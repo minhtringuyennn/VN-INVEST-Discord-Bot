@@ -1,0 +1,346 @@
+index,symbol,companyName,floor,industryName
+0,AAV,Công ty cổ phần Việt Tiên Sơn Địa ốc,HNX,Xây dựng công trình
+1,ACM,Công ty Cổ phần Tập đoàn khoáng sản Á Cường,HNX,Khai khoáng nói chung
+2,ADC,Công ty Cổ phần Mĩ thuật và Truyền thông ,HNX,Hoạt động xuất bản
+3,ALT,Công ty Cổ phần văn hoá Tân Bình ,HNX,Hoạt động xuất bản
+4,AMC,Công ty Cổ phần Khoáng sản Á Châu,HNX,Khai khoáng nói chung
+5,AME,Công ty Cổ phần Alphanam E&C,HNX,Thiết bị điện
+6,AMV,Công ty Cổ phần Sản xuất kinh doanh dược và Trang thiết bị y tế Việt Mỹ,HNX,Thiết bị y tế
+7,API,Công ty Cổ phần Đầu tư Châu Á - Thái Bình Dương,HNX,Tài chính chuyên biệt
+8,APP,Công ty Cổ phần Phát triển Phụ gia và Sản phẩm dầu mỏ ,HNX,Hóa chất đặc biệt
+9,APS,Công ty Cổ phần Chứng khoán Châu Á - Thái Bình Dương,HNX,Dịch vụ đầu tư
+10,ARM,Công ty Cổ phần Xuất nhập khẩu Hàng không,HNX,Cung ứng
+11,ART,Công ty cổ phần Chứng khoán BOS,HNX,Dịch vụ đầu tư
+12,ATS,Công ty cổ phần Suất ăn công nghiệp Atesco,HNX,Nhà hàng & quầy bar
+13,BAB,Ngân hàng Thương mại cổ phần Bắc Á,HNX,Ngân hàng
+14,BAX,Công ty Cổ phần Thống Nhất,HNX,Đầu tư và phát triển bất động sản
+15,BBS,Công ty Cổ phần VICEM Bao bì Bút Sơn,HNX,Bao bì & đóng gói
+16,BCC,Công ty Cổ phần Xi măng Bỉm Sơn,HNX,Vật liệu xây dựng
+17,BCF,Công ty Cổ phần Thực phẩm Bích Chi,HNX,Sản xuất thực phẩm
+18,BDB,Công ty Cổ phần Sách và Thiết bị Bình Định ,HNX,Cửa hàng chuyên dụng
+19,BED,Công ty Cổ phần Sách và Thiết bị trường học Đà Nẵng,HNX,Cửa hàng chuyên dụng
+20,BII,Công ty Cổ phần Louis Land,HNX,Đầu tư và phát triển bất động sản
+21,BKC,Công ty Cổ phần Khoáng sản Bắc Kạn ,HNX,Khai khoáng nói chung
+22,BLF,Công ty Cổ phần Thủy sản Bạc Liêu,HNX,Nông sản và thủy hải sản
+23,BNA,Công ty Cổ phần Đầu tư Sản xuất Bảo Ngọc,HNX,Bán lẻ thực phẩm
+24,BPC,Công ty Cổ phần Vicem Bao bì Bỉm sơn,HNX,Bao bì & đóng gói
+25,BSC,Công ty Cổ phần Dịch vụ Bến Thành,HNX,Bán lẻ tổng hợp
+26,BST,Công ty Cổ phần Sách - Thiết bị Bình Thuận ,HNX,Cửa hàng chuyên dụng
+27,BTS,Công ty Cổ phần Xi măng Vicem Bút Sơn,HNX,Vật liệu xây dựng
+28,BTW,Công ty Cổ phần Cấp nước Bến Thành,HNX,Nước
+29,BVS,Công ty Cổ phần Chứng khoán Bảo Việt,HNX,Dịch vụ đầu tư
+30,BXH,Công ty Cổ phần Vicem Bao bì Hải Phòng,HNX,Bao bì & đóng gói
+31,C69,Công ty cổ phần Xây dựng 1369,HNX,Xây dựng công trình
+32,C92,Công ty Cổ phần Xây dựng và Đầu tư 492,HNX,Xây dựng công trình
+33,CAG,Công ty Cổ phần Cảng An Giang,HNX,Dịch vụ vận tải
+34,CAN,Công ty Cổ phần Đồ hộp Hạ Long,HNX,Sản xuất thực phẩm
+35,CAP,Công ty Cổ phần Lâm nông sản thực phẩm Yên Bái,HNX,Giấy
+36,CCR,Công ty Cổ phần Cảng Cam Ranh ,HNX,Dịch vụ vận tải
+37,CDN,Công ty Cổ phần Cảng Đà Nẵng,HNX,Dịch vụ vận tải
+38,CEO,Công ty Cổ phần Tập Đoàn C.E.O,HNX,Đầu tư và phát triển bất động sản
+39,CET,CÔNG TY CỔ PHẦN HTC HOLDING,HNX,Hóa chất đặc biệt
+40,CIA,Công ty Cổ phần Dịch vụ Sân bay Quốc tế Cam Ranh,HNX,Dịch vụ vận tải
+41,CJC,Công ty Cổ phần Cơ điện Miền Trung (CEMC),HNX,Máy công nghiệp
+42,CKV,Công ty Cổ phần COKYVINA ,HNX,Thiết bị viễn thông
+43,CLH,Công ty Cổ phần xi măng La Hiên - VVMI,HNX,Vật liệu xây dựng
+44,CLM,Công ty cổ phần Xuất nhập khẩu Than - Vinacomin,HNX,Cung ứng
+45,CMC,Công ty Cổ phần Đầu tư CMC ,HNX,Xây dựng công trình
+46,CMS,Công ty cổ phần CMVIETNAM,HNX,Dịch vụ cung ứng lao động và đào tạo
+47,CPC,Công ty Cổ phần Thuốc sát trùng Cần Thơ,HNX,Hóa chất đặc biệt
+48,CSC,Công ty cổ phần Tập đoàn COTANA,HNX,Đầu tư và phát triển bất động sản
+49,CTB,Công ty Cổ phần Chế tạo Bơm Hải Dương ,HNX,Máy công nghiệp
+50,CTC,CÔNG TY CỔ PHẦN TẬP ĐOÀN HOÀNG KIM TÂY NGUYÊN,HNX,Cửa hàng chuyên dụng
+51,CTP,CÔNG TY CỔ PHẦN MINH KHANG CAPITAL TRADING PUBLIC,HNX,Nông sản và thủy hải sản
+52,CTT,Công ty Cổ phần chế tạo máy - VINACOMIN,HNX,Máy công nghiệp
+53,CTX,Tổng Công ty Cổ phần Đầu tư xây dựng và Thương mại Việt Nam,HNX,Vật liệu xây dựng
+54,CVN,CÔNG TY CỔ PHẦN VINAM,HNX,Xây dựng công trình
+55,CX8,Công ty Cổ phần Đầu tư và Xây lắp Contrexim số 8 ,HNX,Xây dựng công trình
+56,D11,Công ty Cổ phần Địa ốc 11,HNX,Đầu tư và phát triển bất động sản
+57,DAD,Công ty Cổ phần Đầu tư và Phát triển giáo dục Đà Nẵng ,HNX,Cửa hàng chuyên dụng
+58,DAE,Công ty Cổ phần Sách Giáo Dục tại TP Đà Nẵng,HNX,Hoạt động xuất bản
+59,DC2,Công ty Cổ phần Đầu tư phát triển - Xây dựng (DIC) số 2,HNX,Xây dựng công trình
+60,DDG,Công ty cổ phần Đầu tư Công nghiệp Xuất nhập khẩu Đông Dương,HNX,Thiết bị điện
+61,DHP,Công ty Cổ phần Điện Cơ Hải Phòng,HNX,Thiết bị điện
+62,DHT,Công ty Cổ phần Dược phẩm Hà Tây ,HNX,Dược phẩm
+63,DIH,Công ty Cổ phần Đầu tư Phát triển Xây dựng Hội An,HNX,Đầu tư và phát triển bất động sản
+64,DL1,Công ty cổ phần tập đoàn Alpha Seven,HNX,Dịch vụ vận tải
+65,DNC,Công ty Cổ phần Điện nước lắp máy Hải Phòng,HNX,Vật liệu xây dựng
+66,DNM,Tổng Công ty Cổ phần Y tế Danameco ,HNX,Thiết bị y tế
+67,DNP,Công ty Cổ phần Nhựa Đồng Nai ,HNX,Vật liệu xây dựng
+68,DP3,Công ty Cổ phần Dược phẩm Trung ương 3,HNX,Dược phẩm
+69,DPC,Công ty Cổ phần nhựa Đà Nẵng,HNX,Vật liệu xây dựng
+70,DS3,Công ty Cổ phần Quản lý Đường sông số 3,HNX,Dịch vụ vận tải
+71,DST,Công ty Cổ phần Đầu tư Sao Thăng Long,HNX,Cửa hàng chuyên dụng
+72,DTC,Công ty Cổ phần Viglacera Đông Triều,HNX,Điện
+73,DTD,Công ty Cổ phần Đầu tư Phát triển Thành Đạt,HNX,Xây dựng công trình
+74,DTK,Tổng công ty Điện lực TKV - CTCP,HNX,Điện
+75,DVG,CTCP TẬP ĐOÀN SƠN ĐẠI VIỆT,HNX,Vật liệu xây dựng
+76,DXP,Công ty Cổ phần Cảng Đoạn Xá,HNX,Dịch vụ vận tải
+77,DZM,Công ty Cổ phần Chế tạo máy Dzĩ An ,HNX,Thiết bị điện
+78,EBS,Công ty Cổ phần Sách Giáo Dục tại TP Hà Nội,HNX,Cửa hàng chuyên dụng
+79,ECI,Công ty Cổ phần Bản đồ và Tranh ảnh giáo dục,HNX,Hoạt động xuất bản
+80,EID,Công ty Cổ phần Đầu tư và Phát triển giáo dục Hà Nội,HNX,Hoạt động xuất bản
+81,EVS,Công ty Cổ phần Chứng khoán Everest,HNX,Dịch vụ đầu tư
+82,FID,Công ty Cổ phần đầu tư và phát triển doanh nghiệp Việt Nam ,HNX,Bán lẻ dụng cụ gia đình
+83,GDW,Công ty Cổ phần Cấp nước Gia Định,HNX,Nước
+84,GIC,Công ty Cổ phần Đầu tư dịch vụ và Phát triển Xanh,HNX,Dịch vụ vận tải
+85,GKM,Công ty cổ phần Khang Minh Group,HNX,Vật liệu xây dựng
+86,GLT,Công ty Cổ phần Kỹ thuật điện toàn cầu,HNX,Thiết bị điện tử
+87,GMA,Công ty Cổ phần Enteco Việt Nam,HNX,Vật liệu xây dựng
+88,GMX,Công ty Cổ phần Gạch Ngói Gốm Xây dựng Mỹ Xuân,HNX,Vật liệu xây dựng
+89,HAD,Công ty Cổ phần Bia Hà Nội - Hải Dương,HNX,Sản xuất bia
+90,HAT,Công ty Cổ phần Thương mại Bia Hà Nội ,HNX,Sản xuất bia
+91,HBS,Công ty Cổ phần Chứng khoán Hòa Bình,HNX,Dịch vụ đầu tư
+92,HCC,Công ty Cổ phần Bê tông Hòa Cẩm - Intimex,HNX,Vật liệu xây dựng
+93,HCT,Công ty Cổ phần Thương mại - Dịch vụ - Vận tải xi măng Hải Phòng,HNX,Dịch vụ vận tải
+94,HDA,Công ty Cổ phần Hãng sơn Đông Á,HNX,Vật liệu xây dựng
+95,HEV,Công ty Cổ phần Sách Đại học - Dạy nghề,HNX,Hoạt động xuất bản
+96,HGM,Công ty Cổ phần Cơ khí và Khoáng sản Hà Giang ,HNX,Khai khoáng nói chung
+97,HHC,Công ty Cổ phần Bánh kẹo Hải Hà,HNX,Sản xuất thực phẩm
+98,HHG,Công ty Cổ phần Hoàng Hà ,HNX,Dịch vụ vận tải
+99,HJS,Công ty Cổ phần Thủy điện Nậm Mu ,HNX,Điện
+100,HKT,Công ty cổ phần Đầu tư EGO Việt Nam,HNX,Sản xuất thực phẩm
+101,HLC,Công ty Cổ phần Than Hà Lầm - Vinacomin,HNX,Than đá
+102,HLD,Công ty Cổ phần Đầu tư và Phát triển Bất động sản HUDLAND,HNX,Xây dựng công trình
+103,HMH,Công ty Cổ phần Hải Minh ,HNX,Dịch vụ vận tải
+104,HOM,Công ty Cổ phần Xi măng Vicem Hoàng Mai,HNX,Vật liệu xây dựng
+105,HPM,Công ty Cổ phần Xây dựng Thương mại và Khoáng sản Hoàng Phúc,HNX,Vật liệu xây dựng
+106,HTC,Công ty Cổ phần Thương mại Hóc Môn ,HNX,Cửa hàng chuyên dụng
+107,HTP,Công ty Cổ phần In sách Giáo Khoa Hòa Phát,HNX,Hoạt động xuất bản
+108,HUT,Công ty Cổ phần TASCO ,HNX,Xây dựng công trình
+109,HVT,Công ty Cổ phần Hóa chất Việt Trì,HNX,Hóa chất đặc biệt
+110,ICG,Công ty Cổ phần Xây dựng sông Hồng ,HNX,Xây dựng công trình
+111,IDC,Tổng Công ty IDICO - CTCP,HNX,Đầu tư và phát triển bất động sản
+112,IDJ,Công ty cổ phần Đầu tư IDJ Việt Nam,HNX,Đầu tư và phát triển bất động sản
+113,IDV,Công ty Cổ phần Phát triển hạ tầng Vĩnh Phúc,HNX,Đầu tư và phát triển bất động sản
+114,INC,Công ty Cổ phần Tư vấn Đầu tư IDICO,HNX,Dịch vụ hỗ trợ kinh doanh
+115,INN,Công ty Cổ phần Bao bì và In nông nghiệp ,HNX,Hoạt động xuất bản
+116,IPA,Công ty Cổ phần Tập đoàn đầu tư I.P.A,HNX,Tài chính chuyên biệt
+117,ITQ,Công ty Cổ phần Tập đoàn Thiên Quang,HNX,Thép
+118,IVS,Công ty Cổ phần Chứng khoán Đầu tư Việt Nam,HNX,Dịch vụ đầu tư
+119,KDM,CÔNG TY CỔ PHẦN TỔNG CÔNG TY PHÁT TRIỂN KHU ĐÔ THỊ DÂN CƯ MỚI,HNX,Vật liệu xây dựng
+120,KHS,Công ty Cổ phần Kiên Hùng,HNX,Nông sản và thủy hải sản
+121,KKC,Công ty Cổ phần Kim Khí KKC,HNX,Thép
+122,KLF,Công ty cổ phần Đầu tư Thương mại và Xuất nhập khẩu CFS,HNX,Dịch vụ vui chơi giải trí
+123,KMT,Công ty Cổ phần Kim khí Miền Trung ,HNX,Thép
+124,KSD,Công ty cổ phần Đầu tư DNA,HNX,"Đồ may mặc, trang sức, phụ kiện"
+125,KSF,Công ty cổ phần Tập đoàn KSFINANCE,HNX,Dịch vụ bất động sản
+126,KSQ,Công ty cổ phần CNC Capital Việt Nam,HNX,Khai khoáng nói chung
+127,KST,Công ty Cổ phần KASATI,HNX,Thiết bị viễn thông
+128,KTS,Công ty Cổ phần Đường Kon Tum ,HNX,Sản xuất thực phẩm
+129,KTT,CÔNG TY CỔ PHẦN TẬP ĐOÀN ĐẦU TƯ KTT,HNX,Thiết bị điện
+130,KVC,Công ty Cổ phần sản xuất xuất nhập khẩu INOX Kim vĩ,HNX,Kim loại màu
+131,L14,Công ty Cổ phần Licogi 14,HNX,Xây dựng công trình
+132,L18,Công ty Cổ phần Đầu tư và Xây dựng số 18,HNX,Xây dựng công trình
+133,L35,Công ty Cổ phần Cơ khí lắp máy LILAMA,HNX,Xây dựng công trình
+134,L40,Công ty Cổ phần Đầu tư và Xây dựng 40 ,HNX,Vật liệu xây dựng
+135,L43,Công ty Cổ phần Lilama 45.3,HNX,Xây dựng công trình
+136,L61,Công ty Cổ phần LILAMA 69-1,HNX,Xây dựng công trình
+137,L62,Công ty Cổ phần Lilama 69-2,HNX,Xây dựng công trình
+138,LAS,Công ty Cổ phần Supe Phốt phát và Hóa chất Lâm Thao,HNX,Hóa chất đặc biệt
+139,LBE,Công ty Cổ phần Sách và Thiết bị trường học Long An,HNX,Hoạt động xuất bản
+140,LCD,Công ty cổ phần Lắp máy - Thí nghiệm cơ điện,HNX,Thiết bị điện
+141,LCS,Công ty Cổ phần Licogi 166 ,HNX,Vật liệu xây dựng
+142,LDP,Công ty Cổ phần Dược Lâm Đồng - Ladophar,HNX,Dược phẩm
+143,LHC,Công ty Cổ phần Đầu tư và Xây dựng Thủy lợi Lâm Đồng,HNX,Xây dựng công trình
+144,LIG,Công ty Cổ phần Licogi 13,HNX,Xây dựng công trình
+145,LM7,Công ty Cổ phần Lilama 7 ,HNX,Xây dựng công trình
+146,LUT,Công ty Cổ phần Đầu tư xây dựng Lương Tài,HNX,Xây dựng công trình
+147,MAC,Công ty Cổ phần Cung ứng và Dịch vụ kỹ thuật hàng hải ,HNX,Xe tải và phương tiện vận chuyển thương mại
+148,MAS,Công ty Cổ phần Dịch vụ hàng không sân bay Đà Nẵng ,HNX,Dịch vụ vận tải
+149,MBG,Công ty Cổ phần Tập đoàn MBG,HNX,Xây dựng công trình
+150,MBS,Công ty Cổ phần chứng khoán MB,HNX,Dịch vụ đầu tư
+151,MCC,Công ty Cổ phần Gạch ngói cao cấp,HNX,Vật liệu xây dựng
+152,MCF,Công ty Cổ phần Xây lắp Cơ khí và Lương thực Thực phẩm (Mecofood),HNX,Sản xuất thực phẩm
+153,MCO,Công ty Cổ phần MCO Việt Nam,HNX,Xây dựng công trình
+154,MDC,Công ty Cổ phần Than Mông Dương - Vinacomin,HNX,Than đá
+155,MED,CÔNG TY CỔ PHẦN DƯỢC TRUNG ƯƠNG MEDIPLANTEX,HNX,Dược phẩm
+156,MEL,Công ty Cổ phần Thép Mê Lin,HNX,Thép
+157,MHL,Công ty Cổ phần Minh Hữu Liên,HNX,Các sản phẩm gia dụng lâu bền
+158,MIM,Công ty Cổ phần Khoáng sản và Cơ khí,HNX,Khai khoáng nói chung
+159,MKV,Công ty Cổ phần Dược thú y Cai Lậy ,HNX,Dược phẩm
+160,MST,Công ty cổ phần đầu tư MST,HNX,Xây dựng công trình
+161,MVB,Tổng công ty Công nghiệp mỏ Việt Bắc TKV_CTCP,HNX,Khai khoáng nói chung
+162,NAG,Công ty Cổ phần Tập đoàn Nagakawa,HNX,Đồ điện tử
+163,NAP,Công ty Cổ phần Cảng Nghệ Tĩnh,HNX,Vận tải biển
+164,NBC,Công ty Cổ phần Than Núi Béo - Vinacomin ,HNX,Than đá
+165,NBP,Công ty Cổ phần Nhiệt điện Ninh Bình,HNX,Điện
+166,NBW,Công ty Cổ phần Cấp nước Nhà Bè,HNX,Nước
+167,NDN,Công ty Cổ phần Đầu tư Phát triển Nhà Đà Nẵng,HNX,Đầu tư và phát triển bất động sản
+168,NDX,Công ty Cổ phần Xây lắp Phát triển Nhà Đà Nẵng,HNX,Xây dựng công trình
+169,NET,Công ty Cổ phần Bột giặt Net,HNX,Sản phẩm gia dụng không lâu bền
+170,NFC,Công ty Cổ phần Phân lân Ninh Bình ,HNX,Hóa chất đặc biệt
+171,NHC,Công ty Cổ phần gạch ngói Nhị Hiệp ,HNX,Vật liệu xây dựng
+172,NRC,Công ty Cổ phần Tập đoàn Danh Khôi,HNX,Dịch vụ bất động sản
+173,NSH,Công ty Cổ phần Nhôm Sông Hồng,HNX,Nhôm
+174,NST,Công ty Cổ phần Ngân Sơn ,HNX,Thuốc lá
+175,NTH,Công ty cổ phần Thủy điện Nước trong,HNX,Điện
+176,NTP,Công ty Cổ phần Nhựa Thiếu niên Tiền Phong ,HNX,Vật liệu xây dựng
+177,NVB,Ngân hàng Thương mại Cổ phần Quốc Dân ,HNX,Ngân hàng
+178,OCH,Công ty Cổ phần Khách sạn và Dịch vụ OCH,HNX,Đầu tư và phát triển bất động sản
+179,ONE,Công ty Cổ phần Truyền thông số 1,HNX,Thiết bị viễn thông
+180,PBP,Công ty Cổ phần Bao bì Dầu khí Việt Nam,HNX,Bao bì & đóng gói
+181,PCE,Công ty Cổ phần Phân bón và Hóa chất Dầu khí Miền Trung,HNX,Hóa chất đặc biệt
+182,PCG,Công ty Cổ phần Đầu tư Phát triển Gas Đô thị,HNX,Dịch vụ và Thiết bị dầu khí
+183,PCT,Công ty cổ phần Vận tải khí và Hóa chất Việt Nam,HNX,Dịch vụ vận tải
+184,PDB,Công ty cố phần tập đoàn đầu tư DIN Capital,HNX,Vật liệu xây dựng
+185,PDC,Công ty Cổ phần Du lịch Dầu khí Phương Đông,HNX,Khách sạn
+186,PEN,Công ty Cổ phần Xây lắp III Petrolimex,HNX,Xây dựng công trình
+187,PGN,Công ty cổ phần Phụ Gia Nhựa,HNX,Hóa chất cơ bản
+188,PGS,Công ty cổ phần kinh doanh khí miền nam,HNX,Gas
+189,PGT,Công ty cổ phần PGT Holdings,HNX,Dịch vụ vận tải
+190,PHN,Công ty cổ phần Pin Hà Nội,HNX,Thiết bị điện
+191,PHP,Công ty Cổ phần Cảng Hải Phòng,HNX,Dịch vụ vận tải
+192,PIA,Công ty cổ phần Tin học Viễn thông Petrolimex,HNX,Phần mềm
+193,PIC,Công ty Cổ phần Đầu tư Điện lực 3,HNX,Điện
+194,PJC,Công ty Cổ phần Thương mại và Vận tải Petrolimex Hà Nội,HNX,Dịch vụ vận tải
+195,PLC,Tổng Công ty Hóa dầu Petrolimex - CTCP,HNX,Hóa chất đặc biệt
+196,PMB,Công ty Cổ phần Phân bón và Hóa chất Dầu khí miền Bắc ,HNX,Hóa chất đặc biệt
+197,PMC,Công ty Cổ phần Dược phẩm dược liệu Pharmedic ,HNX,Dược phẩm
+198,PMP,Công ty Cổ phần Bao bì Đạm Phú Mỹ,HNX,Bao bì & đóng gói
+199,PMS,Công ty Cổ phần Cơ khí Xăng dầu,HNX,Xe tải và phương tiện vận chuyển thương mại
+200,POT,Công ty Cổ phần Thiết bị Bưu Điện,HNX,Thiết bị viễn thông
+201,PPE,Công ty Cổ phần Tư vấn Điện lực Dầu khí Việt Nam ,HNX,Dịch vụ hỗ trợ kinh doanh
+202,PPP,Công ty Cổ phần Dược phẩm Phong Phú,HNX,Dược phẩm
+203,PPS,Công ty Cổ phần Dịch vụ kỹ thuật Điện lực Dầu khí Việt Nam ,HNX,Thiết bị điện
+204,PPY,Công ty Cổ phần Xăng dầu Dầu khí Phú Yên,HNX,Dịch vụ và Thiết bị dầu khí
+205,PRC,Công ty Cổ phần Portserco,HNX,Dịch vụ vận tải
+206,PRE,Tổng công ty cổ phần Tái bảo hiểm Hà Nội,HNX,Bảo hiểm đa ngành
+207,PSC,Công ty Cổ phần Vận tải và Dịch vụ Petrolimex Sài Gòn ,HNX,Dịch vụ vận tải
+208,PSD,Công ty Cổ phần Dịch vụ Phân phối Tổng hợp Dầu khí ,HNX,Thiết bị viễn thông
+209,PSE,Công ty Cổ phần Phân Bón và Hóa Chất Dầu Khí Đông Nam Bộ ,HNX,Hóa chất đặc biệt
+210,PSI,Công ty Cổ phần Chứng khoán Dầu khí,HNX,Dịch vụ đầu tư
+211,PSW,Công ty Cổ phần Phân bón và Hóa chất dầu khí Tây Nam Bộ,HNX,Hóa chất đặc biệt
+212,PTD,Công ty Cổ phần Thiết kế - Xây dựng - Thương mại Phúc Thịnh,HNX,Xây dựng công trình
+213,PTI,Tổng Công ty Cổ phần bảo hiểm bưu điện,HNX,Bảo hiểm tài sản & thương vong
+214,PTS,Công ty Cổ phần Vận tải và Dịch vụ Petrolimex Hải Phòng,HNX,Vận tải biển
+215,PV2,Công ty Cổ phần Đầu tư PV2 ,HNX,Tài chính chuyên biệt
+216,PVB,Công ty Cổ phần Bọc Ống Dầu khí Việt Nam ,HNX,Dịch vụ và Thiết bị dầu khí
+217,PVC,Tổng công ty Hóa chất và Dịch vụ Dầu khí - CTCP (PVChem),HNX,Dịch vụ và Thiết bị dầu khí
+218,PVG,CÔNG TY CỔ PHẦN KINH DOANH LPG VIỆT NAM,HNX,Gas
+219,PVI,Công ty Cổ phần PVI,HNX,Bảo hiểm đa ngành
+220,PVL,Công ty cổ phần Đầu tư Nhà đất Việt,HNX,Đầu tư và phát triển bất động sản
+221,PVS,Tổng Công ty Cổ phần Dịch vụ Kỹ thuật Dầu khí Việt Nam,HNX,Dịch vụ và Thiết bị dầu khí
+222,QHD,Công ty cổ phần que hàn điện Việt Đức,HNX,Vật liệu xây dựng
+223,QST,Công ty Cổ phần Sách và Thiết bị trường học Quảng Ninh,HNX,Cửa hàng chuyên dụng
+224,QTC,Công ty Cổ phần Công trình giao thông Vận tải Quảng Nam,HNX,Xây dựng công trình
+225,RCL,Công ty Cổ phần Địa ốc Chợ Lớn,HNX,Đầu tư và phát triển bất động sản
+226,S55,Công ty Cổ phần Sông Đà 505,HNX,Xây dựng công trình
+227,S99,Công ty Cổ phần SCI,HNX,Xây dựng công trình
+228,SAF,Công ty Cổ phần Lương thực Thực phẩm SAFOCO,HNX,Sản xuất thực phẩm
+229,SCG,CÔNG TY CỔ PHẦN XÂY DỰNG SCG,HNX,Xây dựng công trình
+230,SCI,Công ty cổ phần SCI E&C,HNX,Xây dựng công trình
+231,SD2,Công ty Cổ phần Sông Đà 2,HNX,Xây dựng công trình
+232,SD4,Công ty Cổ phần Sông Đà 4,HNX,Xây dựng công trình
+233,SD5,Công ty Cổ phần Sông Đà 5,HNX,Xây dựng công trình
+234,SD6,Công ty Cổ phần Sông Đà 6,HNX,Xây dựng công trình
+235,SD9,Công ty Cổ phần Sông Đà 9,HNX,Xây dựng công trình
+236,SDA,Công ty Cổ phần Simco Sông Đà ,HNX,Dịch vụ cung ứng lao động và đào tạo
+237,SDC,Công ty Cổ phần Tư vấn sông Đà,HNX,Xây dựng công trình
+238,SDG,Công ty Cổ phần SADICO Cần Thơ,HNX,Bao bì & đóng gói
+239,SDN,Công ty Cổ phần Sơn Đồng Nai,HNX,Vật liệu xây dựng
+240,SDT,Công ty Cổ phần Sông Đà 10 ,HNX,Xây dựng công trình
+241,SDU,Công ty Cổ phần Đầu tư xây dựng và Phát triển đô thị Sông Đà,HNX,Đầu tư và phát triển bất động sản
+242,SEB,Công ty Cổ phần Đầu tư và Phát triển điện miền Trung,HNX,Điện
+243,SED,Công ty Cổ phần Đầu tư và Phát triển giáo dục Phương Nam ,HNX,Cửa hàng chuyên dụng
+244,SFN,Công ty Cổ phần Dệt lưới Sài Gòn ,HNX,Bao bì & đóng gói
+245,SGC,Công ty Cổ phần Xuất nhập khẩu Sa Giang,HNX,Sản xuất thực phẩm
+246,SGD,Công ty Cổ phần Sách Giáo dục tại Thành phố Hồ Chí Minh,HNX,Hoạt động xuất bản
+247,SGH,Công ty Cổ phần Khách sạn Sài Gòn,HNX,Khách sạn
+248,SHE,Công ty cổ phần Phát triển năng lượng Sơn Hà,HNX,Thiết bị điện
+249,SHN,Công ty Cổ phần Đầu tư Tổng hợp Hà Nội,HNX,Xây dựng công trình
+250,SHS,Công ty Cổ phần Chứng khoán Sài Gòn Hà Nội ,HNX,Dịch vụ đầu tư
+251,SIC,Công ty Cổ phần ANI,HNX,Xây dựng công trình
+252,SJ1,Công ty Cổ phần Nông nghiệp Hùng Hậu,HNX,Nông sản và thủy hải sản
+253,SJE,Công ty Cổ phần Sông Đà 11 ,HNX,Xây dựng công trình
+254,SLS,Công ty Cổ phần Mía đường Sơn La ,HNX,Sản xuất thực phẩm
+255,SMN,Công ty Cổ phần sách và thiết bị giáo dục miền Nam ,HNX,Cửa hàng chuyên dụng
+256,SMT,Công ty Cổ phần Sametel,HNX,Thiết bị viễn thông
+257,SPI,Công ty Cổ phần Spiral Galaxy,HNX,Cung ứng
+258,SRA,Công ty Cổ phần Sara Việt Nam ,HNX,Phần mềm
+259,SSM,Công ty Cổ phần Chế tạo kết cấu thép VNECO.SSM,HNX,Vật liệu xây dựng
+260,STC,Công ty Cổ phần Sách và Thiết bị trường học TP Hồ Chí Minh ,HNX,Hoạt động xuất bản
+261,STP,Công ty Cổ phần công nghiệp thương mại Sông Đà,HNX,Bao bì & đóng gói
+262,SVN,Công ty cổ phần Tập đoàn Vexilla Việt Nam,HNX,Xây dựng công trình
+263,SZB,Công ty cổ phần Sonadezi Long Bình,HNX,Dịch vụ bất động sản
+264,TA9,Công ty Cổ phần Xây lắp Thành An 96,HNX,Xây dựng công trình
+265,TAR,Công ty cổ phần Nông nghiệp Công nghệ cao Trung An,HNX,Nông sản và thủy hải sản
+266,TBX,Công ty Cổ phần Xi măng Thái Bình,HNX,Vật liệu xây dựng
+267,TC6,Công ty Cổ phần Than Cọc Sáu - VINACOMIN ,HNX,Than đá
+268,TDN,Công ty Cổ phần Than Đèo Nai - VINACOMIN ,HNX,Than đá
+269,TDT,Công ty Cổ phần Đầu tư và Phát triển TDT,HNX,"Đồ may mặc, trang sức, phụ kiện"
+270,TET,Công ty Cổ phần Vải sợi May mặc miền Bắc ,HNX,"Đồ may mặc, trang sức, phụ kiện"
+271,TFC,Công ty cổ phần Trang,HNX,Sản xuất thực phẩm
+272,THB,Công ty Cổ phần Bia Thanh Hóa ,HNX,Sản xuất bia
+273,THD,CÔNG TY CỔ PHẦN THAIHOLDINGS,HNX,"Xây dựng, chế tạo nhà ở"
+274,THS,Công ty Cổ phần Thanh Hoa - Sông Đà,HNX,Dịch vụ tiện ích tổng hợp
+275,THT,Công ty Cổ phần than Hà Tu – Vinacomin,HNX,Than đá
+276,TIG,Công ty Cổ phần Tập đoàn Đầu tư Thăng long,HNX,Đầu tư và phát triển bất động sản
+277,TJC,Công ty Cổ phần Dịch vụ Vận tải và Thương mại ,HNX,Vận tải biển
+278,TKC,Công ty Cổ phần Xây dựng và Kinh doanh địa ốc Tân Kỷ,HNX,Xây dựng công trình
+279,TKU,Công ty Cổ phần Công nghiệp Tung Kuang,HNX,Nhôm
+280,TMB,Công ty Cổ phần Kinh doanh Than miền Bắc - Vinacomin,HNX,Than đá
+281,TMC,Công ty Cổ phần Thương mại Xuất nhập khẩu Thủ Đức,HNX,Cửa hàng chuyên dụng
+282,TMX,Công ty Cổ phần Vicem Thương mại xi măng ,HNX,Vật liệu xây dựng
+283,TNG,Công ty Cổ phần Đầu tư và Thương mại TNG,HNX,"Đồ may mặc, trang sức, phụ kiện"
+284,TPH,Công ty Cổ phần In Sách Giáo Khoa tại TP Hà Nội,HNX,Hoạt động xuất bản
+285,TPP,Công Ty Cổ Phần Tân Phú Việt Nam,HNX,Bao bì & đóng gói
+286,TSB,Công ty Cổ phần Ắc quy Tia sáng,HNX,Thiết bị điện
+287,TST,Công ty Cổ phần Dịch vụ Kỹ thuật Viễn thông,HNX,Thiết bị viễn thông
+288,TTC,Công ty Cổ phần Gạch men Thanh Thanh,HNX,Vật liệu xây dựng
+289,TTH,Công ty Cổ phần Thương mại và Dịch vụ Tiến Thành,HNX,Dịch vụ tiêu dùng chuyên dụng
+290,TTL,Tổng công ty xây dựng Thăng Long - Công ty cổ phần,HNX,Xây dựng công trình
+291,TTT,Công ty Cổ phần Du lịch - Thương mại Tây Ninh,HNX,Du lịch
+292,TTZ,Công ty Cổ phần Đầu tư Xây dựng và Công nghệ Tiến Trung,HNX,Vận tải xe tải
+293,TV3,Công ty Cổ phần Tư vấn xây dựng điện 3,HNX,Xây dựng công trình
+294,TV4,Công ty Cổ phần Tư vấn xây dựng điện 4,HNX,Xây dựng công trình
+295,TVC,Công ty cổ phần Tập đoàn Quản lý Tài sản Trí Việt,HNX,Quản lý tài sản
+296,TVD,Công ty Cổ phần than Vàng Danh - Vinacomin ,HNX,Than đá
+297,TXM,Công ty Cổ phần VICEM Thạch cao Xi măng,HNX,Vật liệu xây dựng
+298,UNI,Công ty Cổ phần Viễn Liên,HNX,Dịch vụ bất động sản
+299,V12,CTCP Xây dựng số 12,HNX,Xây dựng công trình
+300,V21,Công ty Cổ phần Vinaconex 21,HNX,Xây dựng công trình
+301,VBC,Công ty Cổ phần Nhựa - Bao bì Vinh ,HNX,Bao bì & đóng gói
+302,VC1,Công ty Cổ phần Xây dựng số 1 ,HNX,Xây dựng công trình
+303,VC2,Công ty Cổ phần Đầu tư và Xây dựng VINA2,HNX,Xây dựng công trình
+304,VC3,CÔNG TY CỔ PHẦN TẬP ĐOÀN NAM MÊ KÔNG,HNX,Xây dựng công trình
+305,VC6,Công ty cổ phần Xây dựng và Đầu tư Visicons,HNX,Xây dựng công trình
+306,VC7,CÔNG TY CỔ PHẦN TẬP ĐOÀN BGI,HNX,Xây dựng công trình
+307,VC9,Công ty Cổ phần Xây dựng số 9 ,HNX,Xây dựng công trình
+308,VCC,Công ty Cổ phần Vinaconex 25,HNX,Xây dựng công trình
+309,VCM,Công ty Cổ phần Nhân lực và Thương mại Vinaconex ,HNX,Dịch vụ cung ứng lao động và đào tạo
+310,VCS,Công ty Cổ phần VICOSTONE,HNX,Vật liệu xây dựng
+311,VDL,Công ty Cổ phần Thực phẩm Lâm Đồng ,HNX,"Rượu, đồ uống có cồn"
+312,VE1,Công ty Cổ phần Xây dựng điện VNECO 1 ,HNX,Xây dựng công trình
+313,VE2,Công ty Cổ phần Xây dựng Điện VNECO 2 ,HNX,Xây dựng công trình
+314,VE3,Công ty Cổ phần Xây dựng điện VNECO 3 ,HNX,Xây dựng công trình
+315,VE4,Công ty Cổ phần xây dựng điện VNECO 4 ,HNX,Xây dựng công trình
+316,VE8,Công ty Cổ phần Xây dựng Điện Vneco 8 ,HNX,Xây dựng công trình
+317,VGP,Công ty Cổ phần Cảng rau quả,HNX,Dịch vụ vận tải
+318,VGS,Công ty Cổ phần Ống thép Việt Đức VG PIPE,HNX,Thép
+319,VHE,Công ty cổ phần Dược liệu và Thực phẩm Việt Nam,HNX,Bán lẻ dược phẩm
+320,VHL,Công ty Cổ phần Viglacera Hạ Long,HNX,Vật liệu xây dựng
+321,VIE,Công ty Cổ phần Công nghệ Viễn thông VITECO,HNX,Thiết bị viễn thông
+322,VIF,Tổng công ty Lâm nghiệp Việt Nam - Công ty cổ phần,HNX,Chế phẩm từ gỗ
+323,VIG,Công ty Cổ phần Chứng khoán Thương mại và Công nghiệp Việt Nam (VICS) ,HNX,Dịch vụ đầu tư
+324,VIT,Công ty Cổ phần Viglacera Tiên Sơn ,HNX,Vật liệu xây dựng
+325,VKC,Công ty Cổ phần Cáp Nhựa Vĩnh Khánh,HNX,Công nghiệp đa ngành
+326,VLA,Công ty Cổ phần Đầu tư và Phát triển Công nghệ Văn Lang,HNX,Phần mềm
+327,VMC,Công ty Cổ phần VIMECO,HNX,Xây dựng công trình
+328,VMS,Công ty Cổ phần Phát triển Hàng hải,HNX,Vận tải biển
+329,VNC,Công ty Cổ phần Tập đoàn Vinacontrol,HNX,Dịch vụ hỗ trợ kinh doanh
+330,VNF,Công ty cổ phần VINAFREIGHT,HNX,Dịch vụ vận tải
+331,VNR,Tổng Công ty Cổ phần tái bảo hiểm quốc gia Việt Nam,HNX,Tái bảo hiểm
+332,VNT,Công ty Cổ phần Giao nhận Vận tải Ngoại thương,HNX,Dịch vụ giao nhận
+333,VSA,Công ty Cổ phần Đại lý Hàng hải Việt Nam,HNX,Vận tải biển
+334,VSM,Công ty Cổ phần Container Miền Trung,HNX,Dịch vụ vận tải
+335,VTC,Công ty Cổ phần viễn thông VTC,HNX,Dịch vụ viễn thông cố định
+336,VTH,Công ty Cổ phần Dây Cáp Điện Việt Thái,HNX,Thiết bị viễn thông
+337,VTJ,Công ty Cổ phần Thương mại và Đầu tư VI NA TA BA,HNX,Thuốc lá
+338,VTL,Công ty Cổ phần Vang Thăng Long,HNX,"Rượu, đồ uống có cồn"
+339,VTV,CÔNG TY CỔ PHẦN NĂNG LƯỢNG VÀ MÔI TRƯỜNG VICEM,HNX,Vật liệu xây dựng
+340,VTZ,Công ty Cổ phần Sản xuất và Thương mại Nhựa Việt Thành,HNX,Sản phẩm sinh hóa
+341,VXB,Công ty Cổ phần Vật liệu xây dựng Bến Tre,HNX,Vật liệu xây dựng
+342,WCS,Công ty Cổ phần Bến xe miền Tây,HNX,Du lịch
+343,WSS,Công ty Cổ phần Chứng khoán phố Wall,HNX,Dịch vụ đầu tư
+344,X20,Công ty cổ phần X20,HNX,"Đồ may mặc, trang sức, phụ kiện"

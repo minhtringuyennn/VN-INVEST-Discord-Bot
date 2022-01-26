@@ -1,0 +1,892 @@
+index,symbol,companyName,floor,industryName
+0,A32,Công ty cổ phần 32,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+1,AAS,Công ty Cổ phần Chứng khoán SmartInvest,UPCOM,Dịch vụ đầu tư
+2,ABB,Ngân hàng Thương mại Cổ phần An Bình,UPCOM,Ngân hàng
+3,ABC,Công ty cổ phần Truyền thông VMG,UPCOM,Dịch vụ viễn thông di động
+4,ABI,Công ty Cổ phần Bảo hiểm Ngân hàng Nông nghiệp (ABIC) ,UPCOM,Bảo hiểm đa ngành
+5,ABR,Công ty Cổ phần Đầu tư Nhãn hiệu Việt,UPCOM,Dịch vụ tiện ích tổng hợp
+6,ACE,Công ty Cổ phần Bê tông ly tâm An Giang,UPCOM,Vật liệu xây dựng
+7,ACG,Công ty Cổ phần Gỗ An Cường,UPCOM,"Đồ đạc, nội thất"
+8,ACS,Công ty Cổ phần Xây lắp Thương mại 2,UPCOM,Xây dựng công trình
+9,ACV,Tổng công ty cảng hàng không Việt Nam - CTCP,UPCOM,Dịch vụ vận tải
+10,ADP,Công ty Cổ phần Sơn Á Đông ,UPCOM,Vật liệu xây dựng
+11,AFX,Công ty Cổ phần Xuất nhập khẩu Nông sản thực phẩm An Giang,UPCOM,Nông sản và thủy hải sản
+12,AG1,Công ty Cổ phần 28.1,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+13,AGF,Công ty Cổ phần Xuất nhập khẩu thủy sản An Giang ,UPCOM,Nông sản và thủy hải sản
+14,AGP,Công ty Cổ phần Dược phẩm Agimexpharm,UPCOM,Dược phẩm
+15,AGX,Công ty Cổ phần nông sản xuất khẩu Sài Gòn ,UPCOM,Sản xuất thực phẩm
+16,AIC,Tổng Công ty Cổ phần Bảo hiểm Hàng không,UPCOM,Bảo hiểm đa ngành
+17,ALV,Công ty Cổ phần Xây dựng ALVICO,UPCOM,Vật liệu xây dựng
+18,AMP,Công ty Cổ phần Armephaco,UPCOM,Thiết bị y tế
+19,AMS,Công ty cổ phần Cơ khí Xây dựng AMECC,UPCOM,Vật liệu xây dựng
+20,ANT,Công ty Cổ phần Rau quả thực phẩm An Giang,UPCOM,Sản xuất thực phẩm
+21,APF,Công ty Cổ phần Nông sản Thực phẩm Quảng Ngãi,UPCOM,Sản xuất thực phẩm
+22,APL,Công ty cổ phần Cơ khí và thiết bị áp lực – VVMI,UPCOM,Vật liệu xây dựng
+23,APT,Công ty Cổ phần Kinh doanh Thủy hải sản Sài Gòn,UPCOM,Sản xuất thực phẩm
+24,ASA,Công ty Cổ phần ASA,UPCOM,Sản phẩm gia dụng không lâu bền
+25,ATA,Công ty Cổ phần NTACO ,UPCOM,Nông sản và thủy hải sản
+26,ATB,Công ty Cổ phần An Thịnh,UPCOM,Xây dựng công trình
+27,ATG,Công ty Cổ phần An Trường An,UPCOM,Khai khoáng nói chung
+28,AUM,Công ty Cổ phần Vinacafe Sơn Thành,UPCOM,Cửa hàng chuyên dụng
+29,AVC,Công ty cổ phần Thủy điện A Vương,UPCOM,Điện
+30,AVF,Công ty Cổ phần Việt An,UPCOM,Nông sản và thủy hải sản
+31,B82,Công ty Cổ phần 482,UPCOM,Xây dựng công trình
+32,BAL,Công ty Cổ phần Bao bì Bia - Rượu - Nước giải khát,UPCOM,Sản xuất bia
+33,BBH,Công ty cổ phần Bao bì Hoàng Thạch,UPCOM,Bao bì & đóng gói
+34,BBM,Công ty Cổ phần Bia Hà Nội - Nam Định,UPCOM,Sản xuất bia
+35,BBT,Công ty Cổ phần Bông Bạch Tuyết,UPCOM,Vật dụng cá nhân
+36,BCA,Công ty cổ phần B.C.H,UPCOM,Khai thác và sản xuất dầu khí 
+37,BCB,Công ty cổ phần 397,UPCOM,Than đá
+38,BCP,Công ty cổ phần dược ENLIE,UPCOM,Dược phẩm
+39,BCV,Công ty Cổ phần Du lịch & Thương mại Bằng Giang Cao Bằng,UPCOM,Khách sạn
+40,BDG,CÔNG TY CỔ PHẦN MAY MẶC BÌNH DƯƠNG,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+41,BDT,Công ty cổ phần Xây lắp và Vật liệu xây dựng Đồng Tháp,UPCOM,Vật liệu xây dựng
+42,BDW,Công ty Cổ phần Cấp thoát nước Bình Định ,UPCOM,Nước
+43,BEL,CÔNG TY CỔ PHẦN ĐIỆN TỬ BIÊN HÒA,UPCOM,Thiết bị điện tử văn phòng
+44,BGW,Công ty Cổ phần Nước sạch Bắc Giang,UPCOM,Nước
+45,BHA,Công ty Cổ phần Thủy điện Bắc Hà,UPCOM,Điện
+46,BHC,Công ty Cổ phần Bê tông Biên Hòa ,UPCOM,Xe tải và phương tiện vận chuyển thương mại
+47,BHG,Công ty Cổ phần Chè Biển Hồ,UPCOM,Sản xuất thực phẩm
+48,BHK,Công ty cổ phần Bia Hà Nội - Kim Bài,UPCOM,Sản xuất bia
+49,BHP,Công ty Cổ phần Bia Hà Nội - Hải Phòng,UPCOM,Sản xuất bia
+50,BHT,Công ty Cổ phần Đầu tư Xây dựng Bạch Đằng TMC ,UPCOM,Xây dựng công trình
+51,BIO,Công ty cổ phần Vắc Xin và Sinh phẩm Nha Trang,UPCOM,Dược phẩm
+52,BKH,Công ty Cổ phần Bánh mứt kẹo Hà Nội,UPCOM,Sản xuất thực phẩm
+53,BLI,Tổng Công ty Cổ phần Bảo Hiểm Bảo Long,UPCOM,Bảo hiểm tài sản & thương vong
+54,BLN,Công ty cổ phần Vận tải và dịch vụ Liên Ninh,UPCOM,Du lịch
+55,BLT,Công ty Cổ phần Lương thực Bình Định,UPCOM,Sản xuất thực phẩm
+56,BLU,Công ty cổ phần Công trình Đô thị Bạc Liêu,UPCOM,Dịch vụ xử lý phế liệu phế thải
+57,BLW,Công ty cổ phần Cấp nước Bạc Liêu,UPCOM,Nước
+58,BMD,Công ty Cổ phần Môi trường và Dịch vụ Đô thị Bình Thuận,UPCOM,Dịch vụ xử lý phế liệu phế thải
+59,BMF,Công ty Cổ phần Vật liệu xây dựng và Chất đốt Đồng Nai,UPCOM,Cửa hàng chuyên dụng
+60,BMG,Công ty Cổ phần May Bình Minh,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+61,BMJ,Công ty cổ phần khoáng sản Miền Đông AHP,UPCOM,Khai khoáng nói chung
+62,BMN,Công ty cổ phần 715,UPCOM,Xây dựng công trình
+63,BMS,Công ty Cổ phần Chứng Khoán Bảo Minh,UPCOM,Dịch vụ đầu tư
+64,BMV,Công ty Cổ phần Bột mỳ Vinafood 1,UPCOM,Sản xuất thực phẩm
+65,BNW,Công ty cổ phần Nước sạch Bắc Ninh,UPCOM,Nước
+66,BOT,Công ty cổ phần BOT Cầu Thái Hà,UPCOM,Xây dựng công trình
+67,BPW,Công ty Cổ phần Cấp thoát nước Bình Phước,UPCOM,Nước
+68,BQB,Công ty Cổ phần Bia Hà Nội - Quảng Bình,UPCOM,Sản xuất bia
+69,BRR,Công ty Cổ phần Cao su Bà Rịa,UPCOM,Hóa chất cơ bản
+70,BRS,Công ty Cổ phần Dịch vụ Đô thị Bà Rịa,UPCOM,Dịch vụ xử lý phế liệu phế thải
+71,BSA,Công ty Cổ phần Thủy Điện Buôn Đôn,UPCOM,Điện
+72,BSD,"Công ty cổ phần Bia, Rượu Sài Gòn - Đồng Xuân",UPCOM,Sản xuất bia
+73,BSG,Công ty cổ phần Xe khách Sài Gòn,UPCOM,Du lịch
+74,BSH,Công ty Cổ phần Bia Sài Gòn - Hà Nội,UPCOM,Sản xuất bia
+75,BSL,Công ty Cổ phần Bia Sài Gòn - Sông Lam,UPCOM,Sản xuất bia
+76,BSP,Công ty Cổ phần Bia Sài Gòn - Phú Thọ,UPCOM,Sản xuất bia
+77,BSQ,Công ty cổ phần Bia Sài Gòn - Quảng Ngãi,UPCOM,Sản xuất bia
+78,BSR,Công ty cổ phần Lọc – Hóa dầu Bình Sơn,UPCOM,Dầu khí tổng hợp
+79,BT1,Công ty cổ phần bảo vệ thực vật 1 Trung Ương,UPCOM,Hóa chất đặc biệt
+80,BT6,Công ty Cổ phần Beton 6,UPCOM,Vật liệu xây dựng
+81,BTB,Công ty Cổ phần Bia Hà Nội - Thái Bình,UPCOM,Sản xuất bia
+82,BTD,Công ty cổ phần Bê tông Ly tâm Thủ Đức,UPCOM,Vật liệu xây dựng
+83,BTG,Công ty Cổ phần Bao bì Tiền Giang,UPCOM,Bao bì & đóng gói
+84,BTH,Công ty Cổ phần Chế tạo Biến thế và Vật liệu điện Hà Nội,UPCOM,Thiết bị điện
+85,BTN,Công ty cổ phần Gạch Tuy Nen Bình Định,UPCOM,Vật liệu xây dựng
+86,BTU,Công ty cổ phần Công trình Đô thị Bến Tre,UPCOM,Xây dựng công trình
+87,BTV,Công ty Cổ phần Dịch vụ du lịch Bến Thành,UPCOM,Du lịch
+88,BUD,Công ty Cổ phần Khoa học Công nghệ Việt Nam,UPCOM,Xây dựng công trình
+89,BVB,Ngân hàng TMCP Bản Việt,UPCOM,Ngân hàng
+90,BVG,Công ty Cổ phần Thép Bắc Việt,UPCOM,Vật liệu xây dựng
+91,BVL,Công ty Cổ phần BV Land,UPCOM,Dịch vụ bất động sản
+92,BVN,Công ty Cổ phần Bông Việt Nam ,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+93,BWA,Công ty Cổ phần Cấp thoát nước và Xây dựng Bảo Lộc ,UPCOM,Nước
+94,BWS,Công ty cổ phần Cấp nước Bà Rịa - Vũng Tàu,UPCOM,Nước
+95,BXT,Công ty Cổ phần Bến xe tàu Hậu Giang,UPCOM,Du lịch
+96,C12,Công ty Cổ phần Cầu 12,UPCOM,Xây dựng công trình
+97,C21,Công ty Cổ phần Thế kỷ 21,UPCOM,Đầu tư và phát triển bất động sản
+98,C22,Công ty Cổ phần 22,UPCOM,Sản xuất thực phẩm
+99,C36,Công ty Cổ phần Quản Lý và Xây dựng công trình giao thông 236,UPCOM,Xây dựng công trình
+100,C4G,Công ty cổ phần Tập đoàn CIENCO4,UPCOM,Xây dựng công trình
+101,CAB,CÔNG TY CỔ PHẦN TỔNG CÔNG TY TRUYỀN HÌNH CÁP VIỆT NAM,UPCOM,Các hãng truyền thông
+102,CAD,Công ty Cổ phần Chế biến và Xuất nhập khẩu Thủy sản Cadovimex ,UPCOM,Nông sản và thủy hải sản
+103,CAM,Công ty cổ phần Môi trường đô thị Cà Mau,UPCOM,Dịch vụ xử lý phế liệu phế thải
+104,CAT,Công ty Cổ phần Thủy sản Cà Mau,UPCOM,Sản xuất thực phẩm
+105,CBI,Công ty Cổ phần Gang thép Cao Bằng,UPCOM,Thép
+106,CBS,Công ty Cổ phần Mía đường Cao Bằng,UPCOM,Sản xuất thực phẩm
+107,CC1,Tổng Công ty Xây dựng Số 1 – CTCP,UPCOM,Xây dựng công trình
+108,CC4,Công ty Cổ phần Đầu tư và Xây dựng số 4,UPCOM,Xây dựng công trình
+109,CCA,Công ty cổ phần Xuất nhập khẩu Thủy sản Cần Thơ,UPCOM,Sản xuất thực phẩm
+110,CCM,Công ty Cổ phần Khoáng Sản Và Xi Măng Cần Thơ ,UPCOM,Vật liệu xây dựng
+111,CCP,Công ty Cổ phần Cảng Cửa Cấm Hải Phòng,UPCOM,Dịch vụ vận tải
+112,CCT,Công ty Cổ phần Cảng Cần Thơ,UPCOM,Dịch vụ vận tải
+113,CCV,Công ty cổ phần Tư vấn Xây dựng Công nghiệp và Đô thị Việt Nam,UPCOM,Xây dựng công trình
+114,CDG,Công ty cổ phần Cầu Đuống,UPCOM,Vật liệu xây dựng
+115,CDH,Công ty cổ phần Công trình công cộng và dịch vụ du lịch Hải Phòng,UPCOM,Dịch vụ xử lý phế liệu phế thải
+116,CDO,Công ty Cổ phần Tư vấn thiết kế và phát triển đô thị,UPCOM,Xây dựng công trình
+117,CDP,Công ty cổ phần Dược phẩm Trung ương Codupha,UPCOM,Dược phẩm
+118,CDR,Công ty Cổ phần Xây dựng Cao su Đồng Nai,UPCOM,Xây dựng công trình
+119,CE1,Công ty Cổ phần Xây dựng và Thiết bị Công nghiệp CIE1,UPCOM,Máy công nghiệp
+120,CEG,Công ty Cổ phần Tập đoàn Xây dựng và thiết bị Công nghiệp,UPCOM,Vật liệu xây dựng
+121,CEN,Công ty Cổ phần CENCON Việt Nam,UPCOM,Cửa hàng chuyên dụng
+122,CFM,Công ty cổ phần Đầu tư CFM,UPCOM,Dịch vụ cung ứng lao động và đào tạo
+123,CFV,Công ty cổ phần Cà phê Thắng Lợi,UPCOM,Sản xuất thực phẩm
+124,CGL,CÔNG TY CỔ PHẦN THƯƠNG MẠI GIA LAI,UPCOM,Cung ứng
+125,CGV,Công ty cổ phần Sành sứ Thủy tinh Việt Nam,UPCOM,Vật liệu xây dựng
+126,CH5,Công ty cổ phần xây dựng số 5 Hà Nội,UPCOM,Xây dựng công trình
+127,CHC,Công ty cổ phần Cẩm Hà,UPCOM,Chế phẩm từ gỗ
+128,CHS,Công ty Cổ phần Chiếu sáng công cộng Thành phố Hồ Chí Minh,UPCOM,Điện
+129,CI5,Công ty Cổ phần Đầu tư Xây dựng số 5,UPCOM,Xây dựng công trình
+130,CID,Công ty Cổ phần Xây dựng và phát triển cơ sở hạ tầng,UPCOM,Xây dựng công trình
+131,CIP,Công ty Cổ phần Xây lắp và Sản xuất công nghiệp,UPCOM,Xây dựng công trình
+132,CKA,Công ty cổ phần Cơ Khí An Giang,UPCOM,Kim loại màu
+133,CKD,Công ty Cổ phần cơ khí Đông Anh Licogi,UPCOM,Kim loại màu
+134,CLG,Công ty Cổ phần Đầu tư và Phát triển Nhà đất Cotec ,UPCOM,Đầu tư và phát triển bất động sản
+135,CLX,Công ty cổ phần Xuất nhập khẩu và đầu tư Chợ Lớn (Cholimex),UPCOM,Bán lẻ thực phẩm
+136,CMD,Công ty cổ phần Vật liệu Xây dựng và Trang trí nội thất Thành phố Hồ Chí Minh,UPCOM,Vật liệu xây dựng
+137,CMF,Công ty cổ phần Thực phẩm Cholimex,UPCOM,Sản xuất thực phẩm
+138,CMI,Công ty Cổ phần CMISTONE Việt Nam,UPCOM,Khai khoáng nói chung
+139,CMK,Công ty Cổ phần cơ khí Mạo Khê - Vinacomin ,UPCOM,Máy công nghiệp
+140,CMN,Công ty Cổ phần Lương thực thực phẩm Colusa - Miliket,UPCOM,Sản xuất thực phẩm
+141,CMP,Công ty Cổ phần Cảng Chân Mây,UPCOM,Vận tải biển
+142,CMT,Công ty Cổ phần Công nghệ Mạng và Truyền thông,UPCOM,Dịch vụ máy tính
+143,CMW,Công ty Cổ phần cấp nước Cà Mau,UPCOM,Nước
+144,CNA,Công ty TNHH MTV Đầu tư và Phát triển Chè Nghệ An,UPCOM,Sản xuất thực phẩm
+145,CNC,Công ty Cổ phần Công nghệ cao Traphaco,UPCOM,Hóa chất cơ bản
+146,CNN,"Công ty cổ phần Tư vấn công nghệ, thiết bị và kiểm định xây dựng - CONINCO",UPCOM,Dịch vụ hỗ trợ kinh doanh
+147,CNT,Công ty Cổ phần Xây dựng và Kinh doanh vật tư ,UPCOM,Xây dựng công trình
+148,CPA,Công ty Cổ phần Cà phê Phước An,UPCOM,Nông sản và thủy hải sản
+149,CPH,Công ty cổ phần Phục vụ mai táng Hải Phòng,UPCOM,Dịch vụ tiêu dùng chuyên dụng
+150,CPI,Công ty Cổ phần Đầu tư Cảng Cái Lân,UPCOM,Dịch vụ vận tải
+151,CQN,Công ty cổ phần Cảng Quảng Ninh,UPCOM,Dịch vụ giao nhận
+152,CQT,Công Ty Cổ Phần Xi Măng Quán Triều VVMI,UPCOM,Vật liệu xây dựng
+153,CSI,Công ty Cổ phần Chứng Khoán Kiến Thiết Việt Nam,UPCOM,Dịch vụ đầu tư
+154,CST,Công ty cổ phần Than Cao Sơn - TKV,UPCOM,Khai khoáng nói chung
+155,CT3,Công ty Cổ phần Đầu tư và Xây dựng công trình 3,UPCOM,Xây dựng công trình
+156,CT5,CÔNG TY CỔ PHẦN 319.5,UPCOM,"Xây dựng, chế tạo nhà ở"
+157,CT6,Công ty Cổ phần Công trình 6,UPCOM,Xây dựng công trình
+158,CTA,Công ty Cổ phần Vinavico ,UPCOM,Vật liệu xây dựng
+159,CTN,Công ty Cổ phần Xây dựng Công trình ngầm ,UPCOM,Xây dựng công trình
+160,CTR,Tổng công ty cổ phần công trình Viettel,UPCOM,Dịch vụ viễn thông cố định
+161,CTW,Công ty Cổ phần Cấp thoát nước Cần Thơ,UPCOM,Nước
+162,CYC,Công ty Cổ phần Gạch Men Chang Yih ,UPCOM,Vật liệu xây dựng
+163,DAC,Công ty Cổ phần 382 Đông Anh,UPCOM,Vật liệu xây dựng
+164,DAN,Công ty Cổ phần Dược Danapha,UPCOM,Dược phẩm
+165,DAP,Công ty Cổ phần Đông Á,UPCOM,Giấy
+166,DAR,Công ty Cổ phần Xe lửa Dĩ An,UPCOM,Đường sắt
+167,DAS,Công ty Cổ phần Máy - Thiết bị Dầu khí Đà Nẵng,UPCOM,Phụ tùng ô tô
+168,DBH,Công ty cổ phần Đường bộ Hải Phòng,UPCOM,Dịch vụ vận tải
+169,DBM,Công ty Cổ phần Dược - Vật tư y tế Đăk Lăk ,UPCOM,Dược phẩm
+170,DBW,Công ty Cổ phần Cấp nước Điện Biên,UPCOM,Nước
+171,DC1,Công ty Cổ phần Đầu tư Phát triển Xây dựng số 1,UPCOM,Xây dựng công trình
+172,DCF,Công ty Cổ phần Xây dựng và Thiết kế Số 1,UPCOM,Xây dựng công trình
+173,DCG,Công ty cổ phần Tổng Công ty May Đáp Cầu,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+174,DCH,Công ty Cổ phần Địa chính Hà Nội,UPCOM,Dịch vụ bất động sản
+175,DCR,Công ty cổ phần Gạch Men Cosevco,UPCOM,Vật liệu xây dựng
+176,DCS,Công ty Cổ phần Tập đoàn Đại Châu,UPCOM,"Đồ đạc, nội thất"
+177,DCT,Công ty Cổ phần Tấm lợp Vật liệu Xây dựng Đồng Nai ,UPCOM,Vật liệu xây dựng
+178,DDH,Công ty cổ phần Đảm bảo giao thông đường thủy Hải Phòng,UPCOM,Dịch vụ vận tải
+179,DDM,Công ty Cổ phần Hàng hải Đông Đô ,UPCOM,Vận tải biển
+180,DDN,Công ty Cổ phần Dược - Thiết bị y tế Đà Nẵng (DDN),UPCOM,Dược phẩm
+181,DDV,Công ty Cổ phần DAP - VINACHEM,UPCOM,Hóa chất đặc biệt
+182,DFC,Công ty Cổ phần Xích Líp Đông Anh,UPCOM,Máy công nghiệp
+183,DFF,Công ty Cổ phần Tập đoàn đua FAT,UPCOM,"Xây dựng, chế tạo nhà ở"
+184,DGT,Công ty Cổ phần Công trình giao thông Đồng Nai,UPCOM,Xây dựng công trình
+185,DHB,Công ty Cổ phần Phân đạm và Hóa chất Hà Bắc,UPCOM,Hóa chất đặc biệt
+186,DHD,Công ty Cổ phần Dược Vật tư Y tế Hải Dương,UPCOM,Dược phẩm
+187,DHN,Công ty Cổ phần Dược phẩm Hà Nội,UPCOM,Dược phẩm
+188,DIC,Công ty Cổ phần Đầu tư và Thương mại DIC ,UPCOM,Vật liệu xây dựng
+189,DID,Công ty Cổ phần DIC-Đồng Tiến ,UPCOM,Xây dựng công trình
+190,DKC,Công ty Cổ phần Chợ Lạng Sơn,UPCOM,Dịch vụ hỗ trợ kinh doanh
+191,DKH,Trung tâm Đăng kiểm phương tiện Giao thông Thủy bộ,UPCOM,Dịch vụ vận tải
+192,DLD,Công ty Cổ phần Du lịch Đắc Lắk,UPCOM,Khách sạn
+193,DLR,Công ty Cổ phần Địa ốc Đà Lạt ,UPCOM,Đầu tư và phát triển bất động sản
+194,DLT,Công ty cổ phần du lịch và thương mại - VINACOMIN,UPCOM,Công nghiệp đa ngành
+195,DM7,Công ty cổ phần Dệt May 7,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+196,DMN,Công ty Cổ phần DOMENAL,UPCOM,Nông sản và thủy hải sản
+197,DNA,Công ty Cổ phần Điện nước An Giang,UPCOM,Điện
+198,DNB,Công ty TNHH MTV Sách và Thiết bị trường học tỉnh Đắk Nông,UPCOM,Hoạt động xuất bản
+199,DND,Công ty Cổ phần Đầu tư Xây dựng và Vật liệu Đồng Nai,UPCOM,Vật liệu xây dựng
+200,DNE,Công ty cổ phần Môi trường Đô thị Đà Nẵng,UPCOM,Dịch vụ xử lý phế liệu phế thải
+201,DNH,Công ty cổ phần Thủy điện Đa Nhim - Hàm Thuận - Đa Mi,UPCOM,Điện
+202,DNL,Công ty Cổ phần Logistic Cảng Đà Nẵng ,UPCOM,Dịch vụ vận tải
+203,DNN,Công ty Cổ phần Cấp nước Đà Nẵng,UPCOM,Nước
+204,DNT,Công ty Cổ phần Du lịch Đồng Nai,UPCOM,Du lịch
+205,DNW,Công ty Cổ phần Cấp nước Đồng Nai,UPCOM,Nước
+206,DOC,Công ty cổ phần Vật tư nông nghiệp Đồng Nai,UPCOM,Sản phẩm sinh hóa
+207,DOP,Công ty Cổ phần Vận tải Xăng dầu Đồng Tháp ,UPCOM,Vận tải biển
+208,DP1,Công ty Cổ phần Dược phẩm Trung ương CPC1,UPCOM,Dược phẩm
+209,DP2,Công ty Cổ phần Dược phẩm Trung ương 2,UPCOM,Dược phẩm
+210,DPD,Công ty Cổ phần Cao su Đồng Phú - Đắk Nông,UPCOM,Hóa chất cơ bản
+211,DPH,Công ty cổ phần Dược phẩm Hải Phòng,UPCOM,Dược phẩm
+212,DPP,Công ty Cổ phần Dược Đồng Nai ,UPCOM,Dược phẩm
+213,DPS,Công ty Cổ phần Đầu tư Phát triển Sóc Sơn,UPCOM,Thép
+214,DRG,Công ty Cổ phân cao su Đắk Lắk,UPCOM,Chế phẩm từ gỗ
+215,DRI,Công ty Cổ phần Đầu tư cao su Đắk Lắk,UPCOM,Hóa chất cơ bản
+216,DSC,Công ty cổ phần chứng khoán DSC,UPCOM,Dịch vụ đầu tư
+217,DSG,Công ty Cổ phần Kính Đáp Cầu,UPCOM,Vật liệu xây dựng
+218,DSP,Công ty Cổ phần Dịch vụ Du lịch Phú Thọ,UPCOM,Du lịch
+219,DSV,Công ty cổ phần Đường sắt Vĩnh Phú,UPCOM,Đường sắt
+220,DT4,Công ty Cổ phần Quản lý bảo trì đường thủy nội địa số 4,UPCOM,Xây dựng công trình
+221,DTB,CÔNG TY CỔ PHẦN CÔNG TRÌNH ĐÔ THỊ BẢO LỘC,UPCOM,Xây dựng công trình
+222,DTE,Công ty cổ phần Đầu tư Năng lượng Đại Trường Thành Holdings,UPCOM,Điện
+223,DTG,Công ty Cổ phần Dược phẩm Tipharco,UPCOM,Dược phẩm
+224,DTI,Công ty Cổ phần Đầu tư Đức Trung,UPCOM,Đầu tư và phát triển bất động sản
+225,DTP,Công ty cổ phần Dược phẩm CPC1 Hà Nội,UPCOM,Dược phẩm
+226,DTV,Công ty Cổ phần Phát triển Điện Trà Vinh,UPCOM,Xây dựng công trình
+227,DUS,CÔNG TY CỔ PHẦN DỊCH VỤ ĐÔ THỊ ĐÀ LẠT,UPCOM,Dịch vụ xử lý phế liệu phế thải
+228,DVC,Công ty Cổ phần Thương mại dịch vụ tổng hợp Cảng Hải Phòng ,UPCOM,Gas
+229,DVN,Tổng công ty Dược Việt Nam - CTCP,UPCOM,Dược phẩm
+230,DVW,Công ty Cổ phần Dịch vụ và Xây dựng Cấp nước Đồng Nai,UPCOM,Nước
+231,DWC,Công ty Cổ phần Cấp nước Đắk Lắk,UPCOM,Nước
+232,DWS,Công ty Cổ phần Cấp nước và Môi trường đô thị Đồng Tháp,UPCOM,Nước
+233,DX2,Công ty cổ phần Đầu tư và Xây dựng 319.2,UPCOM,Xây dựng công trình
+234,DXD,Công ty Cổ phần Đầu tư và Phát triển Xây lắp Đông Anh,UPCOM,Xây dựng công trình
+235,DXL,Công ty Cổ phần Du lịch và Xuất nhập khẩu Lạng Sơn ,UPCOM,Khách sạn
+236,E12,CÔNG TY CỔ PHẦN XÂY DỰNG ĐIỆN VNECO12,UPCOM,Điện
+237,E29,Công ty Cổ phần Đầu tư Xây dựng và Kỹ thuật 29,UPCOM,Đầu tư và phát triển bất động sản
+238,EAD,Công ty cổ phần Thủy điện Điện lực Đắk Lắk,UPCOM,Điện
+239,EFI,Công ty Cổ phần Đầu tư tài chính giáo dục,UPCOM,Cửa hàng chuyên dụng
+240,EIC,Công ty Cổ phần EVN Quốc tế,UPCOM,Điện
+241,EIN,Công ty cổ phần Đầu tư - Thương mại - Dịch vụ Điện lực,UPCOM,Đầu tư và phát triển bất động sản
+242,EME,Công ty Cổ phần Điện Cơ,UPCOM,Xây dựng công trình
+243,EMG,Công ty Cổ Phần Thiết Bị Phụ Tùng Cơ điện,UPCOM,Thiết bị điện
+244,EMS,Tổng Công ty Chuyển phát nhanh Bưu điện – Công ty cổ phần,UPCOM,Dịch vụ giao nhận
+245,EPC,Công ty cổ phần Cà Phê Ea Pốk,UPCOM,Nông sản và thủy hải sản
+246,EPH,Công ty cổ phần Dịch vụ Xuất bản Giáo dục Hà Nội,UPCOM,Hoạt động xuất bản
+247,FBA,Công ty Cổ phần Tập đoàn Quốc tế FBA,UPCOM,Đồ điện tử
+248,FBC,Công ty Cổ phần Cơ khí Phổ Yên,UPCOM,Vật liệu xây dựng
+249,FCC,Công ty Cổ phần Liên Hợp Thực Phẩm,UPCOM,Sản xuất bia
+250,FCS,Công ty cổ phần Lương thực thành phố Hồ Chí Minh,UPCOM,Nông sản và thủy hải sản
+251,FDG,Công ty Cổ phần DOCIMEXCO,UPCOM,Nông sản và thủy hải sản
+252,FGL,Công ty cổ phần Cà phê Gia Lai,UPCOM,Nông sản và thủy hải sản
+253,FHN,Công ty cổ phần Xuất nhập khẩu Lương thực - Thực phẩm Hà Nội,UPCOM,Bán lẻ thực phẩm
+254,FHS,Công ty cổ phần Phát hành sách thành phố Hồ Chí Minh - FAHASA,UPCOM,Hoạt động xuất bản
+255,FIC,Tổng Công ty Vật liệu Xây dựng số 1 – Công ty cổ phần,UPCOM,Vật liệu xây dựng
+256,FOC,Công ty cổ phần Dịch vụ Trực tuyến FPT,UPCOM,Hoạt động xuất bản
+257,FOX,Công ty Cổ phần Viễn thông FPT,UPCOM,Dịch vụ viễn thông cố định
+258,FRC,Công ty cổ phần Lâm đặc sản Xuất khẩu Quảng Nam,UPCOM,Chế phẩm từ gỗ
+259,FRM,Công ty Cổ phần Lâm nghiệp Sài Gòn,UPCOM,Chế phẩm từ gỗ
+260,FSO,Công ty cổ phần Cơ khí đóng tàu thủy sản Việt Nam,UPCOM,Xây dựng công trình
+261,FT1,Công ty cổ phần Phụ tùng máy số 1,UPCOM,Phụ tùng ô tô
+262,FTI,Công ty Cổ phần Công nghiệp - Thương mại Hữu Nghị,UPCOM,Dịch vụ bất động sản
+263,G20,Công ty Cổ phần Đầu tư Dệt may Vĩnh Phúc,UPCOM,Các sản phẩm gia dụng lâu bền
+264,G36,Tổng công ty 36 - CTCP,UPCOM,Xây dựng công trình
+265,GCB,Công ty cổ phần Petec Bình Định,UPCOM,Cửa hàng chuyên dụng
+266,GE2,Tổng Công ty Phát điện 2 - Công ty Cổ phần,UPCOM,Điện
+267,GER,Công ty Cổ phần Thể Thao Ngôi Sao Geru,UPCOM,Dịch vụ hỗ trợ kinh doanh
+268,GGG,Công ty Cổ phần Ô tô Giải Phóng,UPCOM,Xe tải và phương tiện vận chuyển thương mại
+269,GH3,Công ty Cổ phần Công trình Giao thông Hà Nội,UPCOM,Dịch vụ bất động sản
+270,GHC,Công ty Cổ phần Thủy điện Gia Lai,UPCOM,Xây dựng công trình
+271,GLC,Công ty cổ phần Vàng Lào Cai,UPCOM,Bạch kim & Kim loại quý hiếm khác
+272,GLW,Công ty cổ phần Cấp thoát nước Gia Lai,UPCOM,Nước
+273,GND,Công ty cổ phần Gạch ngói Đồng Nai,UPCOM,Vật liệu xây dựng
+274,GQN,Công ty cổ phần Giống Thủy sản Quảng Nam,UPCOM,Nông sản và thủy hải sản
+275,GSM,Công ty Cổ phần Thủy điện Hương Sơn,UPCOM,Điện
+276,GTD,Công ty cổ phần Giầy Thượng Đình,UPCOM,Giầy dép
+277,GTH,Công ty Cổ phần Xây dựng - Giao thông Thừa Thiên Huế,UPCOM,Xây dựng công trình
+278,GTK,Công ty Cổ phần Giầy Thụy Khuê,UPCOM,Giầy dép
+279,GTS,Công ty cổ phần Công trình Giao thông Sài Gòn,UPCOM,Xây dựng công trình
+280,GTT,Công ty Cổ phần Thuận Thảo ,UPCOM,Khách sạn
+281,GVT,Công ty Cổ phần Giấy Việt Trì,UPCOM,Giấy
+282,H11,Công ty Cổ phần Xây dựng HUD101,UPCOM,Xây dựng công trình
+283,HAB,Công ty Cổ phần Sách và Thiết bị trường học Hà Nội,UPCOM,Hoạt động xuất bản
+284,HAC,Công ty cổ phần Chứng khoán Hải Phòng,UPCOM,Dịch vụ đầu tư
+285,HAF,Công ty cổ phần Thực phẩm Hà Nội,UPCOM,Bán lẻ thực phẩm
+286,HAM,Công ty Cổ phần Vật tư Hậu Giang,UPCOM,Vật liệu xây dựng
+287,HAN,Tổng Công ty Xây dựng Hà Nội,UPCOM,"Xây dựng, chế tạo nhà ở"
+288,HAV,Công ty Cổ phần Rượu Hapro,UPCOM,"Rượu, đồ uống có cồn"
+289,HAW,Công ty cổ phần cấp nước và vệ sinh môi trường nông thôn Hậu Giang,UPCOM,Nước
+290,HBD,Công ty Cổ phần Bao bì PP Bình Dương,UPCOM,Bao bì & đóng gói
+291,HBH,Công ty Cổ phần Habeco - Hải Phòng,UPCOM,Sản xuất bia
+292,HC1,Công ty Cổ phần Xây dựng số 1 Hà Nội,UPCOM,"Xây dựng, chế tạo nhà ở"
+293,HC3,Công ty Cổ phần Xây dựng số 3 Hải Phòng,UPCOM,Xây dựng công trình
+294,HCB,Công ty cổ phần Dệt may 29/3,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+295,HCI,Công ty Cổ phần Đầu tư - Xây dựng Hà Nội ,UPCOM,Xây dựng công trình
+296,HD2,Công ty cổ phần Đầu tư Phát triển nhà HUD2,UPCOM,Đầu tư và phát triển bất động sản
+297,HD6,Công ty Cổ phần đầu tư và phát triển Nhà số 6 Hà Nội,UPCOM,Đầu tư và phát triển bất động sản
+298,HD8,Công ty cổ phần Đầu tư phát triển nhà và đô thị HUD8,UPCOM,Đầu tư và phát triển bất động sản
+299,HDM,Công ty Cổ phần Dệt - May Huế ,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+300,HDO,Công ty Cổ phần Hưng Đạo Container ,UPCOM,Bao bì & đóng gói
+301,HDP,Công ty Cổ phần Dược Hà Tĩnh,UPCOM,Dược phẩm
+302,HDW,Công ty Cổ phần Kinh doanh Nước sạch Hải Dương,UPCOM,Nước
+303,HEC,Công ty cổ phần Tư vấn Xây dựng Thủy Lợi II,UPCOM,Xây dựng công trình
+304,HEJ,Tổng công ty Tư vấn Xây dựng Thủy Lợi Việt Nam - CTCP,UPCOM,Xây dựng công trình
+305,HEM,Công ty cổ phần Chế tạo Điện cơ Hà Nội,UPCOM,Thiết bị điện
+306,HEP,Công ty cổ phần Môi trường và Công trình đô thị Huế,UPCOM,Dịch vụ xử lý phế liệu phế thải
+307,HES,Công ty cổ phần Dịch vụ Giải trí Hà Nội,UPCOM,Dịch vụ vui chơi giải trí
+308,HFB,Công ty cổ phần Công trình Cầu phà Thành phố Hồ Chí Minh,UPCOM,Xây dựng công trình
+309,HFC,Công ty cổ phần Xăng dầu HFC,UPCOM,Gas
+310,HFX,Công ty Cổ phần Sản xuất - Xuất nhập khẩu Thanh Hà ,UPCOM,Vật liệu xây dựng
+311,HGA,CÔNG TY CP NÔNG NGHIỆP CÔNG NGHỆ CAO HẬU GIANG,UPCOM,Nông sản và thủy hải sản
+312,HGC,Trung tâm Quy hoạch - Kiến trúc tỉnh Hậu Giang,UPCOM,Dịch vụ bất động sản
+313,HGR,Công ty cổ phần Tài nguyên và Môi trường Hậu Giang,UPCOM,Dịch vụ bất động sản
+314,HGT,CÔNG TY CỔ PHẦN DU LỊCH HƯƠNG GIANG,UPCOM,Du lịch
+315,HGW,Công ty TNHH MTV Thương mại - Dịch vụ - Xây dựng Cửu Long,UPCOM,Xây dựng công trình
+316,HHN,Công ty cổ phần Vận tải và Dịch vụ hàng hóa Hà Nội,UPCOM,Dịch vụ vận tải
+317,HHR,Công ty cổ phần Đường sắt Hà Hải,UPCOM,Xây dựng công trình
+318,HHV,Công ty Cổ phần Đầu tư hạ tầng giao thông Đèo Cả,UPCOM,Dịch vụ vận tải
+319,HIG,Công ty Cổ phần Tập đoàn HIPT ,UPCOM,Thiết bị viễn thông
+320,HJC,Công ty Cổ phần Hòa Việt ,UPCOM,Nông sản và thủy hải sản
+321,HKB,Công ty Cổ phần nông nghiệp và thực phẩm Hà Nội - Kinh Bắc ,UPCOM,Sản xuất thực phẩm
+322,HKP,CÔNG TY CỔ PHẦN BAO BÌ HÀ TIÊN,UPCOM,Bao bì & đóng gói
+323,HLA,Công ty Cổ phần Hữu Liên Á Châu,UPCOM,Thép
+324,HLB,Công ty Cổ phần Bia và Nước giải khát Hạ Long,UPCOM,Sản xuất bia
+325,HLE,Công ty cổ phần Điện chiếu sáng Hải Phòng,UPCOM,Điện
+326,HLG,Công ty Cổ phần Tập đoàn Hoàng Long,UPCOM,Thuốc lá
+327,HLR,Công ty cổ phần Đường sắt Hà Lạng,UPCOM,Đường sắt
+328,HLS,Công ty Cổ phần Sứ kỹ thuật Hoàng Liên Sơn,UPCOM,Thiết bị điện
+329,HLT,Công ty Cổ phần Dệt may Hoàng Thị Loan,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+330,HLY,Công ty cổ phần gốm xây dựng Yên Hưng,UPCOM,Vật liệu xây dựng
+331,HMG,Công ty Cổ phần kim khí Hà Nội - VNSTEEL,UPCOM,Vật liệu xây dựng
+332,HMS,Công ty cổ phần Xây dựng bảo tàng Hồ Chí Minh,UPCOM,Xây dựng công trình
+333,HNA,Công ty cổ phần Thủy điện Hủa Na,UPCOM,Điện
+334,HNB,Công ty Cổ phần Bến xe Hà Nội ,UPCOM,Du lịch
+335,HND,Công ty Cổ phần Nhiệt điện Hải Phòng,UPCOM,Điện
+336,HNE,Công ty Cổ phần Hanel,UPCOM,Đồ điện tử
+337,HNF,Công ty Cổ phần Thực phẩm Hữu Nghị ,UPCOM,Sản xuất thực phẩm
+338,HNI,Công ty Cổ phần May Hữu Nghị,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+339,HNM,Công ty Cổ phần Sữa Hà Nội,UPCOM,Sản xuất thực phẩm
+340,HNP,Công ty cổ phần Hanel Xốp nhựa,UPCOM,Hóa chất cơ bản
+341,HNR,Công ty Cổ phần Rượu và Nước giải khát Hà Nội,UPCOM,"Rượu, đồ uống có cồn"
+342,HNT,Công ty cổ phần Xe điện Hà Nội,UPCOM,Dịch vụ vận tải
+343,HPB,Công ty Cổ phần Bao bì PP,UPCOM,Bao bì & đóng gói
+344,HPD,Công ty Cổ phần thủy điện Đăk Đoa,UPCOM,Điện
+345,HPH,Công ty Cổ phần Hóa chất Hưng Phát Hà Bắc,UPCOM,Hóa chất cơ bản
+346,HPI,Công ty cổ phần khu công nghiệp Hiệp Phước,UPCOM,Đầu tư và phát triển bất động sản
+347,HPP,Công ty Cổ phần Sơn Hải Phòng ,UPCOM,Hóa chất đặc biệt
+348,HPT,Công ty Cổ phần Dịch vụ Công nghệ Tin học HPT ,UPCOM,Phần cứng
+349,HPW,Công ty cổ phần Cấp nước Hải Phòng,UPCOM,Nước
+350,HRB,Công ty cổ phần Harec Đầu tư và Thương Mại,UPCOM,Đầu tư và phát triển bất động sản
+351,HRT,Công ty cổ phần Vận tải Đường sắt Hà Nội,UPCOM,Đường sắt
+352,HSA,Công ty Cổ phần Hestia,UPCOM,Dịch vụ hỗ trợ kinh doanh
+353,HSI,Công ty Cổ phần Vật tư Tổng hợp và Phân bón Hóa sinh,UPCOM,Hóa chất đặc biệt
+354,HSM,Tổng Công ty Cổ phần Dệt May Hà Nội,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+355,HSP,Công ty cổ phần Sơn Tổng hợp Hà Nội,UPCOM,Vật liệu xây dựng
+356,HSV,Công ty Cổ phần Gang thép Hà Nội,UPCOM,Kim loại màu
+357,HTE,Công ty Cổ phần Đầu tư Kinh doanh điện lực Thành phố Hồ Chí Minh,UPCOM,Xây dựng công trình
+358,HTG,Tổng Công ty Cổ phần Dệt may Hòa Thọ,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+359,HTH,Công ty Cổ phần Hoa tiêu hàng hải - TKV,UPCOM,Dịch vụ hỗ trợ kinh doanh
+360,HTK,Công ty cổ phần Đăng kiểm xe cơ giới Hải Dương,UPCOM,Dịch vụ hỗ trợ kinh doanh
+361,HTM,Tổng Công ty Thương Mại Hà Nội - Công ty cổ phần,UPCOM,Bán lẻ tổng hợp
+362,HTR,Công ty cổ phần Đường sắt Hà Thái,UPCOM,Đường sắt
+363,HTT,Công ty Cổ phần Thương mại Hà Tây,UPCOM,Đầu tư và phát triển bất động sản
+364,HTW,Công ty Cổ phần cấp nước Hà Tĩnh,UPCOM,Nước
+365,HU4,Công ty Cổ phần Đầu tư và Xây dựng HUD4,UPCOM,Xây dựng công trình
+366,HU6,Công ty Cổ phần Đầu tư Phát triển Nhà và Đô thị HUD6,UPCOM,Đầu tư và phát triển bất động sản
+367,HUG,Tổng công ty May Hưng Yên - Công ty Cổ phần,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+368,HUX,Công ty cổ phần khoáng sản Thừa Thiên Huế,UPCOM,Khai khoáng nói chung
+369,HVA,Công ty Cổ phần Đầu tư HVA,UPCOM,Sản xuất thực phẩm
+370,HVG,Công ty Cổ phần Hùng Vương ,UPCOM,Nông sản và thủy hải sản
+371,HWS,Công ty Cổ phần Cấp nước Thừa Thiên Huế,UPCOM,Nước
+372,I10,Công ty Cổ phần Đầu tư Xây dựng số 10 IDICO,UPCOM,Xây dựng công trình
+373,IBD,Công ty Cổ phần In Tổng hợp Bình Dương,UPCOM,Bao bì & đóng gói
+374,IBN,Công ty TNHH MTV In báo Nghệ An,UPCOM,Hoạt động xuất bản
+375,ICC,Công ty cổ phần Xây dựng Công nghiệp,UPCOM,Xây dựng công trình
+376,ICF,Công ty Cổ phần Đầu tư Thương mại Thủy sản ,UPCOM,Nông sản và thủy hải sản
+377,ICI,Công ty Cổ phần Đầu tư và Xây dựng Công nghiệp,UPCOM,Vật liệu xây dựng
+378,ICN,Công ty Cổ phần Đầu Tư Xây Dựng Dầu Khí IDICO ,UPCOM,Xây dựng công trình
+379,IDP,CÔNG TY CỔ PHẦN SỮA QUỐC TẾ,UPCOM,Sản xuất thực phẩm
+380,IFS,Công ty Cổ phần Thực phẩm Quốc Tế,UPCOM,Sản xuất thực phẩm
+381,IHK,Công ty Cổ phần In Hàng không ,UPCOM,Hoạt động xuất bản
+382,ILA,Công ty Cổ phần ILA,UPCOM,Sản xuất thực phẩm
+383,ILC,Công ty Cổ phần Hợp tác lao động với nước ngoài,UPCOM,Dịch vụ cung ứng lao động và đào tạo
+384,ILS,Công ty cổ phần Đầu tư Thương mại và Dịch vụ Quốc tế,UPCOM,Dịch vụ giao nhận
+385,IME,Công ty Cổ phần Cơ khí và Xây lắp Công nghiệp ,UPCOM,Xây dựng công trình
+386,IN4,Công ty Cổ phần In số 4,UPCOM,Hoạt động xuất bản
+387,IPH,Công ty cổ phần In và Phát hành biểu mẫu thống kê,UPCOM,Hoạt động xuất bản
+388,IRC,Công ty cổ phần Cao su Công nghiệp,UPCOM,Săm lốp
+389,ISG,Công ty Cổ phần Vận tải biển và Hợp tác lao động quốc tế,UPCOM,Vận tải biển
+390,ISH,Công ty Cổ phần thủy điện SROK Phu Miêng IDICO,UPCOM,Điện
+391,IST,Công ty cổ phần ICD Tân Cảng Sóng Thần,UPCOM,Dịch vụ vận tải
+392,ITS,"Công ty Cổ phần Đầu tư, Thương mại và Dịch vụ - Vinacomin",UPCOM,Cung ứng
+393,JOS,Công ty cổ phần Chế biến Thủy sản Xuất khẩu Minh Hải,UPCOM,Nông sản và thủy hải sản
+394,KAC,Công ty Cổ phần Đầu tư Địa ốc Khang An,UPCOM,Đầu tư và phát triển bất động sản
+395,KCB,Công ty Cổ phần Khoáng Sản Luyện Kim Cao Bằng,UPCOM,Kim loại màu
+396,KCE,Công ty Cổ phần Bê tông Ly tâm Điện lực Khánh Hòa,UPCOM,Vật liệu xây dựng
+397,KGM,Công ty cổ phần Xuất nhập khẩu Kiên Giang,UPCOM,Sản xuất thực phẩm
+398,KHA,Công ty Cổ phần Đầu tư và Dịch vụ Khánh Hội,UPCOM,Đầu tư và phát triển bất động sản
+399,KHB,Công ty Cổ phần Khoáng sản Hòa Bình,UPCOM,Khai khoáng nói chung
+400,KHD,"Công ty cổ phần khai thác, chế biến khoáng sản Hải Dương",UPCOM,Khai khoáng nói chung
+401,KHL,Công ty Cổ phần Khoáng sản và Vật liệu Xây dựng Hưng Long,UPCOM,Vật liệu xây dựng
+402,KHW,Công ty cổ phần Cấp thoát nước Khánh Hòa,UPCOM,Nước
+403,KIP,Công ty cổ phần K.I.P Việt Nam,UPCOM,Thiết bị điện
+404,KLB,Ngân hàng Thương mại Cổ phần Kiên Long,UPCOM,Ngân hàng
+405,KLM,CÔNG TY CỔ PHẦN KIM LOẠI MÀU NGHỆ TĨNH,UPCOM,Khai khoáng nói chung
+406,KSH,Công ty Cổ phần DAMAC GLS,UPCOM,Khai khoáng nói chung
+407,KSK,Công ty Cổ phần Khoáng sản Luyện kim màu ,UPCOM,Công nghiệp đa ngành
+408,KSV,Tổng công ty Khoáng sản TKV - CTCP,UPCOM,Khai khoáng nói chung
+409,KTC,Công ty Cổ phần Thương mại Kiên Giang,UPCOM,Bán lẻ tổng hợp
+410,KTL,Công ty Cổ phần kim khí Thăng Long ,UPCOM,Các sản phẩm gia dụng lâu bền
+411,L12,Công ty cổ phần Licogi 12,UPCOM,Xây dựng công trình
+412,L44,Công ty Cổ phần Lilama 45.4,UPCOM,Xây dựng công trình
+413,L45,Công ty cổ phần Lilama 45.1,UPCOM,Vật liệu xây dựng
+414,L63,Công ty Cổ phần Lilama 69-3,UPCOM,Vật liệu xây dựng
+415,LAI,Công ty Cổ phần Đầu tư xây dựng Long An IDICO ,UPCOM,Đầu tư và phát triển bất động sản
+416,LAW,Công ty Cổ phần Cấp thoát nước Long An,UPCOM,Nước
+417,LBC,Công ty cổ phần Thương mại - Đầu tư Long Biên,UPCOM,Dịch vụ tiêu dùng chuyên dụng
+418,LCC,CTCP Xi măng Hồng Phong,UPCOM,Vật liệu xây dựng
+419,LCW,Công ty Cổ phần nước sạch Lai Châu,UPCOM,Nước
+420,LDW,Công ty cổ phần Cấp thoát nước Lâm Đồng,UPCOM,Nước
+421,LG9,Công ty Cổ phần Cơ giới và Xây lắp số 9,UPCOM,Xây dựng công trình
+422,LGM,Công ty Cổ phần Giày da và May mặc Xuất khẩu (LEGAMEX),UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+423,LIC,Tổng Công ty LICOGI - CTCP,UPCOM,Xây dựng công trình
+424,LKW,Công ty Cổ phần Cấp nước Long Khánh,UPCOM,Nước
+425,LLM,Tổng công ty lắp máy Việt Nam - Công ty Cổ phần,UPCOM,Xây dựng công trình
+426,LM3,Công ty Cổ phần Lilama 3 ,UPCOM,Xây dựng công trình
+427,LMC,Công ty cổ phần Khoáng sản Latca,UPCOM,Khai khoáng nói chung
+428,LMH,Công ty cổ phần quốc tế Holding,UPCOM,Bán lẻ tổng hợp
+429,LMI,Công ty Cổ phần Đầu tư Xây dựng lắp máy IDICO,UPCOM,Xây dựng công trình
+430,LNC,Công ty cổ phần Lệ Ninh,UPCOM,Chế phẩm từ gỗ
+431,LO5,Công ty Cổ phần Lilama 5 ,UPCOM,Xây dựng công trình
+432,LPT,Công ty cổ phần Thương mại và Sản xuất Lập Phương Thành,UPCOM,Dịch vụ cung ứng lao động và đào tạo
+433,LQN,Công ty cổ phần LICOGI Quảng Ngãi,UPCOM,Xây dựng công trình
+434,LTC,Công ty Cổ phần Điện nhẹ Viễn thông,UPCOM,Thiết bị viễn thông
+435,LTG,Công ty Cổ phần Tập đoàn Lộc Trời,UPCOM,Hóa chất đặc biệt
+436,LWS,Công ty cổ phần Cấp nước tỉnh Lào Cai,UPCOM,Nước
+437,LYF,Công ty Cổ phần Lương Thực Lương Yên,UPCOM,Sản xuất thực phẩm
+438,M10,Tổng công ty May 10 - Công ty Cổ phần,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+439,MA1,CÔNG TY CỔ PHẦN THIẾT BỊ,UPCOM,Thiết bị điện
+440,MBN,Công ty cổ phần Môi trường và Công trình đô thị Bắc Ninh,UPCOM,Dịch vụ xử lý phế liệu phế thải
+441,MC3,Công ty cổ phần Khoáng sản 3 - Vimico,UPCOM,Khai khoáng nói chung
+442,MCH,Công ty cổ phần Hàng Tiêu Dùng Masan,UPCOM,Sản xuất thực phẩm
+443,MCI,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Vật liệu IDICO,UPCOM,Vật liệu xây dựng
+444,MCM,CÔNG TY CỔ PHẦN GIỐNG BÒ SỮA MỘC CHÂU,UPCOM,Sản xuất thực phẩm
+445,MCT,Công ty cổ phần Kinh doanh vật tư và Xây dựng,UPCOM,Xây dựng công trình
+446,MDA,Công ty cổ phần Môi trường Đô thị Đông Anh,UPCOM,Dịch vụ xử lý phế liệu phế thải
+447,MDF,Công ty Cổ phần Gỗ MDF VRG - Quảng Trị,UPCOM,"Đồ đạc, nội thất"
+448,MEC,Công ty Cổ phần cơ khí - lắp máy Sông Đà,UPCOM,Xây dựng công trình
+449,MEF,Công ty Cổ phần MEINFA,UPCOM,Thiết bị y tế
+450,MEG,CÔNG TY CỔ PHẦN MEGRAM,UPCOM,Bán lẻ dụng cụ gia đình
+451,MES,Công ty Cổ phần Cơ điện Công trình,UPCOM,Vật liệu xây dựng
+452,MFS,Công ty cổ phần Dịch vụ kỹ thuật Mobifone,UPCOM,Dịch vụ viễn thông di động
+453,MGC,Công ty cổ phần Địa chất mỏ - TKV,UPCOM,Than đá
+454,MGG,Tổng công ty Đức Giang - Công ty cổ phần,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+455,MH3,Công ty cổ phần Khu công nghiệp Cao su Bình Long,UPCOM,Đầu tư và phát triển bất động sản
+456,MIC,Công ty Cổ phần Kỹ nghệ khoáng sản Quảng Nam,UPCOM,Khai khoáng nói chung
+457,MIE,Tổng Công ty Máy và Thiết bị Công nghiệp - CTCP,UPCOM,Vật liệu xây dựng
+458,MKP,Công ty Cổ phần Hóa - Dược phẩm Mekophar,UPCOM,Dược phẩm
+459,MLC,Công ty Cổ phần Môi trường Đô thị tỉnh Lào Cai,UPCOM,Dịch vụ xử lý phế liệu phế thải
+460,MLS,Công ty Cổ phần Chăn nuôi - Mitraco,UPCOM,Nông sản và thủy hải sản
+461,MML,Công ty Cổ phần Masan MEATLife,UPCOM,Sản xuất thực phẩm
+462,MNB,Tổng công ty May Nhà Bè - Công ty cổ phần,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+463,MND,Công ty Cổ phần Môi trường Nam Định,UPCOM,Dịch vụ xử lý phế liệu phế thải
+464,MPC,Công ty cổ phần Tập đoàn Thủy sản Minh Phú,UPCOM,Nông sản và thủy hải sản
+465,MPT,Công ty Cổ phần tập đoàn MPT,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+466,MPY,Công ty Cổ phần Môi trường đô thị Phú Yên,UPCOM,Dịch vụ xử lý phế liệu phế thải
+467,MQB,Công ty Cổ phần Môi trường và Phát triển đô thị Quảng Bình,UPCOM,Dịch vụ xử lý phế liệu phế thải
+468,MQN,Công ty Cổ phần Môi trường đô thị Quảng Ngãi,UPCOM,Dịch vụ xử lý phế liệu phế thải
+469,MRF,Công ty cổ phần Merufa,UPCOM,Vật dụng y tế
+470,MSR,CÔNG TY CỔ PHẦN MASAN HIGH-TECH MATERIALS,UPCOM,Khai khoáng nói chung
+471,MTA,Tổng Công ty Khoáng sản và Thương mại Hà Tĩnh - CTCP,UPCOM,Khai khoáng nói chung
+472,MTB,CÔNG TY CỔ PHẦN MÔI TRƯỜNG VÀ CÔNG TRÌNH ĐÔ THỊ TỈNH THÁI BÌNH,UPCOM,Dịch vụ xử lý phế liệu phế thải
+473,MTC,Công ty Cổ phần Dịch vụ du lịch Mỹ Trà,UPCOM,Nhà hàng & quầy bar
+474,MTG,Công ty Cổ phần MT GAS,UPCOM,Gas
+475,MTH,Công ty Cổ phần Môi trường Đô thị Hà Đông,UPCOM,Dịch vụ xử lý phế liệu phế thải
+476,MTL,Công ty Cổ phần Dịch vụ Môi trường Đô thị Từ Liêm,UPCOM,Dịch vụ xử lý phế liệu phế thải
+477,MTP,Công ty cổ phần Dược Medipharco,UPCOM,Dược phẩm
+478,MTS,Công ty Cổ phần Vật tư - TKV,UPCOM,Dịch vụ và Thiết bị dầu khí
+479,MTV,Công ty Cổ phần Dịch vụ Môi trường và Công trình Đô thị Vũng Tàu,UPCOM,Dịch vụ xử lý phế liệu phế thải
+480,MVC,Công ty cổ phần Vật liệu và Xây dựng Bình Dương,UPCOM,Vật liệu xây dựng
+481,MVN,Tổng Công ty Hàng hải Việt Nam – Công ty cổ phần,UPCOM,Vận tải biển
+482,MXC,Trung tâm Nông nghiệp Mùa Xuân,UPCOM,Nông sản và thủy hải sản
+483,NAB,Ngân hàng Thương mại Cổ phần Nam Á,UPCOM,Ngân hàng
+484,NAC,Công ty Cổ phần Tư vấn Xây dựng Tổng hợp,UPCOM,Xây dựng công trình
+485,NAS,Công ty Cổ phần Dịch vụ Hàng không Sân bay Nội Bài,UPCOM,Dịch vụ vận tải
+486,NAU,Công ty Cổ phần Môi trường và Công trình Đô thị Nghệ An,UPCOM,Dịch vụ xử lý phế liệu phế thải
+487,NAW,Công ty Cổ phần Cấp nước Nghệ An,UPCOM,Nước
+488,NBE,Công ty Cổ phần Sách và Thiết bị giáo dục miền Bắc,UPCOM,Cửa hàng chuyên dụng
+489,NBT,Công ty cổ phần cấp thoát nước Bến Tre,UPCOM,Nước
+490,NCS,Công ty cổ phần Suất ăn hàng không Nội Bài,UPCOM,Nhà hàng & quầy bar
+491,ND2,Công ty Cổ phần Đầu tư và Phát triển điện miền Bắc 2,UPCOM,Xây dựng công trình
+492,NDC,Công ty Cổ phần Nam dược ,UPCOM,Dược phẩm
+493,NDF,Công ty Cổ phần Chế biến Thực phẩm Nông sản Xuất khẩu Nam Định,UPCOM,Sản xuất thực phẩm
+494,NDP,Công ty cổ phần Dược phẩm 2/9,UPCOM,Dược phẩm
+495,NDT,Tổng Công ty cổ phần Dệt May Nam Định,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+496,NDW,Công ty Cổ phần Cấp nước Nam Định,UPCOM,Nước
+497,NED,Công ty cổ phần Đầu tư và Phát triển Điện Tây Bắc,UPCOM,Điện
+498,NGC,Công ty Cổ phần Chế biến thủy sản Xuất khẩu Ngô Quyền ,UPCOM,Nông sản và thủy hải sản
+499,NHP,Công ty Cổ phần sản xuất xuất nhập khẩu NHP,UPCOM,Bao bì & đóng gói
+500,NHV,Công ty Cổ phần Đầu tư NHV,UPCOM,Sản xuất thực phẩm
+501,NJC,Công ty Cổ phần May Nam Định,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+502,NLS,Công ty cổ phần Cấp thoát nước Lạng Sơn,UPCOM,Nước
+503,NNG,Công ty Cổ phần công nghiệp- dịch vụ- thương mại Ngọc Nghĩa,UPCOM,Bao bì & đóng gói
+504,NNQ,Công ty cổ phần Giống nông nghiệp Quảng Nam,UPCOM,Nông sản và thủy hải sản
+505,NNT,Công ty Cổ phần Cấp nước Ninh Thuận,UPCOM,Nước
+506,NOS,Công ty cổ phần Vận tải biển và Thương mại Phương Đông,UPCOM,Vận tải biển
+507,NQB,Công ty Cổ phần Cấp thoát nước Quảng Bình,UPCOM,Nước
+508,NQN,Công ty Cổ phần Nước sạch Quảng Ninh,UPCOM,Nước
+509,NQT,Công ty cổ phần Nước sạch Quảng Trị,UPCOM,Nước
+510,NS2,Công ty Cổ phần Nước sạch số 2 Hà Nội,UPCOM,Nước
+511,NS3,Công ty Cổ phần sản xuất kinh doanh nước sạch số 3 Hà Nội,UPCOM,Nước
+512,NSG,Công ty Cổ phần Nhựa Sài Gòn,UPCOM,Vật liệu xây dựng
+513,NSL,Công ty Cổ phần cấp nước Sơn La,UPCOM,Nước
+514,NSS,Công ty cổ phần Nông Súc Sản Đồng Nai,UPCOM,Nông sản và thủy hải sản
+515,NTB,Công ty Cổ phần Đầu tư Xây dựng và Khai thác Công trình Giao thông 584,UPCOM,Đầu tư và phát triển bất động sản
+516,NTC,Công ty cổ phần Khu Công nghiệp Nam Tân Uyên,UPCOM,Đầu tư và phát triển bất động sản
+517,NTF,Công ty cổ phần Dược - Vật tư Y tế Nghệ An,UPCOM,Dược phẩm
+518,NTT,Công ty cổ phần Dệt - May Nha Trang,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+519,NTW,Công ty Cổ phần Cấp nước Nhơn Trạch,UPCOM,Nước
+520,NUE,Công ty cổ phần Môi trường Đô thị Nha Trang,UPCOM,Dịch vụ xử lý phế liệu phế thải
+521,NVP,Công ty cổ phần Nước sạch Vĩnh Phúc,UPCOM,Nước
+522,NWT,Công ty Cổ phần Vận tải Newway,UPCOM,Dịch vụ vận tải
+523,NXT,Công ty cổ phần sản xuất và cung ứng vật liệu xây dựng Kom Tum,UPCOM,Vật liệu xây dựng
+524,OIL,Tổng Công ty Dầu Việt Nam – Công ty cổ phần,UPCOM,Dầu khí tổng hợp
+525,ONW,Công ty Cổ phần Dịch vụ Một Thế Giới,UPCOM,Phần mềm
+526,PAI,"Công ty Cổ phần Công nghệ Thông tin, Viễn thông và Tự động hóa Dầu Khí",UPCOM,Dịch vụ máy tính
+527,PAP,Công ty Cổ phần Dầu khí Đầu tư Khai thác Cảng Phước An,UPCOM,Dịch vụ vận tải
+528,PAS,CÔNG TY CỔ PHẦN QUỐC TẾ PHƯƠNG ANH,UPCOM,Thép
+529,PBC,Công ty cổ phần Dược phẩm Trung Ương I - Pharbaco,UPCOM,Dược phẩm
+530,PBT,Công ty Cổ phần Nhà và Thương mại Dầu khí,UPCOM,Bao bì & đóng gói
+531,PCC,Công ty cổ phần Tập đoàn Xây lắp 1 - Petrolimex,UPCOM,Xây dựng công trình
+532,PCF,Công ty Cổ phần Cà Phê PETEC,UPCOM,Sản xuất thực phẩm
+533,PCM,Công ty Cổ phần Vật liệu xây dựng Bưu Điện,UPCOM,Vật liệu xây dựng
+534,PCN,Công ty cổ phần Hóa phẩm Dầu khí DMC - Miền Bắc,UPCOM,Khai thác và sản xuất dầu khí 
+535,PDT,Công ty cổ phần Thương mại Dầu khí Đồng Tháp,UPCOM,Gas
+536,PDV,Công ty Cổ phần Vận tải Dầu Phương Đông Việt,UPCOM,Vận tải biển
+537,PEC,Công ty Cổ phần Cơ khí Điện lực,UPCOM,Vật liệu xây dựng
+538,PEG,Tổng Công ty Thương mại Kỹ thuật và Đầu tư - Công ty cổ phần,UPCOM,Gas
+539,PEQ,Công ty Cổ phần Thiết bị xăng dầu Petrolimex,UPCOM,Dịch vụ và Thiết bị dầu khí
+540,PFL,Công ty Cổ phần Dầu khí Đông Đô,UPCOM,Đầu tư và phát triển bất động sản
+541,PGB,NGÂN HÀNG TMCP XĂNG DẦU PETROLIMEX,UPCOM,Ngân hàng
+542,PGV,Tổng Công ty Phát điện 3 - Công ty cổ phần,UPCOM,Điện
+543,PHH,Công ty Cổ phần Hồng Hà Việt Nam ,UPCOM,Xây dựng công trình
+544,PHS,Công ty Cổ phần Chứng khoán Phú Hưng,UPCOM,Dịch vụ đầu tư
+545,PID,Công ty Cổ phần Trang trí nội thất Dầu khí ,UPCOM,Vật liệu xây dựng
+546,PIS,Tổng công ty PISICO Bình Định - CTCP,UPCOM,Chế phẩm từ gỗ
+547,PIV,Công ty Cổ phần PIV,UPCOM,Tài chính chuyên biệt
+548,PJS,Công ty Cổ phần cấp nước Phú Hòa Tân,UPCOM,Nước
+549,PLA,Công ty cổ phần Đầu tư và Dịch vụ Hạ tầng Xăng Dầu,UPCOM,Đầu tư và phát triển bất động sản
+550,PLE,Công ty Cổ phần Tư vấn Xây Dựng Petrolimex,UPCOM,Dịch vụ và Thiết bị dầu khí
+551,PLO,Công ty Cổ phần Kho vận Petec,UPCOM,Dịch vụ giao nhận
+552,PMJ,Công ty Cổ phần vật tư Bưu điện,UPCOM,Thiết bị viễn thông
+553,PMT,Công ty cổ phần Viễn thông Telvina Việt Nam,UPCOM,Thiết bị viễn thông
+554,PMW,Công ty cổ phần Cấp nước Phú Mỹ,UPCOM,Nước
+555,PND,Công ty cổ phần Xăng dầu Dầu khí Nam Định,UPCOM,Dịch vụ và Thiết bị dầu khí
+556,PNG,Công ty cổ phần thương mại Phú Nhuận,UPCOM,Sản xuất thực phẩm
+557,PNP,Công ty Cổ phần Tân Cảng - Phú Hữu,UPCOM,Vận tải biển
+558,PNT,Công ty Cổ phần Kỹ thuật Xây dựng Phú Nhuận,UPCOM,Đầu tư và phát triển bất động sản
+559,POB,Công ty Cổ phần Xăng dầu Dầu khí Thái Bình,UPCOM,Dầu khí tổng hợp
+560,POS,"Công ty cổ phần Dịch vụ Lắp đặt, Vận hành và Bảo dưỡng Công trình Dầu khí biển PTSC",UPCOM,Dịch vụ và Thiết bị dầu khí
+561,POV,Công ty Cổ phần Xăng dầu Dầu khí Vũng Áng,UPCOM,Dịch vụ và Thiết bị dầu khí
+562,PPH,Tổng Công ty Cổ phần Phong Phú,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+563,PPI,0,UPCOM,Đầu tư và phát triển bất động sản
+564,PQN,Công ty Cổ phần Dịch vụ Dầu khí Quảng Ngãi PTSC,UPCOM,"Xây dựng, chế tạo nhà ở"
+565,PRO,Công ty Cổ phần Procimex Việt Nam,UPCOM,Nông sản và thủy hải sản
+566,PRT,Tổng Công ty cổ phần Sản xuất – Xuất nhập khẩu Bình Dương,UPCOM,Công nghiệp đa ngành
+567,PSB,Công ty Cổ phần Đầu tư Dầu khí Sao Mai - Bến Đình,UPCOM,Xây dựng công trình
+568,PSG,Công ty Cổ phần Đầu tư và Xây lắp Dầu khí Sài Gòn,UPCOM,Xây dựng công trình
+569,PSL,Công ty Cổ phần Chăn nuôi Phú Sơn,UPCOM,Nông sản và thủy hải sản
+570,PSN,Công ty cổ phần Cảng Dịch vụ Dầu khí Tổng hợp PTSC Thanh Hóa,UPCOM,Dịch vụ và Thiết bị dầu khí
+571,PSP,Công ty Cổ phần Cảng Dịch vụ Dầu khí Đình Vũ,UPCOM,Dịch vụ vận tải
+572,PTE,Công ty Cổ phần Xi măng Phú Thọ,UPCOM,Vật liệu xây dựng
+573,PTG,Công ty Cổ phần May xuất khẩu Phan Thiết ,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+574,PTH,Công ty Cổ phần Vận tải và Dịch vụ Petrolimex Hà Tây,UPCOM,Dịch vụ vận tải
+575,PTO,Công ty Cổ phần Dịch vụ - Xây dựng Công trình Bưu điện,UPCOM,Dịch vụ viễn thông cố định
+576,PTP,Công ty Cổ phần Dịch vụ Viễn thông và In bưu điện,UPCOM,Hoạt động xuất bản
+577,PTT,Công ty Cổ phần Vận tải Dầu khí Đông Dương,UPCOM,Dịch vụ vận tải
+578,PTV,Công ty cổ phần Thương mại Dầu khí,UPCOM,Dịch vụ và Thiết bị dầu khí
+579,PTX,Công ty cổ phần Vận tải và Dịch vụ Petrolimex Nghệ Tĩnh,UPCOM,Dầu khí tổng hợp
+580,PVA,Công ty Cổ phần Tổng Công ty Xây lắp Dầu khí Nghệ An,UPCOM,Xây dựng công trình
+581,PVE,Tổng Công ty tư vấn thiết kế dầu khí - CTCP,UPCOM,Dịch vụ hỗ trợ kinh doanh
+582,PVH,Công ty Cổ phần Xây lắp Dầu khí Thanh Hóa,UPCOM,Xây dựng công trình
+583,PVM,Công ty cổ phần Máy - Thiết bị Dầu khí,UPCOM,Máy công nghiệp
+584,PVO,Công ty Cổ phần DẦU NHỜN PV OIL,UPCOM,Dịch vụ và Thiết bị dầu khí
+585,PVP,Công ty cổ phần Vận tải Dầu khí Thái Bình Dương,UPCOM,Vận tải biển
+586,PVR,Công ty Cổ phần Đầu tư PVR Hà Nội,UPCOM,Đầu tư và phát triển bất động sản
+587,PVV,Công ty Cổ phần Vinaconex 39,UPCOM,Xây dựng công trình
+588,PVX,Tổng Công ty Cổ phần Xây lắp Dầu khí Việt Nam,UPCOM,Xây dựng công trình
+589,PVY,Công ty cổ phần Chế tạo Giàn khoan Dầu khí,UPCOM,Dịch vụ và Thiết bị dầu khí
+590,PWA,Công ty Cổ phần Bất động sản Dầu khí,UPCOM,Đầu tư và phát triển bất động sản
+591,PWS,Công ty Cổ phần Cấp thoát nước Phú Yên,UPCOM,Nước
+592,PX1,Công ty Cổ phần xi măng Dầu khí Nghệ An,UPCOM,Vật liệu xây dựng
+593,PXA,Công ty Cổ phần Đầu tư và Thương mại Dầu khí Nghệ An,UPCOM,Vật liệu xây dựng
+594,PXC,Công ty cổ phần Phát triển Đô thị Dầu khí,UPCOM,Xây dựng công trình
+595,PXL,Công ty cổ phần Đầu tư Khu công nghiệp Dầu khí Long Sơn,UPCOM,Đầu tư và phát triển bất động sản
+596,PXM,Công ty Cổ phần Xây lắp Dầu khí miền Trung ,UPCOM,Xây dựng công trình
+597,PXT,Công ty Cổ phần Xây lắp Đường ống Bể chứa Dầu khí,UPCOM,Xây dựng công trình
+598,PYU,Công ty cổ phần Môi trường và Công trình đô thị Phúc Yên,UPCOM,Dịch vụ xử lý phế liệu phế thải
+599,QCC,Công ty Cổ phần Đầu tư xây dựng và phát triển hạ tầng viễn thông,UPCOM,Xây dựng công trình
+600,QHW,Công ty Cổ phần nước khoáng Quảng Ninh,UPCOM,Nước ngọt
+601,QLD,Công ty cổ phần Quản lý và Xây dựng Giao thông Lạng Sơn,UPCOM,Xây dựng công trình
+602,QLT,Công ty cổ phần Quản lý Bảo trì Đường thủy nội địa số 10,UPCOM,Vận tải biển
+603,QNC,Công ty Cổ phần Xi măng và Xây dựng Quảng Ninh,UPCOM,Vật liệu xây dựng
+604,QNS,Công Ty Cổ Phần Đường Quảng Ngãi,UPCOM,Sản xuất thực phẩm
+605,QNT,CÔNG TY CỔ PHẦN TƯ VẤN VÀ ĐẦU TƯ PHÁT TRIỂN QUẢNG NAM,UPCOM,"Xây dựng, chế tạo nhà ở"
+606,QNU,Công ty cổ phần Môi trường Đô thị Quảng Nam,UPCOM,Dịch vụ xử lý phế liệu phế thải
+607,QNW,Công ty cổ phần Cấp thoát nước và Xây dựng Quảng Ngãi,UPCOM,Nước
+608,QPH,Công ty Cổ phần thủy điện Quế Phong,UPCOM,Điện
+609,QSP,Công ty Cổ phần Tân Cảng Quy Nhơn,UPCOM,Dịch vụ vận tải
+610,QTP,Công ty Cổ phần Nhiệt điện Quảng Ninh,UPCOM,Điện
+611,RAT,Công ty Cổ phần Vận tải và Thương mại Đường Sắt,UPCOM,Đường sắt
+612,RBC,Công ty cổ phần Công nghiệp và Xuất nhập khẩu Cao su,UPCOM,"Đồ đạc, nội thất"
+613,RCC,Công ty cổ phần Tổng Công ty Công trình Đường sắt,UPCOM,Xây dựng công trình
+614,RCD,Công ty Cổ phần xây dựng - địa ốc cao su ,UPCOM,Xây dựng công trình
+615,RGC,Công ty Cổ phần Đầu tư PV-Inconess,UPCOM,Dịch vụ vui chơi giải trí
+616,RTB,Công ty cổ phần Cao su Tân Biên,UPCOM,Hóa chất cơ bản
+617,S12,Công ty Cổ phần Sông Đà 12 ,UPCOM,Xây dựng công trình
+618,S27,Công ty Cổ phần Sông Đà 27 ,UPCOM,Xây dựng công trình
+619,S72,Công ty cổ phần Sông Đà 7.02,UPCOM,Xây dựng công trình
+620,S74,Công ty Cổ phần Sông Đà 7.04,UPCOM,Xây dựng công trình
+621,S96,Công ty Cổ phần Sông Đà 9.06,UPCOM,Xây dựng công trình
+622,SAC,Công ty cổ phần Xếp dỡ và Dịch vụ Cảng Sài Gòn,UPCOM,Dịch vụ giao nhận
+623,SAL,Công ty cổ phần Trục vớt cứu hộ Việt Nam,UPCOM,Vận tải biển
+624,SAP,Công ty Cổ phần In sách giáo khoa TP Hồ Chí Minh ,UPCOM,Hoạt động xuất bản
+625,SAS,Công ty Dịch vụ Hàng không sân bay Tân Sơn Nhất,UPCOM,Dịch vụ vận tải
+626,SB1,Công ty cổ phần bia Sài Gòn - Nghệ Tĩnh,UPCOM,Sản xuất bia
+627,SBD,Công ty cổ phần Công nghệ Sao Bắc Đẩu,UPCOM,Dịch vụ máy tính
+628,SBH,Công ty Cổ phần Thủy điện Sông Ba Hạ,UPCOM,Điện
+629,SBL,Công ty cổ phần Bia Sài Gòn - Bạc Liêu,UPCOM,Sản xuất bia
+630,SBM,Công ty cổ phần Đầu tư Phát triển Bắc Minh,UPCOM,Điện
+631,SBR,Công ty cổ phần Cao su Sông Bé,UPCOM,Hóa chất cơ bản
+632,SBS,Công ty Cổ phần Chứng khoán Ngân hàng Sài Gòn Thương tín ,UPCOM,Dịch vụ đầu tư
+633,SCA,CÔNG TY CỔ PHẦN NÔNG NGHIỆP SÔNG CON,UPCOM,Nông sản và thủy hải sản
+634,SCC,Công ty Cổ phần Thương mại Đầu tư SHB,UPCOM,Vật liệu xây dựng
+635,SCJ,Công ty Cổ phần Xi măng Sài Sơn,UPCOM,Vật liệu xây dựng
+636,SCL,Công ty Cổ phần Sông Đà Cao Cường,UPCOM,Vật liệu xây dựng
+637,SCO,Công ty Cổ phần Công nghiệp Thủy sản,UPCOM,Dịch vụ giao nhận
+638,SCV,Công ty TNHH MTV Muối Việt Nam,UPCOM,Sản xuất thực phẩm
+639,SCY,Công ty Cổ phần Đóng tàu Sông Cấm,UPCOM,Xây dựng công trình
+640,SD1,Công ty Cổ phần Sông Đà 1,UPCOM,Vật liệu xây dựng
+641,SD3,Công ty Cổ phần Sông Đà 3,UPCOM,Xây dựng công trình
+642,SD7,Công ty Cổ phần Sông Đà 7,UPCOM,Xây dựng công trình
+643,SD8,Công ty Cổ phần Sông Đà 8,UPCOM,Xây dựng công trình
+644,SDB,Công ty Cổ phần Sông Đà 207,UPCOM,Xây dựng công trình
+645,SDD,Công ty Cổ phần Đầu tư và Xây lắp Sông Đà,UPCOM,Xây dựng công trình
+646,SDH,Công ty Cổ phần Xây dựng hạ tầng sông Đà ,UPCOM,Xây dựng công trình
+647,SDJ,Công ty Cổ phần Sông Đà 25 ,UPCOM,Xây dựng công trình
+648,SDK,Công ty Cổ phần Cơ khí Luyện kim ,UPCOM,Xây dựng công trình
+649,SDP,Công ty cổ phần SDP,UPCOM,Vật liệu xây dựng
+650,SDV,Công ty Cổ phần Dịch vụ Sonadezi ,UPCOM,Dịch vụ tiêu dùng chuyên dụng
+651,SDX,Công ty Cổ phần phòng cháy chữa cháy và đầu tư xây dựng Sông Đà,UPCOM,Vật liệu xây dựng
+652,SDY,Công ty Cổ phần Xi măng Elecem,UPCOM,Vật liệu xây dựng
+653,SEA,Tổng Công ty Thủy sản Việt Nam – Công ty cổ phần,UPCOM,Nông sản và thủy hải sản
+654,SEP,Công ty Cổ phần Tổng Công ty Thương mại Quảng Trị,UPCOM,Nông sản và thủy hải sản
+655,SGB,NGÂN HÀNG THƯƠNG MẠI CỔ PHẦN SÀI GÒN CÔNG THƯƠNG,UPCOM,Ngân hàng
+656,SGI,Công ty cổ phần Đầu tư Phát triển Sài Gòn 3 Group,UPCOM,Dịch vụ tiện ích tổng hợp
+657,SGO,Công ty Cổ phần Dầu thực vật Sài Gòn,UPCOM,Sản xuất thực phẩm
+658,SGP,Công ty Cổ phần Cảng Sài Gòn,UPCOM,Dịch vụ vận tải
+659,SGS,Công ty Cổ phần vận tải biển Sài Gòn,UPCOM,Dịch vụ vận tải
+660,SHC,Công ty Cổ phần Hàng hải Sài Gòn,UPCOM,Vận tải biển
+661,SHG,Tổng Công ty Cổ phần Sông Hồng,UPCOM,Xây dựng công trình
+662,SHX,Công ty cổ phần Sài Gòn Hỏa xa,UPCOM,Thuốc lá
+663,SID,Công ty Cổ phần Đầu tư Phát triển Sài Gòn CO.OP,UPCOM,Dịch vụ bất động sản
+664,SIG,Công ty Cổ phần Đầu tư và Thương mại Sông Đà,UPCOM,Dịch vụ vận tải
+665,SIP,Công ty Cổ phần Đầu tư Sài Gòn VRG,UPCOM,Đầu tư và phát triển bất động sản
+666,SIV,Công ty Cổ phần SIVICO,UPCOM,Hóa chất đặc biệt
+667,SJC,Công ty Cổ phần Sông Đà 1.01,UPCOM,Xây dựng công trình
+668,SJG,Tổng Công ty Sông Đà - CTCP,UPCOM,Xây dựng công trình
+669,SJM,Công ty Cổ phần Sông Đà 19 ,UPCOM,Xây dựng công trình
+670,SKH,Công ty Cổ phần Nước giải khát Sanest Khánh Hòa,UPCOM,Nước ngọt
+671,SKN,Công ty cổ phần Nước giải khát Sanna Khánh Hòa,UPCOM,Nước ngọt
+672,SKV,Công ty Cổ phần Nước Giải khát Yến sào Khánh Hòa,UPCOM,Nước ngọt
+673,SNC,Công ty Cổ phần Xuất nhập khẩu Thủy sản Năm Căn,UPCOM,Sản xuất thực phẩm
+674,SNZ,Tổng Công ty Cổ phần Phát triển khu Công Nghiệp,UPCOM,Đầu tư và phát triển bất động sản
+675,SON,Công ty cổ phần Cung ứng Nhân lực Quốc tế và Thương mại,UPCOM,Dịch vụ cung ứng lao động và đào tạo
+676,SP2,Công ty cổ phần Thủy điện Sử Pán 2,UPCOM,Điện
+677,SPA,Công ty cổ phần Bao bì Sài Gòn,UPCOM,Bao bì & đóng gói
+678,SPB,Công ty cổ phần Sợi Phú Bài,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+679,SPC,Công ty Cổ phần Bảo vệ thực vật Sài Gòn,UPCOM,Hóa chất đặc biệt
+680,SPD,Công ty Cổ phần Xuất nhập khẩu Thủy sản miền Trung ,UPCOM,Nông sản và thủy hải sản
+681,SPH,Công ty Cổ phần xuất nhập khẩu thủy sản Hà Nội,UPCOM,Nông sản và thủy hải sản
+682,SPP,Công ty Cổ phần Bao bì Nhựa Sài Gòn,UPCOM,Bao bì & đóng gói
+683,SPV,Công ty cổ phần Thủy Đặc Sản,UPCOM,Sản xuất thực phẩm
+684,SQC,Công ty Cổ phần Khoáng sản Sài Gòn - Quy Nhơn ,UPCOM,Khai khoáng nói chung
+685,SRB,Công ty Cổ phần Tập đoàn SARA ,UPCOM,Dịch vụ cung ứng lao động và đào tạo
+686,SRT,Công ty cổ phần Vận tải Đường sắt Sài Gòn,UPCOM,Dịch vụ vận tải
+687,SSF,Công ty Cổ phần Giáo dục Sài Gòn,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+688,SSG,Công ty Cổ phần Vận tải biển Hải Âu,UPCOM,Vận tải biển
+689,SSH,Công ty Cổ phần phát triển Sunshine Homes,UPCOM,"Xây dựng, chế tạo nhà ở"
+690,SSN,Công ty Cổ phần Xuất nhập khẩu Thủy sản Sài Gòn,UPCOM,Nông sản và thủy hải sản
+691,SSU,Công ty Cổ phần Môi trường Đô thị Sóc Sơn,UPCOM,Dịch vụ xử lý phế liệu phế thải
+692,STH,Công ty cổ phần phát hành sách Thái Nguyên,UPCOM,Dịch vụ tiêu dùng chuyên dụng
+693,STL,Công ty Cổ phần Sông Đà - Thăng Long,UPCOM,Đầu tư và phát triển bất động sản
+694,STS,Công ty Cổ phần Dịch vụ Vận tải Sài Gòn,UPCOM,Dịch vụ vận tải
+695,STT,Công ty Cổ phần Vận chuyển Sài Gòn Tourist ,UPCOM,Du lịch
+696,STW,Công ty cổ phần Cấp nước Sóc Trăng,UPCOM,Nước
+697,SVG,Công ty cổ phần Hơi Kĩ Nghệ Que Hàn,UPCOM,Hóa chất đặc biệt
+698,SVH,Công ty cổ phần Thủy điện Sông Vàng,UPCOM,Điện
+699,SVL,Công ty cổ phần Nhân lực Quốc tế Sovilaco,UPCOM,Dịch vụ cung ứng lao động và đào tạo
+700,SWC,Tổng Công ty Cổ phần Đường sông Miền Nam ,UPCOM,Vận tải biển
+701,SZE,Công ty cổ phần Môi trường Sonadezi,UPCOM,Dịch vụ xử lý phế liệu phế thải
+702,SZG,Công ty Cổ phần Sonadezi Giang Điền,UPCOM,Dịch vụ bất động sản
+703,T12,Công ty Cổ phần Thương mại Dịch vụ Tràng Thi,UPCOM,Bán lẻ dụng cụ gia đình
+704,TA3,Công ty Cổ phần Đầu tư và Xây lắp Thành An 386,UPCOM,Xây dựng công trình
+705,TA6,Công ty cổ phần Đầu tư và Xây lắp Thành An 665,UPCOM,Xây dựng công trình
+706,TAG,Công ty Cổ phần Thế giới số Trần Anh,UPCOM,Phần cứng
+707,TAN,Công ty cổ phần cà phê Thuận An,UPCOM,Nông sản và thủy hải sản
+708,TAP,Công ty cổ phần Đô thị Tân An,UPCOM,Dịch vụ tiện ích tổng hợp
+709,TAW,Công ty Cổ phần Cấp nước Trung An,UPCOM,Nước
+710,TB8,Công ty cổ phần Sản xuất và kinh doanh Vật tư Thiết bị - VVMI,UPCOM,Vật liệu xây dựng
+711,TBD,Tổng Công ty Thiết bị điện Đông Anh,UPCOM,Thiết bị điện
+712,TBH,Công ty Cổ phần Tổng Bách Hóa,UPCOM,Dịch vụ bất động sản
+713,TBT,Công ty Cổ phần Xây dựng Công trình Giao thông Bến Tre,UPCOM,Xây dựng công trình
+714,TCI,Công ty cổ phần Chứng khoán Thành Công,UPCOM,Dịch vụ đầu tư
+715,TCJ,Công ty Cổ phần Tô Châu,UPCOM,Nông sản và thủy hải sản
+716,TCK,Tổng công ty Cơ khí xây dựng - CTCP,UPCOM,Xây dựng công trình
+717,TCW,Công ty Cổ phần Kho vận Tân Cảng,UPCOM,Dịch vụ vận tải
+718,TDB,Công ty cổ phần Thủy điện Định Bình,UPCOM,Điện
+719,TDF,Công ty cổ phần Trung Đô,UPCOM,"Xây dựng, chế tạo nhà ở"
+720,TDS,Công ty Cổ phần thép Thủ Đức,UPCOM,Thép
+721,TEC,Công ty Cổ phần Traenco,UPCOM,Dịch vụ cung ứng lao động và đào tạo
+722,TEL,Công ty Cổ phần Phát triển Công trình Viễn thông,UPCOM,Dịch vụ viễn thông cố định
+723,TGP,Công ty Cổ phần Trường Phú ,UPCOM,Thiết bị viễn thông
+724,TH1,Công ty Cổ phần Xuất nhập khẩu Tổng hợp I Việt Nam ,UPCOM,Nông sản và thủy hải sản
+725,THN,Công ty cổ phần Cấp nước Thanh Hóa,UPCOM,Nước
+726,THP,Công ty cổ phần Thủy sản và Thương mại Thuận Phước,UPCOM,Nông sản và thủy hải sản
+727,THU,Công ty Cổ phần Môi trường và Công trình đô thị Thanh Hóa,UPCOM,Dịch vụ xử lý phế liệu phế thải
+728,THW,Công ty cổ phần cấp nước Tân Hòa,UPCOM,Nước
+729,TID,Công ty cổ phần Tổng công ty Tín Nghĩa,UPCOM,Đầu tư và phát triển bất động sản
+730,TIE,Công ty Cổ phần TIE,UPCOM,Dịch vụ tiêu dùng chuyên dụng
+731,TIN,Công ty Tài chính Cổ phần Tín Việt,UPCOM,Ngân hàng
+732,TIS,Công ty Cổ phần Gang thép Thái Nguyên ,UPCOM,Thép
+733,TKA,Công ty Cổ phần Bao bì Tân Khánh An,UPCOM,Bao bì & đóng gói
+734,TKG,Công ty cổ phần Sản xuất và Thương mại Tùng Khánh,UPCOM,Vật liệu xây dựng
+735,TL4,Tổng Công ty Xây dựng Thủy lợi 4 ,UPCOM,Xây dựng công trình
+736,TLI,Công ty cổ phần May Quốc Tế Thắng Lợi,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+737,TLP,Tổng công ty Thương mại Xuất nhập khẩu Thanh Lễ – CTCP,UPCOM,Dầu khí tổng hợp
+738,TLT,Công ty Cổ phần Viglacera Thăng Long,UPCOM,Vật liệu xây dựng
+739,TMG,Công ty cổ phần Kim loại màu Thái Nguyên - Vimico,UPCOM,Kim loại màu
+740,TMW,Công ty Cổ phần tổng hợp gỗ Tân Mai,UPCOM,"Đồ đạc, nội thất"
+741,TNB,Công ty Cổ phần Thép Nhà Bè - VNSTEEL,UPCOM,Thép
+742,TNM,Công ty Cổ phần Xuất nhập khẩu và Xây dựng công trình ,UPCOM,Xây dựng công trình
+743,TNP,Công ty cổ phần Cảng Thị Nại,UPCOM,Dịch vụ vận tải
+744,TNS,Công ty Cổ phần Thép Tấm Lá Thống Nhất,UPCOM,Thép
+745,TNW,Công ty Cổ phần Nước sạch Thái Nguyên,UPCOM,Nước
+746,TOP,Công ty Cổ phần Phân phối Top One,UPCOM,Cung ứng
+747,TOS,Công ty Cổ phần Dịch vụ biển Tân Cảng,UPCOM,Dịch vụ vận tải
+748,TOT,Công ty cổ phần Vận tải Transimex,UPCOM,Dịch vụ vận tải
+749,TOW,Công ty cổ phần Cấp nước Trà Nóc - Ô Môn,UPCOM,Nước
+750,TPS,Công ty Cổ phần Bến bãi vận tải Sài Gòn,UPCOM,Dịch vụ vận tải
+751,TQN,Công ty Cổ phần Thông Quảng Ninh,UPCOM,Chế phẩm từ gỗ
+752,TQW,Công ty Cổ phần Cấp thoát nước Tuyên Quang,UPCOM,Nước
+753,TR1,Công ty Cổ phần Vận tải 1 Traco,UPCOM,Dịch vụ vận tải
+754,TRS,Công ty Cổ phần Vận tải và Dịch vụ Hàng hải,UPCOM,Vận tải biển
+755,TRT,Công ty cổ phần RedstarCera,UPCOM,Vật liệu xây dựng
+756,TS3,Công ty cổ phần Trường Sơn 532,UPCOM,Xây dựng công trình
+757,TS4,Công ty Cổ phần Thủy sản số 4 ,UPCOM,Nông sản và thủy hải sản
+758,TS5,Công ty cổ phần Trường Sơn 145,UPCOM,Xây dựng công trình
+759,TSD,Công ty Cổ phần Du lịch Trường Sơn Coecco,UPCOM,Du lịch
+760,TSG,Công ty Cổ phần Thông tin Tín hiệu Đường sắt Sài Gòn,UPCOM,Đường sắt
+761,TSJ,Công ty Cổ phần Du lịch Dịch vụ Hà Nội,UPCOM,Du lịch
+762,TTD,Công ty cổ phần Bệnh viện Tim Tâm Đức,UPCOM,Dịch vụ y tế
+763,TTG,Công ty Cổ phần May Thanh Trì ,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+764,TTN,Công ty Cổ phần Công nghệ và Truyền thông Việt Nam,UPCOM,Dịch vụ viễn thông di động
+765,TTP,Công ty Cổ phần Bao bì Nhựa Tân Tiến,UPCOM,Bao bì & đóng gói
+766,TTS,Công ty cổ phần Cán thép Thái Trung,UPCOM,Thép
+767,TUG,Công ty cổ phần Lai dắt và Vận tải Cảng Hải Phòng,UPCOM,Vận tải biển
+768,TV1,Công ty Cổ phần Tư vấn xây dựng điện 1,UPCOM,Thiết bị điện
+769,TV6,Công ty Cổ phần Thương mại Đầu tư xây lắp điện Thịnh Vượng,UPCOM,Vật liệu xây dựng
+770,TVA,Công ty Cổ phần Sứ Viglacera Thanh Trì,UPCOM,Vật liệu xây dựng
+771,TVG,Công ty Cổ phần Tư vấn đầu tư và Xây dựng giao thông vận tải,UPCOM,Xây dựng công trình
+772,TVH,Công ty cổ phần Tư vấn Xây dựng công trình Hàng hải,UPCOM,Xây dựng công trình
+773,TVM,Công ty cổ phần Tư vấn Đầu tư Mỏ và Công nghiệp - Vinacomin,UPCOM,Dịch vụ hỗ trợ kinh doanh
+774,TVN,Tổng công ty Thép Việt Nam - CTCP,UPCOM,Thép
+775,TVP,Công ty Cổ phần Dược phẩm TV.Pharm,UPCOM,Dược phẩm
+776,TVW,Công ty cổ phần Cấp thoát nước Trà Vinh,UPCOM,Nước
+777,TW3,Công ty Cổ phần Dược Trung Ương 3,UPCOM,Dược phẩm
+778,UCT,Công ty cổ phần Đô thị Cần Thơ,UPCOM,Dịch vụ xử lý phế liệu phế thải
+779,UDJ,Công ty Cổ phần Phát triển Đô thị - Becamex UDJ,UPCOM,Vật liệu xây dựng
+780,UDL,Công ty Cổ phần Đô thị và Môi trường Đắk Lắk,UPCOM,Xây dựng công trình
+781,UEM,Công ty Cổ phần cơ điện Uông Bí,UPCOM,Công nghiệp đa ngành
+782,UMC,Công ty Cổ phần Công trình đô thị Nam Định,UPCOM,Dịch vụ xử lý phế liệu phế thải
+783,UPC,Công ty cổ phần Phát triển công viên cây xanh và Đô thị Vũng Tàu,UPCOM,Dịch vụ xử lý phế liệu phế thải
+784,UPH,Công ty Cổ phần Dược phẩm TW25,UPCOM,Dược phẩm
+785,USC,Công ty Cổ phần Khảo sát và Xây dựng - USCO,UPCOM,Xây dựng công trình
+786,USD,Công ty cổ phần Công trình Đô thị Sóc Trăng,UPCOM,Dịch vụ xử lý phế liệu phế thải
+787,V11,Công ty Cổ phần Xây dựng số 11,UPCOM,Xây dựng công trình
+788,V15,Công ty Cổ phần Xây dựng số 15,UPCOM,Xây dựng công trình
+789,VAB,Ngân hàng Thương mại Cổ phần Việt Á,UPCOM,Ngân hàng
+790,VAV,Công ty cổ phần VIWACO,UPCOM,Nước
+791,VBB,Ngân hàng Thương mại Cổ phần Việt Nam Thương Tín,UPCOM,Ngân hàng
+792,VBG,Công ty cổ phần Địa chất Việt Bắc - TKV,UPCOM,Khai khoáng nói chung
+793,VBH,Công ty Cổ phần Điện tử Bình Hòa,UPCOM,Đồ điện tử
+794,VC5,Công ty Cổ phần Xây dựng số 5_Vinaconex,UPCOM,Xây dựng công trình
+795,VCE,Công ty Cổ phần Xây lắp Môi trường,UPCOM,Khai khoáng nói chung
+796,VCP,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Năng lượng Vinaconex,UPCOM,Điện
+797,VCR,Công ty Cổ phần Đầu tư và Phát triển Du lịch Vinaconex,UPCOM,Đầu tư và phát triển bất động sản
+798,VCT,Công ty Cổ phần Tư vấn Xây dựng Vinaconex,UPCOM,Xây dựng công trình
+799,VCW,Công ty cổ phần Đầu tư Nước sạch Sông Đà,UPCOM,Nước
+800,VCX,Công ty Cổ phần Xi măng Yên Bình ,UPCOM,Vật liệu xây dựng
+801,VDB,Công ty cổ phần Vận tải và Chế biến Than Đông Bắc,UPCOM,Than đá
+802,VDM,Công ty cổ phần - Viện Nghiên cứu Dệt May,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+803,VDN,Công ty Cổ phần Vinatex Đà Nẵng,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+804,VDT,Công ty Cổ phần Lưới thép Bình Tây ,UPCOM,Vật liệu xây dựng
+805,VE9,Công ty Cổ phần Đầu tư và xây dựng VNECO 9 ,UPCOM,Xây dựng công trình
+806,VEA,Tổng công ty Máy Động lực và Máy Nông nghiệp Việt Nam – CTCP,UPCOM,Ôtô
+807,VEC,Tổng Công ty Cổ phần Điện tử và Tin học Việt Nam,UPCOM,Đồ điện tử
+808,VEF,Công ty cổ phần Trung Tâm Hội Chợ Triển Lãm Việt Nam,UPCOM,Các hãng truyền thông
+809,VES,Công ty Cổ phần Đầu tư và Xây dựng điện Mê Ca Vneco,UPCOM,Xây dựng công trình
+810,VET,Công ty Cổ phần Thuốc Thú y Trung ương NAVETCO,UPCOM,Dược phẩm
+811,VFC,Công ty Cổ phần Vinafco,UPCOM,Dịch vụ vận tải
+812,VFR,Công ty Cổ phần Vận tải và Thuê tàu - Vietfracht ,UPCOM,Vận tải biển
+813,VFS,Công ty cổ phần chứng khoán Nhất Việt,UPCOM,Dịch vụ đầu tư
+814,VGG,Tổng Công ty Cổ phần may Việt Tiến ,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+815,VGI,Tổng Công ty cổ phần Đầu tư Quốc tế Viettel,UPCOM,Dịch vụ viễn thông cố định
+816,VGL,Công ty cổ phần Mạ kẽm công nghiệp Vingal - Vnsteel,UPCOM,Thép
+817,VGR,Công ty cổ phần Cảng Xanh Vip,UPCOM,Vận tải biển
+818,VGT,Tập đoàn Dệt May Việt Nam,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+819,VGV,Tổng Công ty Tư vấn Xây dựng Việt Nam - CTCP,UPCOM,Xây dựng công trình
+820,VHD,Công ty Cổ phần Đầu tư phát triển Nhà và Đô thị Vinaconex,UPCOM,Xây dựng công trình
+821,VHF,Công ty Cổ phần Xây dựng và chế biến lương thực Vĩnh Hà,UPCOM,Sản xuất thực phẩm
+822,VHG,Công ty Cổ phần Đầu tư và phát triển Việt Trung Nam,UPCOM,Thiết bị viễn thông
+823,VHH,Công ty Cổ phần Đầu tư Xây dựng Viwaseen Huế,UPCOM,Xây dựng công trình
+824,VHI,Công ty Cổ phần Kinh doanh và Đầu tư Việt Hà,UPCOM,Sản xuất thực phẩm
+825,VIH,Công ty Cổ phần Viglacera Hà Nội,UPCOM,Vật liệu xây dựng
+826,VIM,Công ty Cổ phần Khoáng sản Viglacera,UPCOM,Khai khoáng nói chung
+827,VIN,Công ty Cổ phần Giao nhận Kho vận Ngoại thương Việt Nam,UPCOM,Dịch vụ giao nhận
+828,VIR,Công ty Cổ phần Du lịch Quốc tế Vũng Tàu ,UPCOM,Khách sạn
+829,VIW,Tổng công ty Đầu tư Nước và Môi trường Việt Nam - CTCP,UPCOM,Xây dựng công trình
+830,VKD,Công ty Cổ phần Nước khoáng Khánh Hòa - FIT Beverage,UPCOM,Nước ngọt
+831,VKP,Công ty Cổ phần Nhựa Tân Hóa,UPCOM,Bao bì & đóng gói
+832,VLB,Công ty Cổ phần Xây dựng và Sản xuất vật liệu xây dựng Biên Hòa,UPCOM,Vật liệu xây dựng
+833,VLC,Tổng Công ty Chăn nuôi Việt Nam - CTCP,UPCOM,Nông sản và thủy hải sản
+834,VLF,Công ty Cổ phần Lương thực thực phẩm Vĩnh Long,UPCOM,Bán lẻ thực phẩm
+835,VLG,Công ty Cổ Phần VIMC LOGISTICS,UPCOM,Vận tải biển
+836,VLP,Công ty Cổ phần Công trình Công cộng Vĩnh Long,UPCOM,Dịch vụ xử lý phế liệu phế thải
+837,VLW,Công ty cổ phần Cấp nước Vĩnh Long,UPCOM,Nước
+838,VMA,Công ty Cổ phần Công nghiệp Ô tô - Vinacomin,UPCOM,Ôtô
+839,VMG,Công ty Cổ phần Thương mại và Dịch vụ dầu khí Vũng Tàu,UPCOM,Gas
+840,VMI,Công ty Cổ phần Khoáng sản và Đầu tư VISACO,UPCOM,Xây dựng công trình
+841,VNA,Công ty Cổ phần vận tải biển VINASHIP ,UPCOM,Vận tải biển
+842,VNB,Công ty cổ phần Sách Việt Nam,UPCOM,Cửa hàng chuyên dụng
+843,VNH,Công ty Cổ phần Thủy hải sản Việt Nhật,UPCOM,Nông sản và thủy hải sản
+844,VNI,Công ty Cổ phần Đầu tư bất động sản Việt Nam,UPCOM,Đầu tư và phát triển bất động sản
+845,VNP,Công ty Cổ phần nhựa Việt Nam ,UPCOM,Hóa chất cơ bản
+846,VNX,Công ty Cổ phần Quảng cáo và Hội chợ thương mại,UPCOM,Các hãng truyền thông
+847,VNY,Công ty cổ phần Thuốc Thú y Trung Ương I,UPCOM,Dược phẩm
+848,VOC,Tổng Công ty Công nghiệp dầu thực vật Việt Nam – CTCP,UPCOM,Sản xuất thực phẩm
+849,VPA,Công ty Cổ phần Vận tải Hóa dầu VP,UPCOM,Vận tải biển
+850,VPC,Công ty Cổ phần Đầu tư và Phát triển Năng lượng Việt Nam ,UPCOM,Xây dựng công trình
+851,VPR,CÔNG TY CỔ PHẦN VINAPRINT,UPCOM,Giấy
+852,VPW,Công ty Cổ phần Cấp thoát nước số 1 Vĩnh Phúc,UPCOM,Nước
+853,VQC,Công ty Cổ phần Giám định Vinacomin,UPCOM,Dịch vụ hỗ trợ kinh doanh
+854,VRG,Công ty Cổ phần Phát triển đô thị và khu công nghiệp cao su Việt Nam,UPCOM,Xây dựng công trình
+855,VSE,Công ty cổ phần Dịch vụ Đường cao tốc Việt Nam,UPCOM,Dịch vụ vận tải
+856,VSF,Tổng Công ty Lương thực Miền Nam – Công ty cổ phần,UPCOM,Nông sản và thủy hải sản
+857,VSG,Công ty Cổ phần Container phía Nam ,UPCOM,Dịch vụ vận tải
+858,VSN,Công ty cổ phần Việt Nam Kỹ Nghệ Súc Sản,UPCOM,Sản xuất thực phẩm
+859,VSP,Công ty Cổ phần Vận tải biển và Bất động sản Việt Hải ,UPCOM,Vận tải biển
+860,VST,Công ty Cổ phần Vận tải và Thuê tàu biển Việt Nam,UPCOM,Vận tải biển
+861,VTA,Công ty Cổ phần Vitaly,UPCOM,Vật liệu xây dựng
+862,VTD,Công ty Cổ phần Du lịch Vietourist,UPCOM,Du lịch
+863,VTE,Công ty cổ phần Viễn thông Điện tử VINACAP,UPCOM,Thiết bị viễn thông
+864,VTG,Công ty Cổ phần du lịch tỉnh Bà Rịa - Vũng Tàu,UPCOM,Khách sạn
+865,VTI,Công ty Cổ phần Sản xuất - Xuất nhập khẩu Dệt may,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+866,VTK,Công ty cổ phần Tư vấn Thiết kế Viettel,UPCOM,Thiết bị viễn thông
+867,VTM,Công ty cổ phần Vận Tải và đưa đón thợ mỏ - Vinacomin,UPCOM,Dịch vụ vận tải
+868,VTP,Tổng công ty Cổ phần Bưu chính Viettel,UPCOM,Dịch vụ giao nhận
+869,VTQ,Công ty cổ phần Việt Trung Quảng Bình,UPCOM,Nông sản và thủy hải sản
+870,VTR,Công ty cổ phần Du lịch và Tiếp thị Giao thông Vận tải Việt Nam - Vietravel,UPCOM,Du lịch
+871,VTS,Công ty Cổ phần Gạch ngói Từ Sơn,UPCOM,Vật liệu xây dựng
+872,VTX,Công ty cổ phần vận tải đa phương thức VIETRANSTIMEX,UPCOM,Dịch vụ vận tải
+873,VVN,Tổng Công ty Cổ phần Xây dựng Công nghiệp Việt Nam,UPCOM,Xây dựng công trình
+874,VW3,Công ty Cổ Phần VIWASEEN3,UPCOM,Vật liệu xây dựng
+875,VWS,Công ty cổ phần Nước và Môi trường Việt Nam,UPCOM,Xây dựng công trình
+876,VXP,CÔNG TY CỔ PHẦN THUỐC THÚ Y TRUNG ƯƠNG VETVACO,UPCOM,Dược phẩm
+877,VXT,Công ty Cổ phần Kho vận và Dịch vụ thương mại,UPCOM,Dịch vụ vận tải
+878,WSB,Công ty Cổ phần Bia Sài Gòn - Miền Tây,UPCOM,Sản xuất bia
+879,WTC,Công ty Cổ phần Vận tải thủy - Vinacomin,UPCOM,Vận tải biển
+880,X26,Công ty cổ phần 26,UPCOM,"Đồ may mặc, trang sức, phụ kiện"
+881,X77,Công ty cổ phần Thành An 77,UPCOM,Vật liệu xây dựng
+882,XDH,Công ty cổ phần Đầu tư Xây dựng Dân dụng Hà Nội,UPCOM,"Xây dựng, chế tạo nhà ở"
+883,XHC,Công ty cổ phần Xuân Hòa Việt Nam,UPCOM,"Đồ đạc, nội thất"
+884,XLV,Công ty cổ phần Xây lắp và Dịch vụ Sông Đà,UPCOM,Xây dựng công trình
+885,XMC,Công ty cổ phần Đầu tư và Xây dựng Xuân Mai,UPCOM,Vật liệu xây dựng
+886,XMD,Công ty Cổ phần Xuân Mai - Đạo Tú,UPCOM,Vật liệu xây dựng
+887,XMP,Công ty cổ phần thủy điện Xuân Minh,UPCOM,Thiết bị điện
+888,XPH,Công ty Cổ phần Xà phòng Hà Nội,UPCOM,Hóa chất đặc biệt
+889,YBC,Công ty Cổ phần Xi măng và Khoáng sản Yên Bái ,UPCOM,Vật liệu xây dựng
+890,YTC,Công ty Cổ phần Xuất nhập khẩu Y tế Thành phố Hồ Chí Minh,UPCOM,Dược phẩm

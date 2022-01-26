@@ -1,0 +1,9 @@
+beautifulsoup4>=4.10.0
+py-cord @ git+https://github.com/Pycord-Development/pycord@master
+matplotlib>=3.5.1
+mplfinance>=0.12.8b6
+numpy>=1.21.5
+pandas>=1.1.5
+Pillow>=9.0.0
+requests>=2.26.0
+

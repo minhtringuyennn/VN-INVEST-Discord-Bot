@@ -1,0 +1,415 @@
+index,symbol,companyName,floor,industryName
+0,AAA,Công ty cổ phần Nhựa An Phát Xanh,HOSE,Bao bì & đóng gói
+1,AAM,Công ty Cổ phần Thủy sản Mekong,HOSE,Nông sản và thủy hải sản
+2,AAT,Công ty cổ phần Tiên Sơn Thanh Hoá,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+3,ABS,Công ty Cổ phần Dịch vụ Nông nghiệp Bình Thuận,HOSE,Sản phẩm sinh hóa
+4,ABT,Công ty Cổ phần Xuất nhập khẩu thủy sản Bến Tre,HOSE,Nông sản và thủy hải sản
+5,ACB,Ngân hàng Thương mại Cổ phần Á Châu,HOSE,Ngân hàng
+6,ACC,Công ty cổ phần Đầu tư và Xây dựng Bình Dương ACC,HOSE,Vật liệu xây dựng
+7,ACL,Công ty Cổ phần Xuất nhập khẩu Thủy sản Cửu Long An Giang,HOSE,Nông sản và thủy hải sản
+8,ADG,Công ty Cổ phần Clever Group,HOSE,Các hãng truyền thông
+9,ADS,Công ty Cổ phần Damsan,HOSE,Hóa chất cơ bản
+10,AGG,CTCP Đầu tư và Phát triển Bất động sản An Gia,HOSE,Đầu tư và phát triển bất động sản
+11,AGM,Công ty Cổ phần xuất nhập khẩu An Giang,HOSE,Sản xuất thực phẩm
+12,AGR,Công ty Cổ phần Chứng khoán Agribank,HOSE,Dịch vụ đầu tư
+13,AMD,Công ty cổ phần đầu tư và khoáng sản FLC Stone,HOSE,Bán lẻ tổng hợp
+14,ANV,Công ty TNHH Amicogen Nam Việt,HOSE,Nông sản và thủy hải sản
+15,APC,Công ty Cổ phần Chiếu xạ An Phú,HOSE,Hóa chất đặc biệt
+16,APG,Công ty Cổ phần Chứng khoán APG,HOSE,Dịch vụ đầu tư
+17,APH,Công ty cổ phần Tập đoàn An Phát Holdings,HOSE,Hóa chất cơ bản
+18,ASG,Công ty Cổ phần Tập đoàn ASG,HOSE,Dịch vụ vận tải
+19,ASM,Công ty Cổ phần Tập đoàn Sao Mai ,HOSE,Đầu tư và phát triển bất động sản
+20,ASP,Công ty Cổ phần Tập đoàn Dầu khí An Pha,HOSE,Gas
+21,AST,Công ty Cổ phần Dịch vụ Hàng không Taseco,HOSE,Dịch vụ tiêu dùng chuyên dụng
+22,BAF,Công ty Cổ phần Nông nghiệp BAF Việt Nam,HOSE,Nông sản và thủy hải sản
+23,BBC,Công ty Cổ phần Bibica,HOSE,Sản xuất thực phẩm
+24,BCE,Công ty Cổ phần Xây dựng và Giao thông Bình Dương,HOSE,Xây dựng công trình
+25,BCG,Công ty Cổ phần Bamboo Capital,HOSE,Dịch vụ hỗ trợ kinh doanh
+26,BCM,Tổng Công ty Đầu tư và Phát triển Công nghiệp - CTCP,HOSE,Đầu tư và phát triển bất động sản
+27,BFC,Công ty Cổ phần Phân bón Bình Điền ,HOSE,Hóa chất đặc biệt
+28,BHN,Tổng Công ty Cổ phần Bia - Rượu - Nước giải khát Hà Nội,HOSE,Sản xuất bia
+29,BIC,Tổng Công ty Cổ phần Bảo Hiểm Ngân hàng Đầu tư và Phát triển Việt Nam ,HOSE,Bảo hiểm đa ngành
+30,BID,Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ,HOSE,Ngân hàng
+31,BKG,Công ty Cổ phần Đầu tư BKG Việt Nam,HOSE,Chế phẩm từ gỗ
+32,BMC,Công ty Cổ phần Khoáng sản Bình Định,HOSE,Khai khoáng nói chung
+33,BMI,Tổng Công ty Cổ phần Bảo Minh ,HOSE,Bảo hiểm đa ngành
+34,BMP,Công ty Cổ phần nhựa Bình Minh,HOSE,Vật liệu xây dựng
+35,BRC,Công ty Cổ phần Cao su Bến Thành ,HOSE,Hóa chất cơ bản
+36,BSI,Công ty Cổ phần Chứng khoán Ngân hàng Đầu tư và Phát triển Việt Nam,HOSE,Dịch vụ đầu tư
+37,BTP,Công ty Cổ phần Nhiệt điện Bà Rịa,HOSE,Điện
+38,BTT,Công ty Cổ phần Thương mại - Dịch vụ Bến Thành,HOSE,Cửa hàng chuyên dụng
+39,BVH,Tập đoàn Bảo Việt ,HOSE,Bảo hiểm đa ngành
+40,BWE,Công ty Cổ phần Nước - Môi trường Bình Dương,HOSE,Nước
+41,C32,Công ty cổ phần CIC39,HOSE,Vật liệu xây dựng
+42,C47,Công ty Cổ phần Xây dựng 47,HOSE,Vật liệu xây dựng
+43,CAV,Công ty Cổ phần dây cáp điện Việt Nam ,HOSE,Thiết bị điện
+44,CCI,Công ty Cổ phần Đầu tư Phát triển Công nghiệp Thương mại Củ Chi,HOSE,Cửa hàng chuyên dụng
+45,CCL,Công ty Cổ phần Đầu tư và Phát triển Đô thị Dầu khí Cửu Long,HOSE,Đầu tư và phát triển bất động sản
+46,CDC,Công ty Cổ phần Chương Dương,HOSE,Xây dựng công trình
+47,CEE,Công ty Cổ phần Xây dựng Hạ tầng CII,HOSE,Xây dựng công trình
+48,CHP,Công ty Cổ phần Thủy điện miền Trung,HOSE,Điện
+49,CIG,Công ty Cổ phần COMA18,HOSE,Đầu tư và phát triển bất động sản
+50,CII,Công ty Cổ phần Đầu tư Hạ tầng Kỹ thuật Thành phố Hồ Chí Minh ,HOSE,Đầu tư và phát triển bất động sản
+51,CKG,CÔNG TY CÔ PHẦN TẬP ĐOÀN TƯ VẤN ĐẦU TƯ XÂY DỰNG KIÊN GIANG,HOSE,"Xây dựng, chế tạo nhà ở"
+52,CLC,Công ty Cổ phần Cát Lợi,HOSE,Thuốc lá
+53,CLL,Công ty Cổ phần Cảng Cát Lái,HOSE,Dịch vụ vận tải
+54,CLW,Công ty Cổ phần Cấp nước Chợ Lớn ,HOSE,Nước
+55,CMG,Công ty Cổ phần Tập đoàn Công nghệ CMC,HOSE,Dịch vụ máy tính
+56,CMV,Công ty Cổ phần Thương Nghiệp Cà Mau,HOSE,Cửa hàng chuyên dụng
+57,CMX,Công ty cổ phần Camimex Group,HOSE,Sản xuất thực phẩm
+58,CNG,Công ty Cổ phần CNG Việt Nam,HOSE,Gas
+59,COM,Công ty Cổ phần Vật Tư - Xăng Dầu,HOSE,Cửa hàng chuyên dụng
+60,CRC,Công ty Cổ phần Create Capital Việt Nam,HOSE,Bán lẻ dụng cụ gia đình
+61,CRE,Công ty Cổ phần Bất động sản Thế kỷ,HOSE,Dịch vụ bất động sản
+62,CSM,Công ty Cổ phần Công nghiệp Cao su Miền Nam,HOSE,Săm lốp
+63,CSV,Công ty Cổ phần hóa chất cơ bản Miền Nam ,HOSE,Hóa chất đặc biệt
+64,CTD,Công ty Cổ phần Xây dựng Coteccons,HOSE,Xây dựng công trình
+65,CTF,Công ty Cổ phần City Auto,HOSE,Cửa hàng chuyên dụng
+66,CTG,Ngân hàng Thương mại Cổ phần Công Thương Việt Nam,HOSE,Ngân hàng
+67,CTI,Công ty Cổ phần Đầu tư Phát triển Cường Thuận IDICO,HOSE,Xây dựng công trình
+68,CTS,Công ty Cổ phần Chứng khoán Ngân hàng Công thương Việt Nam,HOSE,Dịch vụ đầu tư
+69,CVT,Công ty Cổ phần CMC,HOSE,Vật liệu xây dựng
+70,D2D,Công ty Cổ phần Phát triển Đô thị Công nghiệp Số 2 ,HOSE,Đầu tư và phát triển bất động sản
+71,DAG,Công ty Cổ phần Tập đoàn Nhựa Đông Á,HOSE,Vật liệu xây dựng
+72,DAH,Công ty cổ phần Tập đoàn Khách sạn Đông Á,HOSE,Khách sạn
+73,DAT,Công ty cổ phần Đầu tư Du lịch và Phát triển Thuỷ sản,HOSE,Công nghiệp đa ngành
+74,DBC,Công ty Cổ phần Tập đoàn Dabaco Việt Nam,HOSE,Nông sản và thủy hải sản
+75,DBD,Công ty Cổ phần Dược - Trang thiết bị Y tế Bình Định (Bidiphar),HOSE,Dược phẩm
+76,DBT,Công ty Cổ phần Dược phẩm Bến Tre,HOSE,Dược phẩm
+77,DC4,Công ty cổ phần Xây dựng DIC Holdings,HOSE,Xây dựng công trình
+78,DCL,Công ty Cổ phần Dược phẩm Cửu Long ,HOSE,Dược phẩm
+79,DCM,Công ty Cổ phần Phân Bón Dầu khí Cà Mau,HOSE,Hóa chất đặc biệt
+80,DGC,Công ty cổ phần Tập đoàn Hóa chất Đức Giang,HOSE,Hóa chất cơ bản
+81,DGW,Công ty Cổ phần Thế giới Số,HOSE,Bán lẻ tổng hợp
+82,DHA,Công ty Cổ phần Hoá An,HOSE,Vật liệu xây dựng
+83,DHC,Công ty Cổ phần Đông Hải Bến Tre ,HOSE,Giấy
+84,DHG,Công ty Cổ phần Dược Hậu Giang,HOSE,Dược phẩm
+85,DHM,Công ty cổ phần thương mại và khai thác khoáng sản Dương Hiếu,HOSE,Khai khoáng nói chung
+86,DIG,Tổng công ty Đầu tư phát triển Xây dựng,HOSE,Đầu tư và phát triển bất động sản
+87,DLG,Công ty Cổ phần Tập đoàn Đức Long Gia Lai,HOSE,"Đồ đạc, nội thất"
+88,DMC,Công ty Cổ phần Xuất nhập khẩu Y tế Domesco,HOSE,Thiết bị y tế
+89,DPG,Công ty Cổ phần Tập đoàn Đạt Phương,HOSE,Xây dựng công trình
+90,DPM,Tổng Công ty Cổ phần Phân bón và Hóa chất dầu khí,HOSE,Hóa chất đặc biệt
+91,DPR,Công ty Cổ phần Cao su Đồng Phú,HOSE,Hóa chất cơ bản
+92,DQC,Công ty Cổ phần Bóng đèn Điện Quang,HOSE,Thiết bị điện
+93,DRC,Công ty Cổ phần Cao Su Đà Nẵng,HOSE,Săm lốp
+94,DRH,Công ty Cổ phần DRH Holdings,HOSE,Đầu tư và phát triển bất động sản
+95,DRL,Công ty Cổ phần Thủy Điện - Điện lực 3,HOSE,Điện
+96,DSN,Công ty Cổ phần Công viên nước Đầm Sen,HOSE,Dịch vụ vui chơi giải trí
+97,DTA,Công ty Cổ phần Đệ Tam,HOSE,Đầu tư và phát triển bất động sản
+98,DTL,Công ty Cổ phần Đại Thiên Lộc ,HOSE,Thép
+99,DTT,Công ty Cổ phần Kỹ nghệ Đô Thành ,HOSE,Hóa chất đặc biệt
+100,DVP,Công ty Cổ phần Đầu tư và Phát triển cảng Đình Vũ,HOSE,Dịch vụ vận tải
+101,DXG,Công ty Cổ phần Tập đoàn Đất Xanh,HOSE,Đầu tư và phát triển bất động sản
+102,DXS,Công ty Cổ phần Dịch vụ Bất động sản Đất Xanh,HOSE,Dịch vụ bất động sản
+103,DXV,Công ty Cổ phần ViCem Vật liệu xây dựng Đà Nẵng,HOSE,Vật liệu xây dựng
+104,E1VFVN30,Quỹ ETF DCVFMVN30,HOSE,Công cụ đầu tư cổ phần
+105,EIB,Ngân hàng Thương mại Cổ phần Xuất nhập khẩu Việt Nam,HOSE,Ngân hàng
+106,ELC,Công ty Cổ phần Đầu tư Phát triển Công nghệ điện tử - Viễn thông ,HOSE,Phần mềm
+107,EMC,Công ty Cổ phần Cơ Điện Thủ Đức,HOSE,Thiết bị điện
+108,EVE,Công ty Cổ phần Everpia,HOSE,Các sản phẩm gia dụng lâu bền
+109,EVG,Công ty cổ phần Tập đoàn Everland,HOSE,Vật liệu xây dựng
+110,FCM,Công ty Cổ phần Khoáng sản FECON ,HOSE,Khai khoáng nói chung
+111,FCN,Công ty Cổ phần FECON,HOSE,Xây dựng công trình
+112,FDC,Công ty Cổ phần Ngoại thương và Phát triển Đầu tư Thành phố Hồ Chí Minh,HOSE,Đầu tư và phát triển bất động sản
+113,FIR,Công ty Cổ phần Địa ốc First Real,HOSE,Đầu tư và phát triển bất động sản
+114,FIT,Công ty cổ phần Tập đoàn F.I.T,HOSE,Đầu tư và phát triển bất động sản
+115,FLC,Công ty Cổ phần Tập đoàn FLC,HOSE,Đầu tư và phát triển bất động sản
+116,FMC,Công ty Cổ phần Thực phẩm Sao Ta ,HOSE,Nông sản và thủy hải sản
+117,FPT,Công ty Cổ phần FPT,HOSE,Dịch vụ máy tính
+118,FRT,Công ty cổ phần Bán lẻ Kỹ thuật số FPT,HOSE,Cửa hàng chuyên dụng
+119,FTM,Công ty Cổ phần Đầu tư và Phát triển Đức Quân,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+120,FTS,Công ty Cổ phần Chứng khoán FPT,HOSE,Dịch vụ đầu tư
+121,FUCTVGF2,Quỹ Đầu tư Tăng trưởng Thiên Việt 2,HOSE,Công cụ đầu tư cổ phần
+122,FUCTVGF3,Quỹ đầu tư tăng trưởng Thiên Việt 3,HOSE,Công cụ đầu tư cổ phần
+123,FUCVREIT,Quỹ đầu tư bất động sản Techcom Việt Nam,HOSE,Công cụ đầu tư cổ phần
+124,FUEIP100,Quỹ ETF IPAAM VN100,HOSE,Công cụ đầu tư cổ phần
+125,FUESSV30,Quỹ ETF SSIAM VN30,HOSE,0
+126,FUESSV50,QUỸ ETF SSIAM VNX50,HOSE,Công cụ đầu tư cổ phần
+127,FUESSVFL,QUỸ ETF SSIAM VNFIN LEAD,HOSE,Công cụ đầu tư cổ phần
+128,FUEVFVND,Quỹ ETF DCVFMVN DIAMOND,HOSE,Công cụ đầu tư cổ phần
+129,FUEVN100,Công ty Cổ phần Quản lý Quỹ VinaCapital,HOSE,Công cụ đầu tư cổ phần
+130,GAB,CÔNG TY CỔ PHẦN ĐẦU TƯ KHAI KHOÁNG & QUẢN LÝ TÀI SẢN FLC,HOSE,Vật liệu xây dựng
+131,GAS,Tổng Công ty Khí Việt Nam - CTCP,HOSE,Gas
+132,GDT,Công ty Cổ phần Chế biến Gỗ Đức Thành ,HOSE,"Đồ đạc, nội thất"
+133,GEG,Công ty Cổ phần Điện Gia Lai,HOSE,Điện
+134,GEX,Công ty Cổ phần Tập đoàn Gelex,HOSE,Thiết bị điện
+135,GIL,Công ty Cổ phần Sản Xuất Kinh Doanh Xuất Nhập Khẩu Bình Thạnh,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+136,GMC,Công ty cổ phần Garmex Sài Gòn,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+137,GMD,Công ty Cổ phần Gemadept ,HOSE,Dịch vụ vận tải
+138,GSP,Công ty Cổ phần Vận tải Sản Phẩm khí Quốc Tế,HOSE,Gas
+139,GTA,Công ty Cổ phần chế biến gỗ Thuận An,HOSE,"Đồ đạc, nội thất"
+140,GTN,Công ty cổ phần GTNFOODS,HOSE,Sản xuất thực phẩm
+141,GVR,Tập đoàn Công nghiệp Cao su Việt Nam - Công ty cổ phần,HOSE,Hóa chất cơ bản
+142,HAG,Công ty Cổ phần Hoàng Anh Gia Lai,HOSE,Đầu tư và phát triển bất động sản
+143,HAH,Công ty Cổ phần Vận tải và xếp dỡ Hải An ,HOSE,Dịch vụ vận tải
+144,HAI,Công ty Cổ phần Nông dược H.A.I,HOSE,Hóa chất đặc biệt
+145,HAP,Công ty Cổ phần Tập đoàn HAPACO,HOSE,Giấy
+146,HAR,Công ty Cổ phần Đầu tư Thương mại Bất động sản An Dương Thảo Điền,HOSE,Đầu tư và phát triển bất động sản
+147,HAS,Công ty Cổ phần Hacisco,HOSE,Xây dựng công trình
+148,HAX,Công ty Cổ phần Dịch vụ Ô tô Hàng Xanh,HOSE,Cửa hàng chuyên dụng
+149,HBC,Công ty Cổ phần Tập đoàn Xây dựng Hòa Bình,HOSE,Xây dựng công trình
+150,HCD,Công ty cổ phần Đầu tư Sản xuất và Thương mại HCD,HOSE,Vật liệu xây dựng
+151,HCM,Công ty Cổ phần Chứng khoán Thành phố Hồ Chí Minh,HOSE,Dịch vụ đầu tư
+152,HDB,Ngân hàng Thương mại Cổ phần Phát triển Thành phố Hồ Chí Minh,HOSE,Ngân hàng
+153,HDC,Công ty Cổ phần Phát triển nhà Bà Rịa-Vũng Tàu,HOSE,Đầu tư và phát triển bất động sản
+154,HDG,Công ty Cổ phần Tập đoàn Hà Đô,HOSE,Đầu tư và phát triển bất động sản
+155,HHP,Công ty cổ phần Giấy Hoàng Hà Hải Phòng,HOSE,Giấy
+156,HHS,Công ty Cổ phần Đầu tư - Dịch vụ Hoàng Huy ,HOSE,Ôtô
+157,HID,Công ty Cổ phần Halcom Việt Nam,HOSE,Xây dựng công trình
+158,HII,Công ty Cổ phần An Tiến Industries,HOSE,Khai khoáng nói chung
+159,HMC,Công ty Cổ phần Kim khí Thành phố Hồ Chí Minh - VNSTEEL,HOSE,Thép
+160,HNG,Công ty Cổ phần Nông nghiệp Quốc tế Hoàng Anh Gia Lai,HOSE,Nông sản và thủy hải sản
+161,HOT,Công ty Cổ phần Du lịch-Dịch vụ Hội An,HOSE,Khách sạn
+162,HPG,Công ty Cổ phần Tập đoàn Hòa Phát,HOSE,Thép
+163,HPX,Công ty cổ phần Đầu tư Hải Phát,HOSE,Đầu tư và phát triển bất động sản
+164,HQC,Công ty Cổ phần Tư vấn - Thương mại - Dịch vụ Địa ốc Hoàng Quân,HOSE,Đầu tư và phát triển bất động sản
+165,HRC,Công ty Cổ phần Cao su Hòa Bình,HOSE,Hóa chất cơ bản
+166,HSG,Công ty Cổ phần Tập đoàn Hoa Sen,HOSE,Thép
+167,HSL,CÔNG TY CỔ PHẦN ĐẦU TƯ PHÁT TRIỂN THỰC PHẨM HỒNG HÀ,HOSE,Nông sản và thủy hải sản
+168,HT1,Công ty Cổ phần xi măng Hà Tiên 1,HOSE,Vật liệu xây dựng
+169,HTI,Công ty Cổ phần Đầu tư Phát triển Hạ tầng IDICO,HOSE,Xây dựng công trình
+170,HTL,Công ty Cổ phần Kỹ thuật và Ô tô Trường Long,HOSE,Xe tải và phương tiện vận chuyển thương mại
+171,HTN,Công ty cổ phần Hưng Thịnh Incons,HOSE,Xây dựng công trình
+172,HTV,Công ty cổ phần Logistics Vicem,HOSE,Dịch vụ vận tải
+173,HU1,Công ty Cổ phần Đầu tư và Xây dựng HUD1,HOSE,Xây dựng công trình
+174,HU3,Công ty Cổ phần Đầu tư và Xây dựng HUD3,HOSE,Vật liệu xây dựng
+175,HUB,Công ty Cổ phần Xây lắp Thừa Thiên Huế,HOSE,Xây dựng công trình
+176,HVH,Công ty cổ phần Đầu tư và Công nghệ HVC,HOSE,"Thiết bị, đồ dùng phục vụ mục đích vui chơi giải trí"
+177,HVN,Tổng Công ty Hàng không Việt Nam - CTCP,HOSE,Hàng không
+178,HVX,Công ty Cổ phần xi măng Vicem Hải Vân ,HOSE,Vật liệu xây dựng
+179,IBC,Công ty cổ phần Đầu tư APAX HOLDINGS,HOSE,Tài chính chuyên biệt
+180,ICT,Công ty cổ phần Viễn thông - Tin học Bưu điện,HOSE,Thiết bị viễn thông
+181,IDI,Công ty Cổ phần Đầu tư và Phát triển Đa Quốc Gia IDI,HOSE,Nông sản và thủy hải sản
+182,IJC,Công ty Cổ phần Phát triển Hạ tầng Kỹ thuật,HOSE,Xây dựng công trình
+183,ILB,Công ty Cổ phần ICD Tân Cảng - Long Bình,HOSE,Dịch vụ bất động sản
+184,IMP,Công ty Cổ phần dược phẩm Imexpharm,HOSE,Dược phẩm
+185,ITA,Công ty Cổ phần Đầu tư và Công nghiệp Tân Tạo ,HOSE,Đầu tư và phát triển bất động sản
+186,ITC,Công ty Cổ phần Đầu tư - Kinh doanh nhà,HOSE,Đầu tư và phát triển bất động sản
+187,ITD,Công ty Cổ phần Công nghệ Tiên Phong,HOSE,Phần mềm
+188,JVC,Công ty Cổ phần Thiết bị Y tế Việt Nhật,HOSE,Thiết bị y tế
+189,KBC,Tổng Công ty Phát triển Đô thị Kinh Bắc - CTCP,HOSE,Đầu tư và phát triển bất động sản
+190,KDC,Công ty Cổ phần tập đoàn Kido ,HOSE,Sản xuất thực phẩm
+191,KDH,Công ty Cổ phần Đầu tư và Kinh doanh Nhà Khang Điền,HOSE,Đầu tư và phát triển bất động sản
+192,KHG,Công ty Cổ phần Bất động sản Khải Hoàn Land,HOSE,Dịch vụ bất động sản
+193,KHP,Công ty Cổ phần Điện lực Khánh Hòa ,HOSE,Điện
+194,KMR,Công ty Cổ phần Mirae ,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+195,KOS,Công ty cổ phần Kosy,HOSE,Đầu tư và phát triển bất động sản
+196,KPF,Công ty cổ phần Đầu tư tài chính Hoàng Minh,HOSE,Vật liệu xây dựng
+197,KSB,Công ty Cổ phần Khoáng sản và Xây dựng Bình Dương,HOSE,Khai khoáng nói chung
+198,L10,Công ty Cổ phần LILAMA 10,HOSE,Xây dựng công trình
+199,LAF,Công ty Cổ phần Chế biến hàng xuất khẩu Long An,HOSE,Sản xuất thực phẩm
+200,LBM,Công ty Cổ phần Khoáng sản và Vật liệu Xây dựng Lâm Đồng,HOSE,Vật liệu xây dựng
+201,LCG,Công ty Cổ phần LICOGI 16,HOSE,Xây dựng công trình
+202,LCM,Công ty Cổ phần Khai thác và Chế biến Khoáng sản Lào Cai ,HOSE,Khai khoáng nói chung
+203,LDG,Công ty Cổ phần Đầu tư LDG ,HOSE,Đầu tư và phát triển bất động sản
+204,LEC,Công ty Cổ phần Bất động sản Điện lực Miền Trung,HOSE,Đầu tư và phát triển bất động sản
+205,LGC,Công ty Cổ phần đầu tư cầu đường CII,HOSE,Xây dựng công trình
+206,LGL,Công ty Cổ phần Đầu tư và Phát triển Đô thị Long Giang,HOSE,Đầu tư và phát triển bất động sản
+207,LHG,Công ty Cổ phần Long Hậu ,HOSE,Đầu tư và phát triển bất động sản
+208,LIX,Công ty Cổ phần Bột giặt Lix,HOSE,Sản phẩm gia dụng không lâu bền
+209,LM8,Công ty Cổ phần Lilama 18,HOSE,Máy công nghiệp
+210,LPB,Ngân hàng Thương mại Cổ phần Bưu điện Liên Việt,HOSE,Ngân hàng
+211,LSS,Công ty Cổ phần Mía đường Lam Sơn,HOSE,Sản xuất thực phẩm
+212,MBB,Ngân hàng Thương mại Cổ phần Quân đội ,HOSE,Ngân hàng
+213,MCG,Công ty Cổ phần Năng lượng và Bất Động sản MCG,HOSE,Xây dựng công trình
+214,MCP,Công ty Cổ phần In và Bao bì Mỹ Châu,HOSE,Bao bì & đóng gói
+215,MDG,Công ty Cổ phần Miền Đông,HOSE,Xây dựng công trình
+216,MHC,Công ty Cổ phần MHC,HOSE,Vận tải biển
+217,MIG,Tổng Công ty Cổ phần Bảo Hiểm Quân Đội,HOSE,Bảo hiểm tài sản & thương vong
+218,MSB,Ngân hàng Thương mại Cổ phần Hàng Hải Việt Nam,HOSE,Ngân hàng
+219,MSH,Công ty cổ phần May Sông Hồng,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+220,MSN,Công ty Cổ phần Tập đoàn Ma San,HOSE,Sản xuất thực phẩm
+221,MWG,Công ty Cổ phần đầu tư thế giới di động,HOSE,Bán lẻ tổng hợp
+222,NAF,Công ty Cổ phần Nafoods Group ,HOSE,Nước ngọt
+223,NAV,Công ty Cổ phần Nam Việt ,HOSE,Vật liệu xây dựng
+224,NBB,Công ty Cổ phần Đầu tư Năm Bảy Bảy,HOSE,Đầu tư và phát triển bất động sản
+225,NCT,Công ty Cổ phần dịch vụ hàng hóa Nội Bài ,HOSE,Dịch vụ giao nhận
+226,NHA,Tổng Công ty Đầu tư Phát triển Nhà và Đô thị Nam Hà Nội,HOSE,Xây dựng công trình
+227,NHH,Công ty Cổ phần Nhựa Hà Nội,HOSE,Hóa chất cơ bản
+228,NHT,Công ty Cổ phần Sản xuất và Thương mại Nam Hoa,HOSE,Đồ chơi các loại
+229,NKG,Công ty Cổ phần Thép Nam Kim,HOSE,Thép
+230,NLG,Công ty Cổ phần Đầu tư Nam Long,HOSE,Đầu tư và phát triển bất động sản
+231,NNC,Công ty Cổ phần Đá Núi Nhỏ,HOSE,Vật liệu xây dựng
+232,NSC,Công ty Cổ phần Giống cây trồng Trung Ương ,HOSE,Nông sản và thủy hải sản
+233,NT2,Công ty Cổ phần Điện lực Dầu khí Nhơn Trạch 2 ,HOSE,Điện
+234,NTL,Công ty Cổ phần Phát triển đô thị Từ Liêm,HOSE,Đầu tư và phát triển bất động sản
+235,NVL,Công ty cổ phần Tập đoàn Đầu tư Địa ốc No Va,HOSE,Đầu tư và phát triển bất động sản
+236,NVT,Công ty Cổ phần Bất động sản Du lịch Ninh Vân Bay,HOSE,Đầu tư và phát triển bất động sản
+237,OCB,Ngân hàng Thương mại Cổ phần Phương Đông,HOSE,Ngân hàng
+238,OGC,Công ty Cổ phần Tập đoàn Đại Dương ,HOSE,Đầu tư và phát triển bất động sản
+239,OPC,Công ty Cổ phần Dược phẩm OPC ,HOSE,Dược phẩm
+240,ORS,Công ty Cổ phần Chứng khoán Tiên Phong,HOSE,Dịch vụ đầu tư
+241,PAC,Công ty Cổ phần Pin Ắc quy miền Nam,HOSE,Thiết bị điện
+242,PAN,Công ty Cổ phần Tập đoàn PAN,HOSE,Sản xuất thực phẩm
+243,PC1,Công ty cổ phần Xây lắp điện I,HOSE,Xây dựng công trình
+244,PDN,Công ty Cổ phần Cảng Đồng Nai ,HOSE,Dịch vụ vận tải
+245,PDR,Công ty Cổ phần Phát triển Bất động sản Phát Đạt ,HOSE,Đầu tư và phát triển bất động sản
+246,PET,Tổng Công ty Cổ phần Dịch vụ Tổng hợp Dầu khí ,HOSE,Cửa hàng chuyên dụng
+247,PGC,Tổng Công ty Gas Petrolimex - CTCP,HOSE,Gas
+248,PGD,Công ty Cổ phần Phân phối khí Thấp áp Dầu khí Việt Nam,HOSE,Gas
+249,PGI,Tổng Công ty Cổ phần Bảo hiểm Petrolimex ,HOSE,Bảo hiểm đa ngành
+250,PHC,Công ty Cổ phần Xây dựng Phục Hưng Holdings,HOSE,Xây dựng công trình
+251,PHR,Công ty Cổ phần Cao su Phước Hòa ,HOSE,Hóa chất cơ bản
+252,PIT,Công ty Cổ phần Xuất nhập khẩu Petrolimex,HOSE,Nông sản và thủy hải sản
+253,PJT,Công ty Cổ phần Vận tải Xăng dầu Đường Thủy Petrolimex,HOSE,Dịch vụ vận tải
+254,PLP,Công ty cổ phần Sản xuất và Công nghệ Nhựa Pha Lê,HOSE,Khai khoáng nói chung
+255,PLX,Tập đoàn Xăng dầu Việt Nam,HOSE,Dầu khí tổng hợp
+256,PMG,Công ty Cổ phần Đầu tư và Sản xuất Petro Miền Trung,HOSE,Gas
+257,PNC,Công ty Cổ phần văn hoá Phương Nam ,HOSE,Cửa hàng chuyên dụng
+258,PNJ,Công ty Cổ phần Vàng bạc đá quý Phú Nhuận,HOSE,Cửa hàng chuyên dụng
+259,POM,Công ty Cổ phần Thép Pomina,HOSE,Thép
+260,POW,Tổng Công ty Điện lực Dầu khí Việt Nam – Công ty cổ phần,HOSE,Điện
+261,PPC,Công ty Cổ phần Nhiệt điện Phả Lại ,HOSE,Điện
+262,PSH,Công ty Cổ phần Thương mại Đầu tư Dầu khí Nam Sông Hậu,HOSE,Dầu khí tổng hợp
+263,PTB,Công ty cổ phần Phú Tài,HOSE,Vật liệu xây dựng
+264,PTC,Công ty Cổ phần Đầu tư và Xây dựng Bưu điện,HOSE,Xây dựng công trình
+265,PTL,Công ty Cổ phần Đầu tư hạ tầng và Đô thị Dầu khí ,HOSE,Vật liệu xây dựng
+266,PVD,Tổng Công ty Cổ phần Khoan và Dịch vụ khoan dầu khí,HOSE,Dịch vụ và Thiết bị dầu khí
+267,PVT,Tổng Công ty Cổ phần Vận tải dầu khí,HOSE,Vận tải biển
+268,PXI,Công ty Cổ phần Xây dựng Công nghiệp và Dân dụng Dầu khí,HOSE,Xây dựng công trình
+269,PXS,Công ty Cổ phần Kết cấu Kim loại và Lắp máy Dầu khí,HOSE,Xây dựng công trình
+270,QBS,Công ty Cổ phần Xuất nhập khẩu Quảng Bình,HOSE,Hóa chất đặc biệt
+271,QCG,Công ty Cổ phần Quốc Cường Gia Lai ,HOSE,Đầu tư và phát triển bất động sản
+272,RAL,Công ty Cổ phần Bóng đèn Phích nước Rạng Đông ,HOSE,Thiết bị điện
+273,RDP,Công ty cổ phần Rạng Đông Holding,HOSE,Bao bì & đóng gói
+274,REE,Công ty Cổ phần Cơ điện lạnh,HOSE,Dịch vụ tiện ích tổng hợp
+275,RIC,Công ty Cổ phần Quốc tế Hoàng Gia,HOSE,Sòng bạc
+276,ROS,Công ty cổ phần Xây dựng FLC Faros,HOSE,Xây dựng công trình
+277,S4A,Công ty Cổ phần Thủy điện Sê San 4A,HOSE,Điện tái tạo
+278,SAB,Tổng Công ty Cổ phần Bia - Rượu - Nước giải khát Sài Gòn,HOSE,Sản xuất bia
+279,SAM,Công ty Cổ phần SAM HOLDINGS,HOSE,Thiết bị viễn thông
+280,SAV,Công ty Cổ phần Hợp tác kinh tế và Xuất nhập khẩu SAVIMEX,HOSE,"Đồ đạc, nội thất"
+281,SBA,Công ty Cổ phần Sông Ba,HOSE,Điện
+282,SBT,Công ty Cổ phần Thành Thành Công - Biên Hòa,HOSE,Sản xuất thực phẩm
+283,SBV,Công ty Cổ phần Siam Brothers Việt Nam,HOSE,Vật liệu xây dựng
+284,SC5,Công ty Cổ phần Xây dựng số 5 ,HOSE,Xây dựng công trình
+285,SCD,Công ty Cổ phần Nước Giải khát Chương Dương (CDBECO),HOSE,Nước ngọt
+286,SCR,Công ty Cổ phần Địa ốc Sài Gòn Thương Tín,HOSE,Đầu tư và phát triển bất động sản
+287,SCS,Công ty Cổ phần Dịch vụ Hàng hóa Sài Gòn,HOSE,Dịch vụ vận tải
+288,SFC,Công ty Cổ phần Nhiên Liệu Sài Gòn ,HOSE,Cửa hàng chuyên dụng
+289,SFG,Công ty Cổ phần phân bón Miền Nam,HOSE,Hóa chất đặc biệt
+290,SFI,Công ty Cổ phần Đại lý Vận tải SAFI,HOSE,Vận tải biển
+291,SGN,Công ty cổ phần Phục vụ Mặt đất Sài Gòn,HOSE,Dịch vụ vận tải
+292,SGR,Công ty Cổ phần Tổng Công ty Cổ phần Địa Ốc Sài Gòn,HOSE,Đầu tư và phát triển bất động sản
+293,SGT,Công ty Cổ phần Công nghệ Viễn thông Sài Gòn,HOSE,Phần mềm
+294,SHA,Công ty Cổ phần Sơn Hà Sài Gòn,HOSE,Các sản phẩm gia dụng lâu bền
+295,SHB,Ngân hàng Thương mại Cổ phần Sài Gòn - Hà Nội ,HOSE,Ngân hàng
+296,SHI,Công ty Cổ phần Quốc tế Sơn Hà,HOSE,Các sản phẩm gia dụng lâu bền
+297,SHP,Công ty Cổ phần Thủy điện miền Nam ,HOSE,Điện
+298,SII,Công ty Cổ phần Hạ tầng Nước Sài Gòn,HOSE,Đầu tư và phát triển bất động sản
+299,SJD,Công ty Cổ phần Thủy Điện Cần Đơn,HOSE,Điện
+300,SJF,Công Ty Cổ phần Đầu tư Sao Thái Dương,HOSE,Nông sản và thủy hải sản
+301,SJS,Công ty Cổ phần Đầu tư Phát triển Đô thị và Khu công nghiệp Sông Đà,HOSE,Đầu tư và phát triển bất động sản
+302,SKG,Công ty Cổ phần Tàu cao tốc Superdong – Kiên Giang ,HOSE,Vận tải biển
+303,SMA,Công ty Cổ phần Thiết bị phụ tùng Sài Gòn,HOSE,Công nghiệp đa ngành
+304,SMB,Công ty Cổ phần Bia Sài Gòn - Miền Trung ,HOSE,Nước ngọt
+305,SMC,Công ty Cổ phần đầu tư thương mại SMC ,HOSE,Thép
+306,SPM,Công ty Cổ phần S.P.M ,HOSE,Dược phẩm
+307,SRC,Công ty Cổ phần Cao su Sao vàng,HOSE,Săm lốp
+308,SRF,Công ty cổ phần Searefico,HOSE,Máy công nghiệp
+309,SSB,Ngân hàng Thương mại Cổ phần Đông Nam Á,HOSE,Ngân hàng
+310,SSC,Công ty Cổ phần Giống cây trồng miền Nam ,HOSE,Nông sản và thủy hải sản
+311,SSI,Công ty Cổ phần chứng khoán SSI,HOSE,Dịch vụ đầu tư
+312,ST8,Công ty Cổ phần Siêu Thanh ,HOSE,Thiết bị điện tử văn phòng
+313,STB,Ngân hàng Thương mại Cổ phần Sài Gòn Thương Tín,HOSE,Ngân hàng
+314,STG,Công ty Cổ phần Kho vận miền Nam,HOSE,Dịch vụ vận tải
+315,STK,Công ty Cổ phần Sợi thế kỷ ,HOSE,Hóa chất cơ bản
+316,SVC,Công ty Cổ phần dịch vụ tổng hợp Sài Gòn ,HOSE,Cửa hàng chuyên dụng
+317,SVD,Công ty Cổ phần Đầu tư và Thương mại Vũ Đăng,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+318,SVI,Công ty Cổ phần Bao bì Biên Hòa,HOSE,Bao bì & đóng gói
+319,SVT,Công ty Cổ phần Công nghệ Sài Gòn Viễn Đông,HOSE,Hoạt động xuất bản
+320,SZC,Công ty cổ phần Sonadezi Châu Đức,HOSE,Xây dựng công trình
+321,SZL,Công ty Cổ phần Sonadezi Long Thành,HOSE,Đầu tư và phát triển bất động sản
+322,TAC,Công ty Cổ phần Dầu thực vật Tường An,HOSE,Sản xuất thực phẩm
+323,TBC,Công ty Cổ phần Thủy điện Thác Bà,HOSE,Điện
+324,TCB,Ngân hàng Thương mại Cổ phần Kỹ Thương Việt Nam - Techcombank,HOSE,Ngân hàng
+325,TCD,Công ty Cổ phần Đầu tư Phát triển Công nghiệp và Vận tải,HOSE,Xây dựng công trình
+326,TCH,Công ty Cổ phần Đầu tư Dịch vụ Tài chính Hoàng Huy,HOSE,Đầu tư và phát triển bất động sản
+327,TCL,Công ty Cổ phần Đại lý giao nhận Vận tải xếp dỡ Tân Cảng ,HOSE,Dịch vụ vận tải
+328,TCM,Công ty Cổ phần Dệt may - Đầu tư - Thương mại Thành Công ,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+329,TCO,Công ty Cổ phần Vận tải đa phương thức Duyên Hải ,HOSE,Vận tải biển
+330,TCR,Công ty Cổ phần Công Nghiệp Gốm sứ Taicera ,HOSE,Vật liệu xây dựng
+331,TCT,Công ty Cổ phần Cáp treo Núi Bà Tây Ninh ,HOSE,Dịch vụ vui chơi giải trí
+332,TDC,Công ty Cổ phần Kinh doanh và Phát triển Bình Dương,HOSE,Vật liệu xây dựng
+333,TDG,Công ty Cổ phần Đầu tư TDG GLOBAL,HOSE,Dầu khí tổng hợp
+334,TDH,Công ty Cổ phần Phát triển nhà Thủ Đức,HOSE,Đầu tư và phát triển bất động sản
+335,TDM,Công ty cổ phần Nước Thủ Dầu Một,HOSE,Nước
+336,TDP,Công ty cổ phần Thuận Đức ECO,HOSE,Hóa chất đặc biệt
+337,TDW,Công ty Cổ phần Cấp nước Thủ Đức,HOSE,Nước
+338,TEG,Công ty Cổ phần Năng lượng và Bất động sản Trường Thành,HOSE,Chế phẩm từ gỗ
+339,TGG,Công ty cổ phần Louis Capital,HOSE,Xây dựng công trình
+340,THG,Công ty Cổ phần Đầu tư và Xây dựng Tiền Giang ,HOSE,Vật liệu xây dựng
+341,THI,Công ty Cổ phần Thiết bị điện,HOSE,Thiết bị điện
+342,TIP,Công ty Cổ phần Phát triển Khu công nghiệp Tín Nghĩa,HOSE,Quỹ tín thác bất động sản đa dạng
+343,TIX,Công ty Cổ phần Sản xuất Kinh doanh Xuất nhập khẩu Dịch vụ và Đầu tư Tân Bình ,HOSE,Đầu tư và phát triển bất động sản
+344,TLD,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Đô thị Thăng Long,HOSE,Vật liệu xây dựng
+345,TLG,Công ty Cổ phần Tập đoàn Thiên Long,HOSE,Sản phẩm gia dụng không lâu bền
+346,TLH,Công ty Cổ phần Tập đoàn thép Tiến Lên,HOSE,Thép
+347,TMP,Công ty Cổ phần Thủy điện Thác Mơ,HOSE,Điện
+348,TMS,CÔNG TY CỔ PHẦN TRANSIMEX,HOSE,Dịch vụ vận tải
+349,TMT,Công ty Cổ phần Ô tô TMT ,HOSE,Ôtô
+350,TN1,CÔNG TY CỔ PHẦN THƯƠNG MẠI DỊCH VỤ TNS HOLDINGS,HOSE,Dịch vụ bất động sản
+351,TNA,Công ty Cổ phần Thương Mại Xuất Nhập Khẩu Thiên Nam,HOSE,Bán lẻ tổng hợp
+352,TNC,Công ty Cổ phần Cao su Thống Nhất,HOSE,Hóa chất cơ bản
+353,TNH,Công ty Cổ phần Bệnh viện Quốc tế Thái Nguyên,HOSE,Dịch vụ y tế
+354,TNI,Công ty Cổ phần Tập đoàn Thành Nam,HOSE,Kim loại màu
+355,TNT,Công ty cổ phần tập đoàn TNT,HOSE,Đầu tư và phát triển bất động sản
+356,TPB,Ngân hàng Thương mại cổ phần Tiên Phong,HOSE,Ngân hàng
+357,TPC,Công ty Cổ phần Nhựa Tân Đại Hưng,HOSE,Bao bì & đóng gói
+358,TRA,Công ty Cổ phần Traphaco ,HOSE,Dược phẩm
+359,TRC,Công ty Cổ phần Cao su Tây Ninh,HOSE,Hóa chất cơ bản
+360,TSC,Công ty Cổ phần Vật tư kỹ thuật nông nghiệp Cần Thơ,HOSE,Nông sản và thủy hải sản
+361,TTA,Công ty Cổ phần Đầu tư Xây dựng và Phát triển Trường Thành,HOSE,Điện
+362,TTB,Công ty Cổ phần Tập đoàn Tiến Bộ,HOSE,Vật liệu xây dựng
+363,TTE,Công ty cổ phần Đầu tư Năng lượng Trường Thịnh,HOSE,Điện
+364,TTF,Công ty Cổ phần Tập đoàn Kỹ nghệ gỗ Trường Thành ,HOSE,"Đồ đạc, nội thất"
+365,TV2,Công ty Cổ phần Tư vấn Xây dựng điện 2,HOSE,Dịch vụ hỗ trợ kinh doanh
+366,TVB,Công ty Cổ phần Chứng khoán Trí Việt,HOSE,Dịch vụ đầu tư
+367,TVS,Công ty Cổ phần Chứng Khoán Thiên Việt,HOSE,Dịch vụ đầu tư
+368,TVT,Tổng công ty Việt Thắng - CTCP,HOSE,"Đồ may mặc, trang sức, phụ kiện"
+369,TYA,Công ty Cổ phần Dây và Cáp điện Taya Việt Nam ,HOSE,Thiết bị viễn thông
+370,UDC,Công ty Cổ phần Xây dựng và Phát triển đô thị Bà Rịa - Vũng Tàu,HOSE,Xây dựng công trình
+371,UIC,Công ty Cổ phần Đầu tư phát triển Nhà và Đô thị IDICO ,HOSE,Xây dựng công trình
+372,VAF,Công ty Cổ phần Phân lân nung chảy Văn Điển,HOSE,Hóa chất đặc biệt
+373,VCA,Công ty Cổ phần Thép VICASA - VNSTEEL,HOSE,Thép
+374,VCB,Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam ,HOSE,Ngân hàng
+375,VCF,Công ty Cổ phần Vinacafé Biên Hòa,HOSE,Nước ngọt
+376,VCG,Tổng Công ty Cổ phần Xuất nhập khẩu và xây dựng Việt Nam ,HOSE,Xây dựng công trình
+377,VCI,Công ty Cổ phần Chứng khoán Bản Việt,HOSE,Dịch vụ đầu tư
+378,VDP,Công ty Cổ phần Dược phẩm Trung ương Vidipha,HOSE,Dược phẩm
+379,VDS,Công ty Cổ phần Chứng khoán Rồng Việt (VDSC),HOSE,Dịch vụ đầu tư
+380,VFG,Công ty Cổ phần Khử trùng Việt Nam ,HOSE,Hóa chất đặc biệt
+381,VGC,Tổng Công ty Viglacera - CTCP,HOSE,Vật liệu xây dựng
+382,VHC,Công ty Cổ phần Vĩnh Hoàn,HOSE,Nông sản và thủy hải sản
+383,VHM,Công ty cổ phần Vinhomes,HOSE,Đầu tư và phát triển bất động sản
+384,VIB,Ngân hàng Thương mại Cổ phần Quốc tế Việt Nam,HOSE,Ngân hàng
+385,VIC,Tập đoàn VINGROUP - CTCP,HOSE,Đầu tư và phát triển bất động sản
+386,VID,Công ty Cổ phần Đầu tư Phát triển Thương mại Viễn Đông,HOSE,Giấy
+387,VIP,Công ty Cổ phần Vận tải Xăng dầu VIPCO,HOSE,Vận tải biển
+388,VIS,Công ty Cổ phần Thép Việt Ý,HOSE,Thép
+389,VIX,CÔNG TY CỔ PHẦN CHỨNG KHOÁN VIX,HOSE,Dịch vụ đầu tư
+390,VJC,Công ty cổ phần Hàng không VIETJET,HOSE,Hàng không
+391,VMD,Công ty Cổ phần Y Dược phẩm Vimedimex ,HOSE,Bán lẻ dược phẩm
+392,VND,Công ty Cổ phần Chứng khoán VNDIRECT,HOSE,Dịch vụ đầu tư
+393,VNE,Tổng Công ty Cổ phần Xây dựng điện Việt Nam,HOSE,Xây dựng công trình
+394,VNG,Công ty Cổ phần Du lịch Thành Thành Công,HOSE,Khách sạn
+395,VNL,Công ty Cổ phần LOGISTICS VINALINK ,HOSE,Vận tải biển
+396,VNM,Công ty Cổ phần Sữa Việt Nam,HOSE,Sản xuất thực phẩm
+397,VNS,Công ty Cổ phần Ánh Dương Việt Nam ,HOSE,Du lịch
+398,VOS,Công ty Cổ phần Vận tải biển Việt Nam ,HOSE,Vận tải biển
+399,VPB,Ngân hàng Thương mại Cổ phần Việt Nam thịnh vượng,HOSE,Ngân hàng
+400,VPD,Công ty Cổ phần Phát triển Điện Lực Việt Nam,HOSE,Điện
+401,VPG,Công ty cổ phần Đầu tư Thương mại Xuất nhập khẩu Việt Phát,HOSE,Than đá
+402,VPH,Công ty Cổ phần Vạn Phát Hưng ,HOSE,Đầu tư và phát triển bất động sản
+403,VPI,Công ty Cổ phần Đầu tư Văn Phú - Invest,HOSE,Đầu tư và phát triển bất động sản
+404,VPS,Công ty Cổ phần thuốc sát trùng Việt Nam ,HOSE,Hóa chất đặc biệt
+405,VRC,Công ty cổ phần Bất động sản và Đầu tư VRC,HOSE,Đầu tư và phát triển bất động sản
+406,VRE,Công ty Cổ phần Vincom Retail,HOSE,Đầu tư và phát triển bất động sản
+407,VSC,Công ty Cổ phần Container Việt Nam ,HOSE,Dịch vụ vận tải
+408,VSH,Công ty Cổ phần Thủy điện Vĩnh Sơn – Sông Hinh,HOSE,Điện
+409,VSI,Công ty Cổ phần đầu tư và xây dựng cấp thoát nước,HOSE,Xây dựng công trình
+410,VTB,Công ty Cổ phần Viettronics Tân Bình,HOSE,Đồ điện tử
+411,VTO,Công ty Cổ phần Vận tải xăng dầu VITACO,HOSE,Vận tải biển
+412,YBM,Công ty cổ phần Khoáng sản công nghiệp Yên Bái,HOSE,Hóa chất đặc biệt
+413,YEG,Công ty cổ phần Tập đoàn Yeah1,HOSE,Các hãng truyền thông
