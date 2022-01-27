@@ -33,6 +33,7 @@ if __name__ == "__main__":
     Db = db.mongoDB()
     wsPrice = wsprice.websocketPrice(Db)
     wsThread = threading.Thread(target=wsPrice.run)
+    wsThread.setDaemon(True)
     wsThread.start()
     BOT = MyBot()
     BOT.add_cog(default.DefaultCommands(BOT))

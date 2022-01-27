@@ -12,18 +12,16 @@ import commands.constants as constants
 class Price(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-    
-    async def default_command(self, ctx, symbols):
-        print(ctx.interaction.channel_id)
+        read_config = configparser.ConfigParser()
+        path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
+        read_config.read(path)
+        self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
         
-        if ctx.interaction.channel_id in constants.ALLOW_CHANNEL:
-            self.__TIMEOUT = None
-        else:
-            read_config = configparser.ConfigParser()
-            path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
-            read_config.read(path)
-            self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
-            
+    @discord.slash_command(
+        name='price',
+        description='Kiểm tra giá cổ phiếu tại sàn Việt Nam.'
+    )
+    async def getStockPrice(self, ctx, *, symbols):
         # symbols = str(symbols)
         symbols_list = symbols.replace(' ','').split(",")
 
@@ -32,16 +30,7 @@ class Price(commands.Cog):
             symbols = [symbols_list]
         else:
             symbols = symbols_list
-        
-        return symbols
-    
-    @discord.slash_command(
-        name='price',
-        description='Kiểm tra giá cổ phiếu tại sàn Việt Nam.'
-    )
-    async def getStockPrice(self, ctx, *, symbols):
-        symbols = await self.default_command(ctx, symbols)
-        
+        # print(symbols)
         for symbol in symbols:
             await self.getEachStockPrice(ctx, symbol)
         
@@ -99,8 +88,15 @@ class Price(commands.Cog):
         description='Kiểm tra thông tin cơ bản của cổ phiếu tại sàn Việt Nam.'
     )
     async def getStockBrief(self, ctx, *, symbols):
-        symbols = await self.default_command(ctx, symbols)
+        # symbols = str(symbols)
+        symbols_list = symbols.replace(' ','').split(",")
 
+        # Check symbols contains list of stocks or not
+        if not isinstance(symbols_list, list):
+            symbols = [symbols_list]
+        else:
+            symbols = symbols_list
+        # print(symbols)
         for symbol in symbols:
             await self.getEachStockBrief(ctx, symbol)
 
@@ -130,8 +126,15 @@ class Price(commands.Cog):
         description='Xem biểu đồ giá của cổ phiếu tại sàn Việt Nam.'
     )
     async def getStockChart(self, ctx, *, symbols):
-        symbols = await self.default_command(ctx, symbols)
+        # symbols = str(symbols)
+        symbols_list = symbols.replace(' ','').split(",")
 
+        # Check symbols contains list of stocks or not
+        if not isinstance(symbols_list, list):
+            symbols = [symbols_list]
+        else:
+            symbols = symbols_list
+        # print(symbols)
         for symbol in symbols:
             await self.getEachChart(ctx, symbol)
 
@@ -153,27 +156,31 @@ class Price(commands.Cog):
         description='Xem tin tức mới nhất của cổ phiếu tại sàn Việt Nam.'
     )
     async def getStockNews(self, ctx, *, symbols):
-        symbols = await self.default_command(ctx, symbols)
-            
+        symbols_list = symbols.replace(' ','').split(",")
+
+        if not isinstance(symbols_list, list):
+            symbols = [symbols_list]
+        else:
+            symbols = symbols_list
+
         for symbol in symbols:
             await self.getEachNews(ctx, symbol.upper())
-            
+
     async def getEachNews(self, ctx, symbol, count = 5):
         data = fetch.fetchStockNews(symbol)
-        
+
         if (data != None):
             embed = discord.Embed()
             embed.set_author(name=f'05 tin mới nhất của {symbol}:')
-            
+
             idx = 0
             for i in range(count):
                 print(data[idx])
                 embed.add_field(name=f'{data[idx]["Title"]}', value=f'[Xem tại đây]({data[idx]["NewsUrl"]}) \n Cập nhật lúc: {utils.get_current_time(data[idx]["Date"])}', inline = False)
                 idx = idx + 1
-                
+
             await ctx.respond(f"Tin tức của doanh nghiệp: {symbol.upper()} đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
             await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
         else:
             mess = "Mã cổ phiếu không hợp lệ."
             await ctx.respond(mess, delete_after=self.__TIMEOUT)
-        

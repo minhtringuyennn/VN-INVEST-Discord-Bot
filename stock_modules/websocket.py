@@ -12,8 +12,9 @@ import database
 class websocketPrice():
     def __init__(self, db):
         # websocket.enableTrace(True)
-        signal.signal(signal.SIGINT, self.stop)
-        signal.signal(signal.SIGTERM, self.stop)
+        signal.signal(signal.SIGQUIT, self.stopthread)
+        signal.signal(signal.SIGINT, self.stopthread)
+        signal.signal(signal.SIGTERM, self.stopthread)
         self.db = db
         self.stocks_hose = []
         self.stocks_hnx = []
@@ -38,16 +39,19 @@ class websocketPrice():
                                 on_message=self.on_message,
                                 on_error=self.on_error,
                                 on_close=self.on_close)
+        self.ws.keep_running = True
 
     def run(self):
         self.stop = False
-        while self.stop:
+        while not(self.stop):
             self.ws.run_forever()
             logging.info("Reconnecting...")
             time.sleep(3)
             
-    def stop(self):
+    def stopthread(self):
+        print('Exiting')
         self.stop = True
+        self.ws.keep_running = False
         
     def subscribe(self):
         req_hose = {
@@ -86,15 +90,15 @@ class websocketPrice():
             obj = message.split("|")
             currentData = self.db.stockRead(obj[0])
             if (currentData is not None):
-                print(currentData)
+                del currentData['_id']
                 inputStock = stock.Stock()
                 inputStock.from_json(currentData)
                 inputStock.update_from_message(obj)
                 self.db.stockUpdate(inputStock.stockNo, inputStock, overwrite=True)
-                print(inputStock.__dict__)
             else:
                 inputStock = stock.Stock()
                 inputStock.update_from_message(obj)
                 self.db.stockUpdate(inputStock.stockNo, inputStock, overwrite=True)
+
                 
 

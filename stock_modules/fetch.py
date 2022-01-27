@@ -221,11 +221,10 @@ def fetchFianancialInfo(symbol):
 def fetchStockNews(symbol, count = 5):
     # API
     FIREANT_API = f'https://www.fireant.vn/api/Data/News/CompanyNews?symbol={symbol}&startIndex=0&count={count}'
-    
+
     # Get reponse from API
     res = requests.get(FIREANT_API, headers=HEADERS)
     try:
         return res.json()
     except:
         return None
-    
