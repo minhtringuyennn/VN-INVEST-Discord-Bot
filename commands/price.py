@@ -150,3 +150,38 @@ class Price(commands.Cog):
         await ctx.respond(f"Biểu đồ của {symbol} trong {len} ngày gần đây!", delete_after=self.__TIMEOUT)
         await ctx.send(file=discord.File(figure.img, filename=f'{symbol}.png'), delete_after=self.__TIMEOUT)
         figure.img.seek(0)
+        
+    @slash_command(
+        name='news',
+        description='Xem tin tức mới nhất của cổ phiếu tại sàn Việt Nam.'
+    )
+    async def getStockNews(self, ctx, *, symbols):
+        symbols_list = symbols.replace(' ','').split(",")
+        
+        if not isinstance(symbols_list, list):
+            symbols = [symbols_list]
+        else:
+            symbols = symbols_list
+            
+        for symbol in symbols:
+            await self.getEachNews(ctx, symbol.upper())
+            
+    async def getEachNews(self, ctx, symbol, count = 5):
+        data = fetch.fetchStockNews(symbol)
+        
+        if (data != None):
+            embed = discord.Embed()
+            embed.set_author(name=f'05 tin mới nhất của {symbol}:')
+            
+            idx = 0
+            for i in range(count):
+                print(data[idx])
+                embed.add_field(name=f'{data[idx]["Title"]}', value=f'[Xem tại đây]({data[idx]["NewsUrl"]}) \n Cập nhật lúc: {utils.get_current_time(data[idx]["Date"])}', inline = False)
+                idx = idx + 1
+                
+            await ctx.respond(f"Tin tức của doanh nghiệp: {symbol.upper()} đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
+            await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
+        else:
+            mess = "Mã cổ phiếu không hợp lệ."
+            await ctx.respond(mess, delete_after=self.__TIMEOUT)
+        
