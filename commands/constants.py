@@ -1,3 +1,7 @@
+# minhtringuyennn's server, bot-stock-coin channel
+
+ALLOW_CHANNEL = [935263262721863722, 935003215131455518]
+
 MESS_DOWN   = ["Cổ đỏ rồi đi nhụ thôi cho đỡ buồn", "#code# biết lỗi rồi ạ, em xin các anh lái, xin được sống ạ", "Mang tiền về cho mẹ, đừng mang #code# về cho mẹ"]
 
 MESS_UP     = ["Cổ xanh rồi, có tiền đi nhụ","Cổ #code# giá #price# là một món quà của thượng đế","#code# chấp lái, xin được chêttttt", "Alo alo #code# đang vít giá: #price#", "#code# ẻn ẻn", "#code# chạy chậm thôi, tao say xe"]

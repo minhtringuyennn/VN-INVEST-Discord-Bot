@@ -16,12 +16,15 @@ class Price(commands.Cog):
         path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
         read_config.read(path)
         self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
+    
+    async def default_command(self, ctx, symbols):
+        print(ctx.interaction.channel_id)
         
-    @discord.slash_command(
-        name='price',
-        description='Kiểm tra giá cổ phiếu tại sàn Việt Nam.'
-    )
-    async def getStockPrice(self, ctx, *, symbols):
+        if ctx.interaction.channel_id in constants.ALLOW_CHANNEL:
+            self.__TIMEOUT = None
+        else:
+            self.__TIMEOUT = constants.TIME_OUT
+            
         # symbols = str(symbols)
         symbols_list = symbols.replace(' ','').split(",")
 
@@ -30,7 +33,16 @@ class Price(commands.Cog):
             symbols = [symbols_list]
         else:
             symbols = symbols_list
-        # print(symbols)
+        
+        return symbols
+    
+    @discord.slash_command(
+        name='price',
+        description='Kiểm tra giá cổ phiếu tại sàn Việt Nam.'
+    )
+    async def getStockPrice(self, ctx, *, symbols):
+        symbols = await self.default_command(ctx, symbols)
+        
         for symbol in symbols:
             await self.getEachStockPrice(ctx, symbol)
         
@@ -88,15 +100,8 @@ class Price(commands.Cog):
         description='Kiểm tra thông tin cơ bản của cổ phiếu tại sàn Việt Nam.'
     )
     async def getStockBrief(self, ctx, *, symbols):
-        # symbols = str(symbols)
-        symbols_list = symbols.replace(' ','').split(",")
+        symbols = await self.default_command(ctx, symbols)
 
-        # Check symbols contains list of stocks or not
-        if not isinstance(symbols_list, list):
-            symbols = [symbols_list]
-        else:
-            symbols = symbols_list
-        # print(symbols)
         for symbol in symbols:
             await self.getEachStockBrief(ctx, symbol)
 
@@ -126,15 +131,8 @@ class Price(commands.Cog):
         description='Xem biểu đồ giá của cổ phiếu tại sàn Việt Nam.'
     )
     async def getStockChart(self, ctx, *, symbols):
-        # symbols = str(symbols)
-        symbols_list = symbols.replace(' ','').split(",")
+        symbols = await self.default_command(ctx, symbols)
 
-        # Check symbols contains list of stocks or not
-        if not isinstance(symbols_list, list):
-            symbols = [symbols_list]
-        else:
-            symbols = symbols_list
-        # print(symbols)
         for symbol in symbols:
             await self.getEachChart(ctx, symbol)
 
@@ -156,12 +154,7 @@ class Price(commands.Cog):
         description='Xem tin tức mới nhất của cổ phiếu tại sàn Việt Nam.'
     )
     async def getStockNews(self, ctx, *, symbols):
-        symbols_list = symbols.replace(' ','').split(",")
-        
-        if not isinstance(symbols_list, list):
-            symbols = [symbols_list]
-        else:
-            symbols = symbols_list
+        symbols = await self.default_command(ctx, symbols)
             
         for symbol in symbols:
             await self.getEachNews(ctx, symbol.upper())
