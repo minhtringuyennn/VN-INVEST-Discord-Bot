@@ -12,10 +12,6 @@ import commands.constants as constants
 class Price(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        read_config = configparser.ConfigParser()
-        path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
-        read_config.read(path)
-        self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
     
     async def default_command(self, ctx, symbols):
         print(ctx.interaction.channel_id)
@@ -23,7 +19,10 @@ class Price(commands.Cog):
         if ctx.interaction.channel_id in constants.ALLOW_CHANNEL:
             self.__TIMEOUT = None
         else:
-            self.__TIMEOUT = constants.TIME_OUT
+            read_config = configparser.ConfigParser()
+            path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
+            read_config.read(path)
+            self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
             
         # symbols = str(symbols)
         symbols_list = symbols.replace(' ','').split(",")
