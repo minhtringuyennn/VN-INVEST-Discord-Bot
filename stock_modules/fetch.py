@@ -10,7 +10,6 @@ import logging as logging
 
 import stock_modules.utils as utils
 
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 HEADERS = {'content-type': 'application/x-www-form-urlencoded', 'User-Agent': 'Mozilla'}
 
 # Struct

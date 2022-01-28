@@ -13,6 +13,8 @@ import stock_modules.database as db
 import threading
 import logging
 
+logging.basicConfig(filename='log.txt', format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+
 class MyBot(commands.Bot):
     def read_config(self):
         read_config = configparser.ConfigParser()
@@ -31,7 +33,6 @@ class MyBot(commands.Bot):
         super().run(self.__TOKEN, reconnect=True)
 
 if __name__ == "__main__":
-    logging.basicConfig(filename='log.txt',level=logging.INFO)
     Db = db.mongoDB()
     wsPrice = wsprice.websocketPrice(Db)
     wsThread = threading.Thread(target=wsPrice.run)
