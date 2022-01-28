@@ -11,6 +11,8 @@ import commands.price as price
 import stock_modules.websocket as wsprice
 import stock_modules.database as db
 import threading
+import logging
+logging.basicConfig(filename='log.txt',level=logging.INFO)
 
 class MyBot(commands.Bot):
     def read_config(self):

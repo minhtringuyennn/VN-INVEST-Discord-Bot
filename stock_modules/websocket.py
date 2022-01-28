@@ -6,7 +6,6 @@ import _thread
 import requests
 import time
 import signal
-import database
 
 
 class websocketPrice():
@@ -49,7 +48,7 @@ class websocketPrice():
             time.sleep(3)
             
     def stopthread(self):
-        print('Exiting')
+        logging.info('Exiting')
         self.stop = True
         self.ws.keep_running = False
         
@@ -88,7 +87,7 @@ class websocketPrice():
         if (message[0] == 'S' and message[1] == '#'):
             message = message[2:]
             obj = message.split("|")
-            currentData = self.db.stockRealtimeRead(obj[0],)
+            currentData = self.db.stockRealtimeRead(stockNo = obj[0])
             if (currentData is not None):
                 del currentData['_id']
                 inputStock = stock.Stock()

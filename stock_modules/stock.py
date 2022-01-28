@@ -8,15 +8,17 @@ def try_float(x):
         
 class Stock():
     def __init__(self):
+        # --- Index Stock Info ---
+        self.code = ''
+        self.stockNo = ''
         # --- Default Stock Info ---
         self.type = ''
         self.clientName = ''
         self.clientNameEn = ''
-        self.code = ''
         self.full_name = ''
         self.name = ''
         self.securityName = ''
-        self.stockNo = ''
+        self.exchange = ''
         # --- Realtime Stock Info ---
         self.bidPrc1 = 0
         self.bidVol1 = 0
@@ -30,10 +32,11 @@ class Stock():
         self.askVol2 = 0
         self.askPrc3 = 0
         self.askVol3 = 0
+        self.session = ''
+        # --- History Stock Info ---
         self.matchedPrc = 0
         self.matchedVol = 0
         self.highPrc = 0
-        self.exchange = ''
         self.lowPrc = 0
         self.avgPrc = 0
         self.foreginBought = 0
@@ -43,7 +46,6 @@ class Stock():
         self.totalVol = 0
         self.totalValue = 0
         self.refPrc = 0
-        self.session = 0
         self.foreginRoom = 0
     
     def load_default(self, obj):

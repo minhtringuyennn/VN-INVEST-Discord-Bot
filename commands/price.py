@@ -2,7 +2,7 @@ import discord, asyncio, requests, random, configparser, os
 from discord.ext import commands
 from discord.commands import slash_command, Option
 from PIL import Image, ImageDraw, ImageFont
-
+import logging
 import stock_modules.fetch as fetch
 import stock_modules.utils as utils
 import stock_modules.figure as figure
@@ -14,7 +14,7 @@ class Price(commands.Cog):
         self.bot = bot
     
     async def default_command(self, ctx, symbols):
-        print(ctx.interaction.channel_id)
+        # print(ctx.interaction.channel_id)
         
         if ctx.interaction.channel_id in constants.ALLOW_CHANNEL:
             self.__TIMEOUT = None
@@ -106,7 +106,7 @@ class Price(commands.Cog):
 
     async def getEachStockBrief(self, ctx, symbol):
         data = fetch.fetchFianancialInfo(symbol.upper())
-        # print(data)
+        # logging.info(data)
         if (data != None):
             embed = discord.Embed(title=f'Thông tin cơ bản của {symbol.upper()}')
             
@@ -181,7 +181,7 @@ class Price(commands.Cog):
             
             idx = 0
             for i in range(count):
-                print(data[idx])
+                logging.info(data[idx])
                 embed.add_field(name=f'{data[idx]["Title"]}', value=f'[Xem tại đây]({data[idx]["NewsUrl"]}) \n Cập nhật lúc: {utils.get_current_time(data[idx]["Date"])}', inline = False)
                 idx = idx + 1
                 
