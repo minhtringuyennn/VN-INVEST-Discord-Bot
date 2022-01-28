@@ -124,14 +124,14 @@ class Price(commands.Cog):
             embed.add_field(name='Vòng quay hàng tồn kho: ', value=f'{utils.format_value(data["InventoryTurnover"], basic=False)}', inline=True)
             embed.add_field(name='Vòng quay các khoản phải thu: ', value=f'{utils.format_value(data["ReceivablesTurnover"], basic=False)}', inline=True)
             
-            embed.add_field(name='Tỷ lệ lãi gộp: ', value=f'{utils.format_percent(float(data["GrossMargin"])*100)}', inline=True)
-            embed.add_field(name='Tỷ lệ lãi từ HĐKD: ', value=f'{utils.format_percent(float(data["OperatingMargin"])*100)}', inline=True)
-            embed.add_field(name='Tỷ lệ EBIT: ', value=f'{utils.format_percent(float(data["EBITMargin"])*100)}', inline=True)
-            embed.add_field(name='Tỷ lệ lãi ròng: ', value=f'{utils.format_percent(float(data["NetProfitMargin"])*100)}', inline=True)
+            embed.add_field(name='Tỷ lệ lãi gộp: ', value=f'{utils.format_percent(data["GrossMargin"], multiply = 100)}', inline=True)
+            embed.add_field(name='Tỷ lệ lãi từ HĐKD: ', value=f'{utils.format_percent(data["OperatingMargin"], multiply = 100)}', inline=True)
+            embed.add_field(name='Tỷ lệ EBIT: ', value=f'{utils.format_percent(data["EBITMargin"], multiply = 100)}', inline=True)
+            embed.add_field(name='Tỷ lệ lãi ròng: ', value=f'{utils.format_percent(data["NetProfitMargin"], multiply = 100)}', inline=True)
             
-            embed.add_field(name='ROA: ', value=f'{utils.format_percent(float(data["ROA"])*100)}', inline=True)
-            embed.add_field(name='ROE: ', value=f'{utils.format_percent(float(data["ROE"])*100)}', inline=True)
-            embed.add_field(name='ROIC: ', value=f'{utils.format_percent(float(data["ROIC"])*100)}', inline=True)
+            embed.add_field(name='ROA: ', value=f'{utils.format_percent(data["ROA"], multiply = 100)}', inline=True)
+            embed.add_field(name='ROE: ', value=f'{utils.format_percent(data["ROE"], multiply = 100)}', inline=True)
+            embed.add_field(name='ROIC: ', value=f'{utils.format_percent(data["ROIC"], multiply = 100)}', inline=True)
             
             await ctx.respond(f"Thông tin của doanh nghiệp: {symbol.upper()} đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
             await ctx.send(embed=embed, delete_after=self.__TIMEOUT)

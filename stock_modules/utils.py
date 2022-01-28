@@ -8,27 +8,40 @@ from dateutil import parser
 import pytz
 
 def format_value(val, basic = True):
+    try:
+        val = float(val)
+    except TypeError:
+        return "None"
+    
     if basic == True:
-        return "{:,.0f}".format(float(val))
+        return "{:,.0f}".format(val)
     else:
-        return "{:,.2f}".format(float(val))
-
-def format_percent(val):
-    val = float(val)
+        return "{:,.2f}".format(val)
+    
+def format_percent(val, multiply = 1.0):
+    try:
+        val = float(val) * multiply
+    except TypeError:
+        return "None"
+    
     if val > 0:
-        return "+{:,.2f}%".format(float(val))
+        return "+{:,.2f}%".format(val)
     if val == 0:
-        return "{:,.2f}%".format(float(val))
+        return "{:,.2f}%".format(val)
     if val < 0:
         val = -val
-        return "-{:,.2f}%".format(float(val))
-
+        return "-{:,.2f}%".format(val)
+    
+    
 def get_current_time(val):
-    time =  parser.isoparse(val)
-    time_zone = pytz.timezone('Asia/Ho_Chi_Minh')
-    time = time.astimezone(time_zone).strftime('%Y-%m-%d, %H:%M:%S')
-    return str(time)
-
+    try:
+        time =  parser.isoparse(val)
+        time_zone = pytz.timezone('Asia/Ho_Chi_Minh')
+        time = time.astimezone(time_zone).strftime('%Y-%m-%d, %H:%M:%S')
+        return str(time)
+    except:
+        return get_today_date()
+    
 def get_today_date():
     today = datetime.now()
     today = today.strftime('%Y-%m-%d')
