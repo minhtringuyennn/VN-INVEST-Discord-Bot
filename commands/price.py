@@ -108,16 +108,30 @@ class Price(commands.Cog):
         data = fetch.fetchFianancialInfo(symbol.upper())
         # print(data)
         if (data != None):
-            embed = discord.Embed()
-            embed.set_author(name=f'Chỉ số cơ bản của {symbol}:')
-            embed.add_field(name='EPS: ', value=f'{utils.format_value(data["DilutedEPS"], basic = False)}', inline=True)
+            embed = discord.Embed(title=f'Thông tin cơ bản của {symbol.upper()}')
+            
             embed.add_field(name='P/E: ', value=f'{utils.format_value(data["DilutedPE"], basic = False)}', inline=True)
             embed.add_field(name='P/B: ', value=f'{utils.format_value(data["PB"], basic = False)}', inline=True)
-            embed.add_field(name='ROA: ', value=f'{utils.format_percent(data["ROA"])}', inline=True)
-            embed.add_field(name='ROE: ', value=f'{utils.format_percent(data["ROE"])}', inline=True)
-            embed.add_field(name='ROIC: ', value=f'{data["ROIC"]}', inline=True)
-            embed.add_field(name='EBIT: ', value=f'{utils.format_value(data["EBIT"])}', inline=True)
-            embed.add_field(name='EBITDA: ', value=f'{utils.format_value(data["EBITDA"])}', inline=True)
+            embed.add_field(name='P/S: ', value=f'{utils.format_value(data["PS"], basic = False)}', inline=True)
+            embed.add_field(name='EPS: ', value=f'{utils.format_value(data["DilutedEPS"], basic = False)}', inline=True)
+            
+            embed.add_field(name='Thanh toán nhanh: ', value=f'{utils.format_value(data["QuickRatio"], basic=False)}', inline=True)
+            embed.add_field(name='Thanh toán hiện hành: ', value=f'{utils.format_value(data["ProfitGrowth_MRQ"], basic=False)}', inline=True)
+            embed.add_field(name='Tổng nợ / VCSH: ', value=f'{utils.format_value(data["TotalDebtOverEquity"], basic=False)}', inline=True)
+            embed.add_field(name='Tổng nợ / Tổng tài sản: ', value=f'{utils.format_value(data["TotalDebtOverAssets"], basic=False)}', inline=True)
+            
+            embed.add_field(name='Vòng quay tổng tài sản: ', value=f'{utils.format_value(data["TotalAssetsTurnover"], basic=False)}', inline=True)
+            embed.add_field(name='Vòng quay hàng tồn kho: ', value=f'{utils.format_value(data["InventoryTurnover"], basic=False)}', inline=True)
+            embed.add_field(name='Vòng quay các khoản phải thu: ', value=f'{utils.format_value(data["ReceivablesTurnover"], basic=False)}', inline=True)
+            
+            embed.add_field(name='Tỷ lệ lãi gộp: ', value=f'{utils.format_percent(float(data["GrossMargin"])*100)}', inline=True)
+            embed.add_field(name='Tỷ lệ lãi từ HĐKD: ', value=f'{utils.format_percent(float(data["OperatingMargin"])*100)}', inline=True)
+            embed.add_field(name='Tỷ lệ EBIT: ', value=f'{utils.format_percent(float(data["EBITMargin"])*100)}', inline=True)
+            embed.add_field(name='Tỷ lệ lãi ròng: ', value=f'{utils.format_percent(float(data["NetProfitMargin"])*100)}', inline=True)
+            
+            embed.add_field(name='ROA: ', value=f'{utils.format_percent(float(data["ROA"])*100)}', inline=True)
+            embed.add_field(name='ROE: ', value=f'{utils.format_percent(float(data["ROE"])*100)}', inline=True)
+            embed.add_field(name='ROIC: ', value=f'{utils.format_percent(float(data["ROIC"])*100)}', inline=True)
             
             await ctx.respond(f"Thông tin của doanh nghiệp: {symbol.upper()} đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
             await ctx.send(embed=embed, delete_after=self.__TIMEOUT)

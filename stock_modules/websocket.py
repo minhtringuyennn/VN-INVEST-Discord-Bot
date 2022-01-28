@@ -31,7 +31,7 @@ class websocketPrice():
                     self.stocks_upcom.append(stock_val['stockNo'])
                 stockobj = stock.Stock()
                 stockobj.load_default(stock_val)
-                self.db.stockUpdate(stockobj.stockNo, stockobj, overwrite=False)
+                self.db.stockRealtimeUpdate(stockobj, overwrite=False, stockNo = stockobj.stockNo)
                 #  đẩy vô database -> update
 
         self.ws = websocket.WebSocketApp("wss://pricestream-iboard.ssi.com.vn/realtime",
@@ -88,17 +88,17 @@ class websocketPrice():
         if (message[0] == 'S' and message[1] == '#'):
             message = message[2:]
             obj = message.split("|")
-            currentData = self.db.stockRead(obj[0])
+            currentData = self.db.stockRealtimeRead(obj[0],)
             if (currentData is not None):
                 del currentData['_id']
                 inputStock = stock.Stock()
                 inputStock.from_json(currentData)
                 inputStock.update_from_message(obj)
-                self.db.stockUpdate(inputStock.stockNo, inputStock, overwrite=True)
+                self.db.stockRealtimeUpdate(inputStock, overwrite=True, stockNo = inputStock.stockNo)
             else:
                 inputStock = stock.Stock()
                 inputStock.update_from_message(obj)
-                self.db.stockUpdate(inputStock.stockNo, inputStock, overwrite=True)
+                self.db.stockRealtimeUpdate(inputStock, overwrite=True, stockNo = inputStock.stockNo)
 
                 
 
