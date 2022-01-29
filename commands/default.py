@@ -4,6 +4,7 @@ from discord.ext import tasks
 from discord.ext import commands
 
 import stock_modules.fetch as fetch
+import stock_modules.utils as utils
 
 class DefaultCommands(commands.Cog):
     def __init__(self, bot):
@@ -53,12 +54,17 @@ class DefaultCommands(commands.Cog):
         asyncio.run_coroutine_threadsafe(self.set_activity(), loop)
                                 
     async def set_activity(self):
+        index_list = ["VNINDEX", "HNXINDEX", "UPINDEX", "VN30", "VN30F1M"]
+        index_pos = 0
+        
         while True:
-            get_vnindex = fetch.fetchVNINDEX()
-            print(get_vnindex)
+            index = index_list[index_pos]
+            get_index, change_perc = fetch.fetchINDEX(index)
             await self.bot.change_presence(
                 activity=discord.Activity(
-                    type=discord.ActivityType.watching, name=f"VNINDEX at {get_vnindex}"
+                    type=discord.ActivityType.watching, 
+                    name=f"{index_list[index_pos]} @ {get_index} | {change_perc}"
                     )
                 )
             await asyncio.sleep(self.TIME_OUT)
+            index_pos = (index_pos + 1) % len(index_list)

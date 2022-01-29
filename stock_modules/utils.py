@@ -18,20 +18,28 @@ def format_value(val, basic = True):
     else:
         return "{:,.2f}".format(val)
     
-def format_percent(val, multiply = 1.0):
+def format_percent(val, multiply = 1.0, basic = False):
     try:
         val = float(val) * multiply
     except TypeError:
         return "None"
     
-    if val > 0:
-        return "+{:,.2f}%".format(val)
-    if val == 0:
-        return "{:,.2f}%".format(val)
-    if val < 0:
-        val = -val
-        return "-{:,.2f}%".format(val)
-    
+    if basic == False:
+        if val > 0:
+            return "+{:,.2f}%".format(val)
+        if val == 0:
+            return "{:,.2f}%".format(val)
+        if val < 0:
+            val = -val
+            return "-{:,.2f}%".format(val)
+    elif basic == True:
+        if val > 0:
+            return "+{:,.0f}%".format(val)
+        if val == 0:
+            return "{:,.0f}%".format(val)
+        if val < 0:
+            val = -val
+            return "-{:,.0f}%".format(val)
     
 def get_current_time(val):
     try:

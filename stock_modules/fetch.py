@@ -219,7 +219,10 @@ def fetchFianancialInfo(symbol):
     
 def fetchStockNews(symbol, count = 5):
     # API
-    FIREANT_API = f'https://restv2.fireant.vn/posts?symbol={symbol}&type=1&offset=0&limit={count}'
+    if symbol == "ALL":
+        FIREANT_API = f'https://restv2.fireant.vn/posts?type=1&offset=0&limit={count}'
+    else:
+        FIREANT_API = f'https://restv2.fireant.vn/posts?symbol={symbol}&type=1&offset=0&limit={count}'
     
     read_config = configparser.ConfigParser()
     path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
@@ -234,12 +237,12 @@ def fetchStockNews(symbol, count = 5):
     except:
         return None
     
-def fetchVNINDEX():
+def fetchINDEX(symbol = "VNINDEX"):
     today_date = utils.get_today_date()
     last_year_date = utils.get_last_year_date()
     
     # API
-    FIREANT_API = f'https://restv2.fireant.vn/symbols/VNINDEX/historical-quotes?startDate={last_year_date}&endDate={today_date}'
+    FIREANT_API = f'https://restv2.fireant.vn/symbols/{symbol}/historical-quotes?startDate={last_year_date}&endDate={today_date}'
     
     read_config = configparser.ConfigParser()
     path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
@@ -250,6 +253,9 @@ def fetchVNINDEX():
     # Get reponse from API
     res = requests.get(FIREANT_API, headers=HEADERS)
     try:
-        return res.json()[0]["priceAverage"]
+        index = round(res.json()[0]["priceAverage"])
+        change_perc = (res.json()[0]["priceAverage"] - res.json()[0]["priceBasic"]) / res.json()[0]["priceBasic"] * 100
+        change_perc = utils.format_percent(change_perc)
+        return [ index, change_perc ]
     except:
-        return None
+        return [ None, None ]

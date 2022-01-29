@@ -1,4 +1,4 @@
-import discord, asyncio, requests, random, configparser, os
+import discord, asyncio, requests, random, configparser, os, re
 from discord.ext import commands
 from discord.commands import slash_command, Option
 from PIL import Image, ImageDraw, ImageFont
@@ -172,7 +172,7 @@ class Price(commands.Cog):
         name='news',
         description='Xem tin tức mới nhất của cổ phiếu tại sàn Việt Nam.'
     )
-    async def getStockNews(self, ctx, *, symbols):
+    async def getStockNews(self, ctx, *, symbols = "ALL"):
         symbols = await self.default_command(ctx, symbols)
             
         for symbol in symbols:
@@ -184,6 +184,9 @@ class Price(commands.Cog):
         print(data)
         
         if (data != None):
+            if symbol == "ALL":
+                symbol = "thị trường"
+                
             embed = discord.Embed()
             embed.set_author(name=f'05 tin mới nhất của {symbol}:')
             
@@ -191,21 +194,25 @@ class Price(commands.Cog):
             for i in range(count):
                 logging.info(data[idx])
                 
-                symbols_info = f"\n"
-                for get_tagged_symbol in data[idx]["taggedSymbols"]:
-                    if symbols_info != f"\n":
-                        symbols_info += "; "
+                symbols_info = ""
+                if len(data[idx]["taggedSymbols"]) != 0:
+                    symbols_info = f"\n"
+                    for get_tagged_symbol in data[idx]["taggedSymbols"]:
+                        if symbols_info != f"\n":
+                            symbols_info += "; "
                         
                     symbols_info += f"*{get_tagged_symbol['symbol']}: {utils.format_percent(get_tagged_symbol['percentChange'])}*"
                 
+                desc = re.sub("\n|\r", "", data[idx]["description"])
+                
                 DIVIDER = "------------------------------------------------------"
                 embed.add_field(name=f'{DIVIDER}\n{data[idx]["title"]}', 
-                                value=f'{data[idx]["description"]}\n[Xem tại đây](https://fireant.vn/dashboard/content/news/{data[idx]["postID"]})\n{symbols_info}\nCập nhật lúc: {utils.get_current_time(data[idx]["date"])}\n', 
+                                value=f'{desc}\n[Xem tại đây](https://fireant.vn/dashboard/content/news/{data[idx]["postID"]})\n{symbols_info}\nCập nhật lúc: {utils.get_current_time(data[idx]["date"])}\n', 
                                 inline = False)
                 
                 idx = idx + 1
                 
-            await ctx.respond(f"Tin tức của doanh nghiệp: {symbol.upper()} đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
+            await ctx.respond(f"Tin tức của **{symbol.upper()}** đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
             await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
         else:
             mess = "Mã cổ phiếu không hợp lệ."
