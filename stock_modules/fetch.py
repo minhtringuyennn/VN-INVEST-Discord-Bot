@@ -2,7 +2,7 @@
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-import re, time, requests
+import re, os, time, requests, configparser
 
 import numpy as np
 import pandas as pd
@@ -219,8 +219,14 @@ def fetchFianancialInfo(symbol):
     
 def fetchStockNews(symbol, count = 5):
     # API
-    FIREANT_API = f'https://www.fireant.vn/api/Data/News/CompanyNews?symbol={symbol}&startIndex=0&count={count}'
-
+    FIREANT_API = f'https://restv2.fireant.vn/posts?symbol={symbol}&type=1&offset=0&limit={count}'
+    
+    read_config = configparser.ConfigParser()
+    path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
+    read_config.read(path)
+    FIREANT_BEARER_KEY = read_config.get("config", "FIREANT_BEARER_KEY")
+    HEADERS.update({'Authorization': f'Bearer {FIREANT_BEARER_KEY}'})
+    
     # Get reponse from API
     res = requests.get(FIREANT_API, headers=HEADERS)
     try:

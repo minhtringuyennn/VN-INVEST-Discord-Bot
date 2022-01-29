@@ -57,19 +57,25 @@ class Price(commands.Cog):
             changeRate = round(changeRate, 2)
             
             # Currently for HOSE market only
-            if changeRate >= 6.9:
+            if float(data['PriceCurrent']) >= float(data['PriceCeiling']) * (1.0 - constants.VARIANCE):
+                print(float(data['PriceCeiling']) * (1.0 - constants.VARIANCE))
                 mess = random.choice(constants.MESS_CE)
                 embed = discord.Embed(color=constants.COLOR_CE)
-            elif changeRate <= -6.9:
+            
+            elif float(data['PriceCurrent']) <= float(data['PriceFloor']) * (1.0 + constants.VARIANCE):
+                print(float(data['PriceFloor']) * (1.0 - constants.VARIANCE))
                 mess = random.choice(constants.MESS_FL)
                 embed = discord.Embed(color=constants.COLOR_FL)
-            elif changeRate > 0.0:
+            
+            elif float(data['PriceCurrent']) > float(data['PriceBasic']):
                 mess = random.choice(constants.MESS_UP)
                 embed = discord.Embed(color=constants.COLOR_UP)
-            elif changeRate < 0.0:
+            
+            elif float(data['PriceCurrent']) < float(data['PriceBasic']):
                 mess = random.choice(constants.MESS_DOWN)
                 embed = discord.Embed(color=constants.COLOR_DOWN)
-            elif changeRate == 0.0:
+            
+            elif float(data['PriceCurrent']) == float(data['PriceBasic']):
                 mess = random.choice(constants.MESS_TC)
                 embed = discord.Embed(color=constants.COLOR_TC)
                 
@@ -175,6 +181,8 @@ class Price(commands.Cog):
     async def getEachNews(self, ctx, symbol, count = 5):
         data = fetch.fetchStockNews(symbol)
         
+        print(data)
+        
         if (data != None):
             embed = discord.Embed()
             embed.set_author(name=f'05 tin mới nhất của {symbol}:')
@@ -182,7 +190,19 @@ class Price(commands.Cog):
             idx = 0
             for i in range(count):
                 logging.info(data[idx])
-                embed.add_field(name=f'{data[idx]["Title"]}', value=f'[Xem tại đây]({data[idx]["NewsUrl"]}) \n Cập nhật lúc: {utils.get_current_time(data[idx]["Date"])}', inline = False)
+                
+                symbols_info = f"\n"
+                for get_tagged_symbol in data[idx]["taggedSymbols"]:
+                    if symbols_info != f"\n":
+                        symbols_info += "; "
+                        
+                    symbols_info += f"*{get_tagged_symbol['symbol']}: {utils.format_percent(get_tagged_symbol['percentChange'])}*"
+                
+                DIVIDER = "------------------------------------------------------"
+                embed.add_field(name=f'{DIVIDER}\n{data[idx]["title"]}', 
+                                value=f'{data[idx]["description"]}\n[Xem tại đây](https://fireant.vn/dashboard/content/news/{data[idx]["postID"]})\n{symbols_info}\nCập nhật lúc: {utils.get_current_time(data[idx]["date"])}\n', 
+                                inline = False)
+                
                 idx = idx + 1
                 
             await ctx.respond(f"Tin tức của doanh nghiệp: {symbol.upper()} đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
