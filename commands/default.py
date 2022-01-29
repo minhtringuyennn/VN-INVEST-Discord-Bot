@@ -1,7 +1,9 @@
-import os, discord, configparser, time, asyncio
+import os, discord, configparser, time, asyncio, threading
 from datetime import datetime
 from discord.ext import tasks
 from discord.ext import commands
+
+import stock_modules.fetch as fetch
 
 class DefaultCommands(commands.Cog):
     def __init__(self, bot):
@@ -10,6 +12,7 @@ class DefaultCommands(commands.Cog):
         path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
         read_config.read(path)
         self.LogID = read_config.get("config", "LOG_CHANNEL")
+        self.TIME_OUT = int(read_config.get("config", "TIME_OUT"))
     
     @commands.Cog.listener()
     async def on_command(self, ctx):
@@ -20,7 +23,10 @@ class DefaultCommands(commands.Cog):
     async def on_ready(self):
         print('Stock Bot is now ready!')
         print('Logged in as ---->', self.bot.user)
-        print('ID:', self.bot.user.id)  
+        print('ID:', self.bot.user.id)
+        activityThread = threading.Thread(target=self.call_set_activity())
+        activityThread.setDaemon(True)
+        activityThread.start()
 
     @commands.Cog.listener()
     async def on_command_error(self, ctx, error):
@@ -41,3 +47,18 @@ class DefaultCommands(commands.Cog):
                         inline=True)
         
         await ctx.send(embed=embed)
+    
+    def call_set_activity(self):
+        loop = asyncio.get_event_loop()
+        asyncio.run_coroutine_threadsafe(self.set_activity(), loop)
+                                
+    async def set_activity(self):
+        while True:
+            get_vnindex = fetch.fetchVNINDEX()
+            print(get_vnindex)
+            await self.bot.change_presence(
+                activity=discord.Activity(
+                    type=discord.ActivityType.watching, name=f"VNINDEX at {get_vnindex}"
+                    )
+                )
+            await asyncio.sleep(self.TIME_OUT)

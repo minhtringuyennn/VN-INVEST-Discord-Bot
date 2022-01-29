@@ -233,3 +233,23 @@ def fetchStockNews(symbol, count = 5):
         return res.json()
     except:
         return None
+    
+def fetchVNINDEX():
+    today_date = utils.get_today_date()
+    last_year_date = utils.get_last_year_date()
+    
+    # API
+    FIREANT_API = f'https://restv2.fireant.vn/symbols/VNINDEX/historical-quotes?startDate={last_year_date}&endDate={today_date}'
+    
+    read_config = configparser.ConfigParser()
+    path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
+    read_config.read(path)
+    FIREANT_BEARER_KEY = read_config.get("config", "FIREANT_BEARER_KEY")
+    HEADERS.update({'Authorization': f'Bearer {FIREANT_BEARER_KEY}'})
+    
+    # Get reponse from API
+    res = requests.get(FIREANT_API, headers=HEADERS)
+    try:
+        return res.json()[0]["priceAverage"]
+    except:
+        return None
