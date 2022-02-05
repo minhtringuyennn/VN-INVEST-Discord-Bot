@@ -14,8 +14,6 @@ class Price(commands.Cog):
         self.bot = bot
     
     async def default_command(self, ctx, symbols):
-        # print(ctx.interaction.channel_id)
-        
         if ctx.interaction.channel_id in constants.ALLOW_CHANNEL:
             self.__TIMEOUT = None
         else:
@@ -24,7 +22,6 @@ class Price(commands.Cog):
             read_config.read(path)
             self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
             
-        # symbols = str(symbols)
         symbols_list = symbols.replace(' ','').split(",")
 
         # Check symbols contains list of stocks or not
@@ -143,28 +140,51 @@ class Price(commands.Cog):
             await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
         else:
             mess = "Mã cổ phiếu không hợp lệ."
-            await ctx.respond(mess, delete_after=self.__TIMEOUT)
-            
+            await ctx.respond(mess, delete_after=self.__TIMEOUT)    
+    
+    async def interval_searcher(ctx: discord.AutocompleteContext):
+        return [interval for interval in constants.INTERVAL]        
+    
     @slash_command(
         name='chart',
         description='Xem biểu đồ giá của cổ phiếu tại sàn Việt Nam.'
     )
-    async def getStockChart(self, ctx, *, symbols):
+    async def getStockChart(self, 
+        ctx, 
+        symbols: Option(str, "Nhập mã cổ phiếu"), 
+        interval: Option(
+            str,
+            "Chọn các khoảng thời gian sau",
+            autocomplete=discord.utils.basic_autocomplete(interval_searcher),
+            default=constants.INTERVAL[0]),
+        draw_ma: Option(bool, "Vẽ MA", default=True),
+        draw_bb: Option(bool, "Vẽ BB", default=True),
+        draw_vol: Option(bool, "Vẽ Volume", default=True),
+        draw_rsi: Option(bool, "Vẽ RSI", default=True),
+        draw_macd: Option(bool, "Vẽ MACD", default=True)
+        ):
         symbols = await self.default_command(ctx, symbols)
 
         for symbol in symbols:
-            await self.getEachChart(ctx, symbol)
+            await self.getEachChart(ctx, symbol, interval, draw_ma, draw_bb, draw_vol, draw_rsi, draw_macd)
 
-    async def getEachChart(self, ctx, symbol):
-        len = 30
-        symbol = symbol.strip().upper()
-        start_date = utils.get_last_year_date()
+    async def getEachChart(self, ctx, symbol, interval, draw_ma, draw_bb, draw_vol, draw_rsi, draw_macd):
+        start_date = utils.get_last_year_date(delta=365*3)
         end_date = utils.get_today_date()
+        len = 30
+        
         loader = fetch.DataLoader(symbol, start_date, end_date)
         data = loader.fetchPrice()
-        figure.drawFigure(data ,symbol, length=len)
+        
+        if interval == constants.INTERVAL[1]:
+            data = utils.convertDailyToWeek(data)
+        
+        label = f"Biểu đồ của {symbol} trong {len} {interval.lower()} gần đây!"
+        figure.drawFigure(data ,symbol, length=len, label=label,
+                          drawMA=draw_ma, drawBB=draw_bb, drawVol=draw_vol, drawRSI=draw_rsi, drawMACD=draw_macd)
+        
         figure.img.seek(0)
-        await ctx.respond(f"Biểu đồ của {symbol} trong {len} ngày gần đây!", delete_after=self.__TIMEOUT)
+        await ctx.respond(f"{label}", delete_after=self.__TIMEOUT)
         await ctx.send(file=discord.File(figure.img, filename=f'{symbol}.png'), delete_after=self.__TIMEOUT)
         figure.img.seek(0)
         
@@ -172,48 +192,61 @@ class Price(commands.Cog):
         name='news',
         description='Xem tin tức mới nhất của cổ phiếu tại sàn Việt Nam.'
     )
-    async def getStockNews(self, ctx, *, symbols = "ALL"):
+    async def getStockNews(self, 
+        ctx, 
+        symbols: Option(str, "Nhập mã cổ phiếu", default="Tất cả"), 
+        count: Option(
+            int,
+            "Số lượng bài báo",
+            min_value=1, max_value=15, default=5),
+        ):
         symbols = await self.default_command(ctx, symbols)
             
         for symbol in symbols:
-            await self.getEachNews(ctx, symbol.upper())
+            if symbol == "Tấtcả":
+                symbol = "ALL"
+            
+            count = max(count, 1)
+            count = min(count, 15)
+            
+            await self.getEachNews(ctx, symbol.upper(), count=count)
             
     async def getEachNews(self, ctx, symbol, count = 5):
-        data = fetch.fetchStockNews(symbol)
-        
+        print(f"Fetching news for {symbol}, {count} news")
+        data = fetch.fetchStockNews(symbol, count=count)
         print(data)
         
-        if (data != None):
-            if symbol == "ALL":
-                symbol = "thị trường"
-                
+        if (data != None):                
             embed = discord.Embed()
-            embed.set_author(name=f'05 tin mới nhất của {symbol}:')
+            embed.set_author(name=f'{count} tin mới nhất của {symbol}:')
             
             idx = 0
-            for i in range(count):
-                logging.info(data[idx])
-                
-                symbols_info = ""
-                if len(data[idx]["taggedSymbols"]) != 0:
-                    symbols_info = f"\n"
-                    for get_tagged_symbol in data[idx]["taggedSymbols"]:
-                        if symbols_info != f"\n":
-                            symbols_info += "; "
-                        
-                    symbols_info += f"*{get_tagged_symbol['symbol']}: {utils.format_percent(get_tagged_symbol['percentChange'])}*"
-                
-                desc = re.sub("\n|\r", "", data[idx]["description"])
-                
-                DIVIDER = "------------------------------------------------------"
-                embed.add_field(name=f'{DIVIDER}\n{data[idx]["title"]}', 
-                                value=f'{desc}\n[Xem tại đây](https://fireant.vn/dashboard/content/news/{data[idx]["postID"]})\n{symbols_info}\nCập nhật lúc: {utils.get_current_time(data[idx]["date"])}\n', 
-                                inline = False)
-                
-                idx = idx + 1
-                
-            await ctx.respond(f"Tin tức của **{symbol.upper()}** đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
-            await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
+            try:
+                for i in range(count):
+                    logging.info(data[idx])
+                    
+                    symbols_info = ""
+                    if len(data[idx]["taggedSymbols"]) != 0:
+                        symbols_info = f"\n"
+                        for get_tagged_symbol in data[idx]["taggedSymbols"]:
+                            if symbols_info != f"\n":
+                                symbols_info += "; "
+                            
+                        symbols_info += f"*{get_tagged_symbol['symbol']}: {utils.format_percent(get_tagged_symbol['percentChange'])}*"
+                    
+                    desc = re.sub("\n|\r", "", data[idx]["description"])
+                    
+                    DIVIDER = "------------------------------------------------------"
+                    embed.add_field(name=f'{DIVIDER}\n{data[idx]["title"]}', 
+                                    value=f'{desc}\n[Xem tại đây](https://fireant.vn/home/content/news/{data[idx]["postID"]})\n{symbols_info}\nCập nhật lúc: {utils.get_current_time(data[idx]["date"])}\n', 
+                                    inline = False)
+                    
+                    idx = idx + 1
+                    
+                await ctx.respond(f"Tin tức của **{symbol.upper()}** đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
+                await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
+            except:
+                await ctx.respond(f"Không tìm thấy tin tức của **{symbol.upper()}**", delete_after=self.__TIMEOUT)
         else:
             mess = "Mã cổ phiếu không hợp lệ."
             await ctx.respond(mess, delete_after=self.__TIMEOUT)

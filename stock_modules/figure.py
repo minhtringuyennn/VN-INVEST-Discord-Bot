@@ -15,7 +15,7 @@ import stock_modules.indicate as indicate
 
 img = io.BytesIO()
 
-def drawFigure(data, Symbol, length, drawMA=True, drawBB=True, drawVol=True, drawRSI=True, drawMACD=True):
+def drawFigure(data, Symbol, length, label, drawMA=True, drawBB=True, drawVol=True, drawRSI=True, drawMACD=True):
 
     length = max(14, length)
 
@@ -87,11 +87,11 @@ def drawFigure(data, Symbol, length, drawMA=True, drawBB=True, drawVol=True, dra
 
     # Calculate Bollinger band
     if drawBB == True:        
-        ax_canddle.plot(range(data.index.size), data.BBUp, label="Bollinger up", color="tab:orange", alpha=0.7)
-        ax_canddle.plot(range(data.index.size), data.BBDown, label="Bollinger down", color="tab:orange", alpha=0.7)
+        ax_canddle.plot(range(data.index.size), data.BBUp, label="Dải Bollinger trên", color="tab:orange", alpha=0.7)
+        ax_canddle.plot(range(data.index.size), data.BBDown, label="Dải Bollinger dưới", color="tab:orange", alpha=0.7)
         ax_canddle.fill_between(range(data.index.size), data.BBUp, data.BBDown, facecolor='orange', alpha=0.1)
 
-    ax_canddle.set_ylabel(f"{Symbol} chart last {length} days")
+    ax_canddle.set_ylabel(f"{label}")
     ax_canddle.legend()
 
     # Draw volume
@@ -108,20 +108,20 @@ def drawFigure(data, Symbol, length, drawMA=True, drawBB=True, drawVol=True, dra
         # Set to Millions Bit Units
         ax_vol.axes.get_xaxis().set_visible(False)
         ax_vol.yaxis.tick_right()
-        ax_vol.set_ylabel("Millon")
-        ax_vol.set_xlabel("Date")
+        ax_vol.set_ylabel("Triệu")
+        ax_vol.set_xlabel("Ngày")
         
     # Compute RSI
     if drawRSI == True:
-        idx += 1        
+        idx += 1
         ax_rsi = fig.add_axes((LEFT, (SUBPLOT - idx) * (SIZE + PADDING), WIDTH, SIZE))
         ax_rsi.locator_params(nbins=30, axis='x')
         ax_rsi.locator_params(nbins=10, axis='y')
         ax_rsi.yaxis.tick_right()
         
         # Draw RSI
-        ax_rsi.plot(range(data.index.size), [70] * len(data.index), label="Overbuy")
-        ax_rsi.plot(range(data.index.size), [30] * len(data.index), label="Oversell")
+        ax_rsi.plot(range(data.index.size), [70] * len(data.index), label="Quá bán")
+        ax_rsi.plot(range(data.index.size), [30] * len(data.index), label="Quá mua")
         ax_rsi.plot(range(data.index.size), data.rsi, label="RSI")
         ax_rsi.axes.get_xaxis().set_visible(False)
         ax_rsi.set_ylabel("%")

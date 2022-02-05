@@ -23,3 +23,10 @@ COLOR_CE    = 0x8205FF
 COLOR_TC    = 0xf1c40f
 
 VARIANCE = 0.01
+
+INTERVAL = [
+        "Ngày",
+        "Tuần",
+        # "Tháng",
+        # "Năm"
+    ]    

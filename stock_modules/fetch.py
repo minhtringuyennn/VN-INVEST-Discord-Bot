@@ -26,16 +26,18 @@ class DataLoader():
         self.start = start
         self.end = end
         self.minimal = minimal
-
+        self.data = None
+        
     def fetchPrice(self):
         loader = FetchDailyPrice(self.symbols, self.start, self.end)
         stock_data = loader.batch_download()
 
+        self.data = stock_data
         if self.minimal:
-            minimal_data = stock_data[['date', 'high','low','open','close', 'volume']]
-            return minimal_data
+            self.data = stock_data[['date', 'high','low','open','close', 'volume']]
+            return self.data
         else:
-            return stock_data
+            return self.data
 
 # Fetch daily stock price from API
 class FetchDailyPrice(Stocks):
@@ -90,8 +92,6 @@ class FetchDailyPrice(Stocks):
                         'volume_match', 'value_match', 'volume_reconcile', 'value_reconcile',
                         'open', 'high', 'low']
 
-        # Clean up data
-        # stock_data = stock_data.set_index('date').apply(pd.to_numeric, errors='coerce')
         stock_data = stock_data.sort_index(ascending=False) # Sort table
         stock_data.fillna(0, inplace=True) # Fill NaN --> 0
         
@@ -217,7 +217,7 @@ def fetchFianancialInfo(symbol):
     except:
         return None
     
-def fetchStockNews(symbol, count = 5):
+def fetchStockNews(symbol, count=5):
     # API
     if symbol == "ALL":
         FIREANT_API = f'https://restv2.fireant.vn/posts?type=1&offset=0&limit={count}'

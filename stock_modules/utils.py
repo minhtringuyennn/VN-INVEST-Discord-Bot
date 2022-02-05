@@ -5,7 +5,30 @@ import pandas as pd
 from datetime import datetime 
 from datetime import timedelta
 from dateutil import parser
-import pytz
+
+import stock_modules.fetch as fetch
+
+def convertDailyToWeek(data):
+    try:
+        data['Datetime'] = pd.to_datetime(data['date'])
+        data = data.set_index(pd.DatetimeIndex(data['Datetime']))
+        
+        agg_dict = {'open': 'first',
+                    'high': 'max',
+                    'low': 'min',
+                    'close': 'last',
+                    'volume': 'sum'}
+
+        dfw = data.resample('W').agg(agg_dict)
+        dfw.index = dfw.index - pd.tseries.frequencies.to_offset("6D")
+        
+        df = dfw[['high','low','open','close', 'volume']].copy()
+        df.columns = ['high','low','open','close', 'volume']
+        df['date'] = dfw.index.strftime('%Y-%m-%d')
+        df.reset_index(drop=True, inplace=True)
+        return df
+    except:
+        return data
 
 def format_value(val, basic = True):
     try:
@@ -56,9 +79,9 @@ def get_today_date():
     return today
 
 # Return last year date
-def get_last_year_date():
+def get_last_year_date(delta = 365):
     today = datetime.now()
-    last_year = today - timedelta(days=365)
+    last_year = today - timedelta(days=delta)
     last_year = last_year.strftime('%Y-%m-%d')
     return last_year
 
