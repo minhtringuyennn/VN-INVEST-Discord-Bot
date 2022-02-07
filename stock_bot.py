@@ -13,7 +13,7 @@ import stock_modules.database as db
 import threading
 import logging
 
-logging.basicConfig(filename='log.txt', format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+logging.basicConfig(filename='./log.txt', format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
 class MyBot(commands.Bot):
     def read_config(self):

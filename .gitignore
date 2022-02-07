@@ -5,6 +5,7 @@ config/config.ini
 __pycache__/
 *.py[cod]
 
+*.sh
 
 # C extensions
 *.so

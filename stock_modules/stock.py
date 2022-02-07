@@ -86,7 +86,7 @@ class Stock():
         self.diffPer = try_float(obj[53]) if obj[53] != '' else self.diffPer
         self.totalVol = try_float(obj[54])/1000 if obj[54] != '' else self.totalVol
         self.totalValue = try_float(obj[55])/1000 if obj[55] != '' else self.totalValue
-        self.refPrc = obj[61] if obj[61] != '' else self.refPrc
+        self.refPrc = try_float(obj[61])/1000 if obj[61] != '' else self.refPrc
         self.session = obj[63] if obj[63] != '' else self.session
         self.foreginRoom = try_float(obj[66]) if obj[66] != '' else self.foreginRoom
 

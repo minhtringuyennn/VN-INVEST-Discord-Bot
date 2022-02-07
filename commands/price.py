@@ -29,6 +29,9 @@ class Price(commands.Cog):
             symbols = [symbols_list]
         else:
             symbols = symbols_list
+            
+        for symbol in symbols:
+            symbol = symbol.upper()
         
         return symbols
     
