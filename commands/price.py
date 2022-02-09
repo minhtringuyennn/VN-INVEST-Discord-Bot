@@ -1,12 +1,16 @@
 import discord, asyncio, requests, random, configparser, os, re
 from discord.ext import commands
+from discord.ui import Button, View
 from discord.commands import slash_command, Option
+
 from PIL import Image, ImageDraw, ImageFont
 import logging
+
 import stock_modules.fetch as fetch
 import stock_modules.utils as utils
 import stock_modules.figure as figure
 import stock_modules.indicate as indicate
+
 import commands.constants as constants
 
 class Price(commands.Cog):
@@ -169,7 +173,7 @@ class Price(commands.Cog):
         symbols = await self.default_command(ctx, symbols)
 
         for symbol in symbols:
-            await self.getEachChart(ctx, symbol, interval, draw_ma, draw_bb, draw_vol, draw_rsi, draw_macd)
+            await self.getEachChart(ctx, symbol.upper(), interval, draw_ma, draw_bb, draw_vol, draw_rsi, draw_macd)
 
     async def getEachChart(self, ctx, symbol, interval, draw_ma, draw_bb, draw_vol, draw_rsi, draw_macd):
         start_date = utils.get_last_year_date(delta=365*3)
@@ -202,6 +206,10 @@ class Price(commands.Cog):
             int,
             "Số lượng bài báo",
             min_value=1, max_value=15, default=5),
+        comment: Option(
+            bool,
+            "Lấy bình luận",
+            default=False),
         ):
         symbols = await self.default_command(ctx, symbols)
             
@@ -212,45 +220,97 @@ class Price(commands.Cog):
             count = max(count, 1)
             count = min(count, 15)
             
-            await self.getEachNews(ctx, symbol.upper(), count=count)
+            await self.getEachNews(ctx, symbol.upper(), get_to=count, comment=comment)
             
-    async def getEachNews(self, ctx, symbol, count = 5):
-        print(f"Fetching news for {symbol}, {count} news")
-        data = fetch.fetchStockNews(symbol, count=count)
-        print(data)
-        
-        if (data != None):                
-            embed = discord.Embed()
-            embed.set_author(name=f'{count} tin mới nhất của {symbol}:')
-            
-            idx = 0
-            try:
-                for i in range(count):
-                    logging.info(data[idx])
-                    
-                    symbols_info = ""
-                    if len(data[idx]["taggedSymbols"]) != 0:
-                        symbols_info = f"\n"
-                        for get_tagged_symbol in data[idx]["taggedSymbols"]:
-                            if symbols_info != f"\n":
-                                symbols_info += "; "
+    async def getEachNews(self, ctx, symbol, comment=False, get_from=0, get_to=5):
+        async def get_embed(ctx=ctx, symbol=symbol, comment=comment, get_from=get_from, get_to=get_to):
+            count = get_to - get_from
+            data = fetch.fetchStockNews(symbol, offset = get_from, count=count, getComment=comment)
+            print(f"Fetching news for {symbol}, {count} news, {'with' if comment else 'without'} comment")
+            # print(data)
+                
+            if (data != None):                    
+                embed = discord.Embed()
+                embed.set_author(name=f'{count} {"bình luận" if comment else "tin tức"} mới nhất của {f"{symbol}" if symbol != "ALL" else "THỊ TRƯỜNG"}:')
+                
+                try:
+                    idx = 0
+                    for i in range(count):                        
+                        symbols_info = ""
+                        if len(data[idx]["taggedSymbols"]) != 0:
+                            print(data[idx]["taggedSymbols"])
+                            symbols_info = f"\n"
+                            for get_tagged_symbol in data[idx]["taggedSymbols"]:
+                                if symbols_info != f"\n": symbols_info += "; "
+                                symbols_info = symbols_info + f"*{get_tagged_symbol['symbol']}: {utils.format_percent(get_tagged_symbol['percentChange'])}*"
+                        
+                        print(symbols_info)
+                        print("-------------------------------------------------------")
                             
-                        symbols_info += f"*{get_tagged_symbol['symbol']}: {utils.format_percent(get_tagged_symbol['percentChange'])}*"
-                    
-                    desc = re.sub("\n|\r", "", data[idx]["description"])
-                    
-                    DIVIDER = "------------------------------------------------------"
-                    embed.add_field(name=f'{DIVIDER}\n{data[idx]["title"]}', 
-                                    value=f'{desc}\n[Xem tại đây](https://fireant.vn/home/content/news/{data[idx]["postID"]})\n{symbols_info}\nCập nhật lúc: {utils.get_current_time(data[idx]["date"])}\n', 
-                                    inline = False)
-                    
-                    idx = idx + 1
-                    
-                await ctx.respond(f"Tin tức của **{symbol.upper()}** đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)
-                await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
-            except:
-                await ctx.respond(f"Không tìm thấy tin tức của **{symbol.upper()}**", delete_after=self.__TIMEOUT)
-        else:
-            mess = "Mã cổ phiếu không hợp lệ."
-            await ctx.respond(mess, delete_after=self.__TIMEOUT)
+                        if not comment:
+                            title = data[idx]["title"]
+                            content = re.sub("\n|\r", "", data[idx]["description"])
+                        else:
+                            title = data[idx]["user"]["name"]
+                            content = data[idx]["originalContent"]
+                        
+                        DIVIDER = "------------------------------------------------------"
+                        URL = "https://fireant.vn/home/content/news/"
+                        
+                        embed.add_field(name=f'{DIVIDER}\n{title}', 
+                                        value=f'{content}\n[Xem tại đây]({URL}{data[idx]["postID"]})\n{symbols_info}\nCập nhật lúc: {utils.get_current_time(data[idx]["date"])}\n', 
+                                        inline = False)
+                        idx = idx + 1
+                    return embed
+                except:
+                    await ctx.respond(f"Không tìm thấy tin tức của ** {f'{symbol}' if symbol != 'ALL' else 'THỊ TRƯỜNG'}**", delete_after=self.__TIMEOUT)
+                    return None
+            else:
+                mess = "Mã cổ phiếu không hợp lệ."
+                await ctx.respond(mess, delete_after=self.__TIMEOUT)
+                return None
         
+        await ctx.respond(f"{'Bình luận' if comment else 'Tin tức'} của ** {f'{symbol}' if symbol != 'ALL' else 'THỊ TRƯỜNG'}** đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)                    
+                
+        buttonPrev = Button(label="Trước đó", style=discord.ButtonStyle.primary)
+        buttonNext = Button(label="Tiếp theo", style=discord.ButtonStyle.primary)
+        count = get_to - get_from
+        
+        # if get_from < count:
+        #     buttonPrev.disabled = True
+        # else:
+        #     buttonPrev.disabled = False
+            
+        async def on_prev_click(interaction):
+            nonlocal get_from
+            nonlocal get_to
+
+            if get_from >= get_to - get_from:
+                get_from = get_from - count
+                get_to = get_to - count
+                
+                print("back")
+                embed = await get_embed(ctx, symbol, comment, get_from, get_to)
+                if embed != None:
+                    await interaction.response.edit_message(embed=embed)
+                
+        async def on_next_click(interaction):
+            nonlocal get_from
+            nonlocal  get_to
+            get_from = get_from + count
+            get_to = get_to + count
+            print("next")
+            embed = await get_embed(ctx, symbol, comment, get_from, get_to)
+            if embed != None:
+                await interaction.response.edit_message(embed=embed)
+            
+        buttonPrev.callback = on_prev_click
+        buttonNext.callback = on_next_click
+        
+        view = View()
+        view.add_item(buttonPrev)
+        view.add_item(buttonNext)
+        
+        embed = await get_embed(ctx, symbol, comment, get_from, get_to)
+        if embed != None:
+            await ctx.send(embed=embed, delete_after=self.__TIMEOUT, view=view)    

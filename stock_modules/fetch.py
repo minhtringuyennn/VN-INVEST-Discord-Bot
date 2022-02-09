@@ -217,12 +217,19 @@ def fetchFianancialInfo(symbol):
     except:
         return None
     
-def fetchStockNews(symbol, count=5):
+def fetchStockNews(symbol, offset = 0, count=5, getComment=False):
+    offset = max(offset, 0)
+    
+    LIMIT = count
+    
+    if getComment: type = 0
+    else: type = 1
+    
     # API
     if symbol == "ALL":
-        FIREANT_API = f'https://restv2.fireant.vn/posts?type=1&offset=0&limit={count}'
+        FIREANT_API = f'https://restv2.fireant.vn/posts?type={type}&offset={offset}&limit={LIMIT}'
     else:
-        FIREANT_API = f'https://restv2.fireant.vn/posts?symbol={symbol}&type=1&offset=0&limit={count}'
+        FIREANT_API = f'https://restv2.fireant.vn/posts?symbol={symbol}&type={type}&offset={offset}&limit={LIMIT}'
     
     read_config = configparser.ConfigParser()
     path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")

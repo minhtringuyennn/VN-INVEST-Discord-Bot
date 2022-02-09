@@ -120,8 +120,8 @@ def drawFigure(data, Symbol, length, label, drawMA=True, drawBB=True, drawVol=Tr
         ax_rsi.yaxis.tick_right()
         
         # Draw RSI
-        ax_rsi.plot(range(data.index.size), [70] * len(data.index), label="Quá bán")
-        ax_rsi.plot(range(data.index.size), [30] * len(data.index), label="Quá mua")
+        ax_rsi.plot(range(data.index.size), [70] * len(data.index), label="Quá mua")
+        ax_rsi.plot(range(data.index.size), [30] * len(data.index), label="Quá bán")
         ax_rsi.plot(range(data.index.size), data.rsi, label="RSI")
         ax_rsi.axes.get_xaxis().set_visible(False)
         ax_rsi.set_ylabel("%")
