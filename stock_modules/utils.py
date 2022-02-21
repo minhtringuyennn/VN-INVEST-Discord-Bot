@@ -26,7 +26,7 @@ def convertDailyToWeek(data):
         df.columns = ['high','low','open','close', 'volume']
         df['date'] = dfw.index.strftime('%Y-%m-%d')
         df.reset_index(drop=True, inplace=True)
-        return df
+        return df.dropna()
     except:
         return data
 

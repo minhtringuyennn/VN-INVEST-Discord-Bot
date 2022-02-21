@@ -10,7 +10,7 @@ MESS_FL     = ["Em ơi!!! #code# sàn! Chị vừa mới mua hôm qua", "Bạn c
 
 MESS_CE     = ["Đã may áo vest dự Đại hội cổ đông chưa?", "Úi giời tím lịm nè anh trai!", "Cổ #code# CE, uy tính như HKCT!!!", "CE! Ngon ngọt như kẹo kẹo Nougat nhà HighKage"]
 
-MESS_TC     = ["Cổ phiếu phòng thủ", "Xin hoàng tử hãy tha thứ cho người em gái bị dính lời nguyền","Đắp chăn đi ngủ đi bạn ơi lo gì","Alo alo #code# dậy gáy đi, sao không gáy nữa"]
+MESS_TC     = ["Ông hoàng đứng tấn", "Cổ phiếu phòng thủ", "Xin hoàng tử hãy tha thứ cho người em gái bị dính lời nguyền","Đắp chăn đi ngủ đi bạn ơi lo gì","Alo alo #code# dậy gáy đi, sao không gáy nữa"]
 
 COLOR_DOWN  = 0xFE4720
 
@@ -22,7 +22,9 @@ COLOR_CE    = 0x8205FF
 
 COLOR_TC    = 0xf1c40f
 
-VARIANCE = 0.01
+VARIANCE = 0.009
+
+CHARACTER_LIMIT = 500
 
 INTERVAL = [
         "Ngày",

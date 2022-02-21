@@ -52,6 +52,13 @@ class Price(commands.Cog):
     async def getEachStockPrice(self, ctx, symbol):
         data = fetch.fetchCurrentPrice(symbol.upper())
 
+        start_date = utils.get_last_year_date(delta=30)
+        end_date = utils.get_today_date()
+        loader = fetch.DataLoader(symbol, start_date, end_date)
+        history_data = loader.fetchPrice()
+        history_data = history_data[-11:-1]
+        KLTB_GD = history_data.volume.mean()
+        
         if (data != None):
             mess = ""
             
@@ -96,8 +103,9 @@ class Price(commands.Cog):
             embed.add_field(name='KLGD: ', value=f'{utils.format_value(data["TotalVolume"])}', inline=True)
             
             embed.add_field(name='KLKN Mua: ', value=f'{utils.format_value(data["BuyForeignQuantity"])}', inline=True)
-            embed.add_field(name='KLKN Bán: ', value=f'{utils.format_value(data["SellForeignQuantity"])}', inline=True)        
-        
+            embed.add_field(name='KLKN Bán: ', value=f'{utils.format_value(data["SellForeignQuantity"])}', inline=True)   
+            embed.add_field(name='KLGDTB 10 phiên: ', value=f'{utils.format_value(KLTB_GD)}', inline=True)
+            
             await ctx.respond(mess, delete_after=self.__TIMEOUT)
             await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
         else:
@@ -186,7 +194,7 @@ class Price(commands.Cog):
         if interval == constants.INTERVAL[1]:
             data = utils.convertDailyToWeek(data)
         
-        label = f"Biểu đồ của {symbol} trong {len} {interval.lower()} gần đây!"
+        label = f"Biểu đồ của {symbol} trong {len} {interval.lower()} giao dịch gần đây!"
         figure.drawFigure(data ,symbol, length=len, label=label,
                           drawMA=draw_ma, drawBB=draw_bb, drawVol=draw_vol, drawRSI=draw_rsi, drawMACD=draw_macd)
         
@@ -201,11 +209,11 @@ class Price(commands.Cog):
     )
     async def getStockNews(self, 
         ctx, 
-        symbols: Option(str, "Nhập mã cổ phiếu", default="Tất cả"), 
+        symbols: Option(str, "Nhập mã cổ phiếu", default="ALL"), 
         count: Option(
             int,
             "Số lượng bài báo",
-            min_value=1, max_value=15, default=5),
+            min_value=1, max_value=5, default=3),
         comment: Option(
             bool,
             "Lấy bình luận",
@@ -214,24 +222,23 @@ class Price(commands.Cog):
         symbols = await self.default_command(ctx, symbols)
             
         for symbol in symbols:
-            if symbol == "Tấtcả":
-                symbol = "ALL"
-            
             count = max(count, 1)
-            count = min(count, 15)
+            count = min(count, 5)
             
             await self.getEachNews(ctx, symbol.upper(), get_to=count, comment=comment)
             
     async def getEachNews(self, ctx, symbol, comment=False, get_from=0, get_to=5):
+        def trim_message(message = ""):
+            return message[:constants.CHARACTER_LIMIT] + "...\n" if len(message) > constants.CHARACTER_LIMIT else message
+        
         async def get_embed(ctx=ctx, symbol=symbol, comment=comment, get_from=get_from, get_to=get_to):
             count = get_to - get_from
             data = fetch.fetchStockNews(symbol, offset = get_from, count=count, getComment=comment)
             print(f"Fetching news for {symbol}, {count} news, {'with' if comment else 'without'} comment")
-            # print(data)
                 
             if (data != None):                    
                 embed = discord.Embed()
-                embed.set_author(name=f'{count} {"bình luận" if comment else "tin tức"} mới nhất của {f"{symbol}" if symbol != "ALL" else "THỊ TRƯỜNG"}:')
+                embed.set_author(name=f'{count} {"bình luận" if comment else "tin tức"} của {f"{symbol}" if symbol != "ALL" else "THỊ TRƯỜNG"}. Trang {int(get_to/count)}:')
                 
                 try:
                     idx = 0
@@ -245,14 +252,19 @@ class Price(commands.Cog):
                                 symbols_info = symbols_info + f"*{get_tagged_symbol['symbol']}: {utils.format_percent(get_tagged_symbol['percentChange'])}*"
                         
                         print(symbols_info)
-                        print("-------------------------------------------------------")
                             
                         if not comment:
                             title = data[idx]["title"]
                             content = re.sub("\n|\r", "", data[idx]["description"])
+                            content = trim_message(content)
+                            print(content)
                         else:
                             title = data[idx]["user"]["name"]
                             content = data[idx]["originalContent"]
+                            content = trim_message(content)
+                            print(content)
+
+                        print("-------------------------------------------------------")
                         
                         DIVIDER = "------------------------------------------------------"
                         URL = "https://fireant.vn/home/content/news/"
@@ -270,21 +282,29 @@ class Price(commands.Cog):
                 await ctx.respond(mess, delete_after=self.__TIMEOUT)
                 return None
         
-        await ctx.respond(f"{'Bình luận' if comment else 'Tin tức'} của ** {f'{symbol}' if symbol != 'ALL' else 'THỊ TRƯỜNG'}** đến ngày {utils.get_today_date()}", delete_after=self.__TIMEOUT)                    
-                
+        await ctx.respond(f"Các {'bình luận' if comment else 'tin tức'} của **{f'{symbol}' if symbol != 'ALL' else 'THỊ TRƯỜNG'}**:", delete_after=self.__TIMEOUT)
+        
         buttonPrev = Button(label="Trước đó", style=discord.ButtonStyle.primary)
         buttonNext = Button(label="Tiếp theo", style=discord.ButtonStyle.primary)
+        buttonDelete = Button(label="Xóa", style=discord.ButtonStyle.danger)
+        
         count = get_to - get_from
         
         # if get_from < count:
         #     buttonPrev.disabled = True
         # else:
         #     buttonPrev.disabled = False
-            
+
+        async def interaction_check(interaction):
+            if interaction.user != ctx.author:
+                await interaction.response.send_message("Bạn không thể thực hiện lệnh này.", ephemeral=True)
+                return False
+            return True
+        
         async def on_prev_click(interaction):
+            if interaction_check(interaction) == False: return
             nonlocal get_from
             nonlocal get_to
-
             if get_from >= get_to - get_from:
                 get_from = get_from - count
                 get_to = get_to - count
@@ -292,9 +312,10 @@ class Price(commands.Cog):
                 print("back")
                 embed = await get_embed(ctx, symbol, comment, get_from, get_to)
                 if embed != None:
-                    await interaction.response.edit_message(embed=embed)
+                    await interaction.response.edit_message(embed=embed)    
                 
         async def on_next_click(interaction):
+            if interaction_check(interaction) == False: return
             nonlocal get_from
             nonlocal  get_to
             get_from = get_from + count
@@ -303,14 +324,27 @@ class Price(commands.Cog):
             embed = await get_embed(ctx, symbol, comment, get_from, get_to)
             if embed != None:
                 await interaction.response.edit_message(embed=embed)
+                
+        async def on_delete_click(interaction):
+            if interaction_check(interaction) == False: return
+            await interaction.response.edit_message(delete_after=0)
+        
+        view = View(timeout=3)
             
         buttonPrev.callback = on_prev_click
         buttonNext.callback = on_next_click
+        buttonDelete.callback = on_delete_click
         
-        view = View()
         view.add_item(buttonPrev)
         view.add_item(buttonNext)
+        view.add_item(buttonDelete)
+        
+        async def on_timeout():
+            # view.clear_items()
+            await ctx.respond(f"Đã hết thời gian chờ {3}s của lệnh /news", ephemeral=True)
+            
+        view.on_timeout = on_timeout
         
         embed = await get_embed(ctx, symbol, comment, get_from, get_to)
         if embed != None:
-            await ctx.send(embed=embed, delete_after=self.__TIMEOUT, view=view)    
+            await ctx.send(embed=embed, view=view)    
