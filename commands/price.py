@@ -329,7 +329,7 @@ class Price(commands.Cog):
             if interaction_check(interaction) == False: return
             await interaction.response.edit_message(delete_after=0)
         
-        view = View(timeout=3)
+        view = View(timeout=300)
             
         buttonPrev.callback = on_prev_click
         buttonNext.callback = on_next_click
@@ -341,7 +341,7 @@ class Price(commands.Cog):
         
         async def on_timeout():
             # view.clear_items()
-            await ctx.respond(f"Đã hết thời gian chờ {3}s của lệnh /news", ephemeral=True)
+            await ctx.respond(f"Đã hết thời gian chờ {300}s của lệnh /news", ephemeral=True)
             
         view.on_timeout = on_timeout
         
