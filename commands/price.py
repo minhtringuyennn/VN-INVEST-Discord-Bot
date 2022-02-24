@@ -56,8 +56,9 @@ class Price(commands.Cog):
         end_date = utils.get_today_date()
         loader = fetch.DataLoader(symbol, start_date, end_date)
         history_data = loader.fetchPrice()
-        history_data = history_data[-11:-1]
+        history_data = history_data[-16:-1]
         KLTB_GD = history_data.volume.mean()
+        KLTB_RATE = int(data["TotalVolume"]) / KLTB_GD * 100
         
         if (data != None):
             mess = ""
@@ -104,7 +105,7 @@ class Price(commands.Cog):
             
             embed.add_field(name='KLKN Mua: ', value=f'{utils.format_value(data["BuyForeignQuantity"])}', inline=True)
             embed.add_field(name='KLKN Bán: ', value=f'{utils.format_value(data["SellForeignQuantity"])}', inline=True)   
-            embed.add_field(name='KLGDTB 10 phiên: ', value=f'{utils.format_value(KLTB_GD)}', inline=True)
+            embed.add_field(name='% với KLTB 15 phiên: ', value=f'{utils.format_percent(KLTB_RATE)}', inline=True)
             
             await ctx.respond(mess, delete_after=self.__TIMEOUT)
             await ctx.send(embed=embed, delete_after=self.__TIMEOUT)

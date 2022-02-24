@@ -1,6 +1,6 @@
 # minhtringuyennn's server, bot-stock-coin channel
 
-ALLOW_CHANNEL = [935263262721863722, 935003215131455518]
+ALLOW_CHANNEL = [935263262721863722, 935003215131455518, 945183686159110144]
 
 MESS_DOWN   = ["Cổ đỏ rồi đi nhụ thôi cho đỡ buồn", "#code# biết lỗi rồi ạ, em xin các anh lái, xin được sống ạ", "Mang tiền về cho mẹ, đừng mang #code# về cho mẹ"]
 
