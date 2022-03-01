@@ -44,7 +44,7 @@ class DefaultCommands(commands.Cog):
         )
         embed.set_author(name='Thông tin nhanh:')
         embed.add_field(name='Về bot',
-                        value='Thuộc team dev SH Investing. Sử dụng slash command để thực hiện các lệnh của bot.\n\n',
+                        value='Sử dụng slash command để thực hiện các lệnh của bot.\n\n',
                         inline=True)
         
         await ctx.send(embed=embed)

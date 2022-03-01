@@ -266,3 +266,10 @@ def fetchINDEX(symbol = "VNINDEX"):
         return [ index, change_perc ]
     except:
         return [ None, None ]
+    
+def fetchINDEXInfluences():
+    VNDIRECT_API = 'https://mkw-socket.vndirect.com.vn/mkwsocket/leaderlarger?index=VNINDEX'
+    
+    res = requests.get(VNDIRECT_API, headers=HEADERS)
+    
+    return res.json()["data"]

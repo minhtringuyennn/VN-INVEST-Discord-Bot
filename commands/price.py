@@ -16,6 +16,10 @@ import commands.constants as constants
 class Price(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        read_config = configparser.ConfigParser()
+        path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
+        read_config.read(path)
+        self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
     
     async def default_command(self, ctx, symbols):
         if ctx.interaction.channel_id in constants.ALLOW_CHANNEL:
@@ -68,7 +72,6 @@ class Price(commands.Cog):
             changeRate = (float(changePrice) / float(data['PriceBasic'])) * 100.0
             changeRate = round(changeRate, 2)
             
-            # Currently for HOSE market only
             if float(data['PriceCurrent']) >= float(data['PriceCeiling']) * (1.0 - constants.VARIANCE):
                 print(float(data['PriceCeiling']) * (1.0 - constants.VARIANCE))
                 mess = random.choice(constants.MESS_CE)
@@ -80,11 +83,17 @@ class Price(commands.Cog):
                 embed = discord.Embed(color=constants.COLOR_FL)
             
             elif float(data['PriceCurrent']) > float(data['PriceBasic']):
-                mess = random.choice(constants.MESS_UP)
+                if float(data['PriceCurrent']) > float(data['PriceBasic']) * (1.0 + constants.VARIANCE):
+                    mess = random.choice(constants.MESS_UP)
+                else:
+                    mess = random.choice(constants.MESS_TC_UP)
                 embed = discord.Embed(color=constants.COLOR_UP)
             
             elif float(data['PriceCurrent']) < float(data['PriceBasic']):
-                mess = random.choice(constants.MESS_DOWN)
+                if float(data['PriceCurrent']) < float(data['PriceBasic']) * (1.0 - constants.VARIANCE):
+                    mess = random.choice(constants.MESS_DOWN)
+                else:
+                    mess = random.choice(constants.MESS_TC_DOWN)
                 embed = discord.Embed(color=constants.COLOR_DOWN)
             
             elif float(data['PriceCurrent']) == float(data['PriceBasic']):
@@ -330,7 +339,8 @@ class Price(commands.Cog):
             if interaction_check(interaction) == False: return
             await interaction.response.edit_message(delete_after=0)
         
-        view = View(timeout=300)
+        time_out = 300
+        view = View(timeout=time_out)
             
         buttonPrev.callback = on_prev_click
         buttonNext.callback = on_next_click
@@ -342,10 +352,89 @@ class Price(commands.Cog):
         
         async def on_timeout():
             # view.clear_items()
-            await ctx.respond(f"Đã hết thời gian chờ {300}s của lệnh /news", ephemeral=True)
+            await ctx.respond(f"Đã hết thời gian chờ {time_out}s của lệnh /news", ephemeral=True)
             
         view.on_timeout = on_timeout
         
         embed = await get_embed(ctx, symbol, comment, get_from, get_to)
         if embed != None:
-            await ctx.send(embed=embed, view=view)    
+            await ctx.send(embed=embed, view=view)
+    
+    async def index_searcher(ctx: discord.AutocompleteContext):
+        return [index for index in constants.INDEX]
+    
+    @slash_command(
+        name='influences',
+        description='Xem các cổ phiếu ảnh hưởng đến chỉ số VN-INDEX.'
+    )
+    async def getStockInfluence(
+        self, 
+        ctx, 
+        index: Option(
+            str,
+            "Chọn các khoảng thời gian sau",
+            autocomplete=discord.utils.basic_autocomplete(index_searcher),                            
+            default=constants.INTERVAL[0]),
+        ):
+        
+        get_index, change_perc = fetch.fetchINDEX(index)
+        
+        await ctx.respond(f"VN-INDEX @ **{get_index}**, thay đổi **{change_perc}**%.", delete_after=self.__TIMEOUT)
+        
+        listInfluence = fetch.fetchINDEXInfluences()
+        listInfluence.sort(key=lambda s: s["point"], reverse=True)
+        print(listInfluence[0:5], listInfluence[-6:-1])
+        
+        embed = discord.Embed()
+        embed.set_author(name=f'Các cổ phiếu ảnh hưởng đến VN-INDEX')
+        
+        listUp   = listInfluence[0:5]
+        listDown = listInfluence[-6:-1]
+        
+        symbolUp = ""
+        pointUp  = ""
+        priceUp  = ""
+        
+        for stock in listUp:
+            symbolUp += f"**{stock['symbol']}**\n"
+            pointUp  += f"+{utils.format_value(stock['point'], basic=False)}\n"
+            priceUp  += f"{utils.format_value(stock['price'])}\n"
+        
+        symbolDown = ""
+        pointDown  = ""
+        priceDown  = ""
+        
+        for stock in listDown:
+            symbolDown += f"**{stock['symbol']}**\n"
+            pointDown  += f"{utils.format_value(stock['point'], basic=False)}\n"
+            priceDown  += f"{utils.format_value(stock['price'])}\n"
+        
+        embed.add_field(name=f'Chiều tăng điểm', 
+                        value=f'{symbolUp}', 
+                        inline = True)
+        embed.add_field(name=f'Điểm thay đổi', 
+                        value=f'{pointUp}', 
+                        inline = True)
+        embed.add_field(name=f'Giá cổ phiếu', 
+                        value=f'{priceUp}', 
+                        inline = True)
+        
+        embed.add_field(name=f'Chiều giảm điểm', 
+                        value=f'{symbolDown}', 
+                        inline = True)
+        embed.add_field(name=f'Điểm thay đổi', 
+                        value=f'{pointDown}', 
+                        inline = True)
+        embed.add_field(name=f'Giá cổ phiếu', 
+                        value=f'{priceDown}', 
+                        inline = True)
+        
+        if int(change_perc) > 0:
+            embed = discord.Embed(color=constants.COLOR_UP)
+        elif int(change_perc) < 0:
+            embed = discord.Embed(color=constants.COLOR_DOWN)
+        else:
+            embed = discord.Embed(color=constants.COLOR_TC)
+            
+        await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
+        
