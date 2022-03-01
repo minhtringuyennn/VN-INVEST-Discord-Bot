@@ -59,7 +59,7 @@ class DefaultCommands(commands.Cog):
         
         while True:
             index = index_list[index_pos]
-            get_index, change_perc = fetch.fetchINDEX(index)
+            get_index, change_perc, change_score = fetch.fetchINDEX(index)
             await self.bot.change_presence(
                 activity=discord.Activity(
                     type=discord.ActivityType.watching, 

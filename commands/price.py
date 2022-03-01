@@ -16,12 +16,8 @@ import commands.constants as constants
 class Price(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        read_config = configparser.ConfigParser()
-        path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
-        read_config.read(path)
-        self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
     
-    async def default_command(self, ctx, symbols):
+    def update_timeout(self, ctx):
         if ctx.interaction.channel_id in constants.ALLOW_CHANNEL:
             self.__TIMEOUT = None
         else:
@@ -29,6 +25,9 @@ class Price(commands.Cog):
             path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
             read_config.read(path)
             self.__TIMEOUT = int(read_config.get("config", "TIME_OUT"))
+            
+    async def default_command(self, ctx, symbols):
+        self.update_timeout(ctx)
             
         symbols_list = symbols.replace(' ','').split(",")
 
@@ -374,19 +373,32 @@ class Price(commands.Cog):
             str,
             "Chọn các khoảng thời gian sau",
             autocomplete=discord.utils.basic_autocomplete(index_searcher),                            
-            default=constants.INTERVAL[0]),
+            default=constants.INDEX[0]),
         ):
         
-        get_index, change_perc = fetch.fetchINDEX(index)
+        self.update_timeout(ctx)
         
-        await ctx.respond(f"VN-INDEX @ **{get_index}**, thay đổi **{change_perc}**%.", delete_after=self.__TIMEOUT)
-        
-        listInfluence = fetch.fetchINDEXInfluences()
+        listInfluence = fetch.fetchINDEXInfluences(index)
         listInfluence.sort(key=lambda s: s["point"], reverse=True)
         print(listInfluence[0:5], listInfluence[-6:-1])
         
+        if index == "HNX":
+            index = "HNXINDEX"
+            
+        get_index, change_perc, change_score = fetch.fetchINDEX(index)
+        
+        await ctx.respond(f"Các cổ phiếu ảnh hưởng đến {index}", delete_after=self.__TIMEOUT)
+        
         embed = discord.Embed()
-        embed.set_author(name=f'Các cổ phiếu ảnh hưởng đến VN-INDEX')
+        
+        if change_perc[0] == "+":
+            embed = discord.Embed(color=constants.COLOR_UP)
+        elif change_perc[0] == "-":
+            embed = discord.Embed(color=constants.COLOR_DOWN)
+        else:
+            embed = discord.Embed(color=constants.COLOR_TC)
+            
+        embed.set_author(name=f'{index} @ {get_index}, thay đổi {change_score} | {change_perc}.')
         
         listUp   = listInfluence[0:5]
         listDown = listInfluence[-6:-1]
@@ -428,13 +440,6 @@ class Price(commands.Cog):
         embed.add_field(name=f'Giá cổ phiếu', 
                         value=f'{priceDown}', 
                         inline = True)
-        
-        if int(change_perc) > 0:
-            embed = discord.Embed(color=constants.COLOR_UP)
-        elif int(change_perc) < 0:
-            embed = discord.Embed(color=constants.COLOR_DOWN)
-        else:
-            embed = discord.Embed(color=constants.COLOR_TC)
             
         await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
         

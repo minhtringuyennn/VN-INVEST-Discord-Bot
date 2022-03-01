@@ -263,12 +263,13 @@ def fetchINDEX(symbol = "VNINDEX"):
         index = round(res.json()[0]["priceAverage"])
         change_perc = (res.json()[0]["priceAverage"] - res.json()[0]["priceBasic"]) / res.json()[0]["priceBasic"] * 100
         change_perc = utils.format_percent(change_perc)
-        return [ index, change_perc ]
+        change_score = utils.format_value(res.json()[0]["priceClose"] - res.json()[0]["priceBasic"], basic=False)
+        return [ index, change_perc, change_score ]
     except:
         return [ None, None ]
     
-def fetchINDEXInfluences():
-    VNDIRECT_API = 'https://mkw-socket.vndirect.com.vn/mkwsocket/leaderlarger?index=VNINDEX'
+def fetchINDEXInfluences(index = "VNINDEX"):
+    VNDIRECT_API = f'https://mkw-socket.vndirect.com.vn/mkwsocket/leaderlarger?index={index}'
     
     res = requests.get(VNDIRECT_API, headers=HEADERS)
     
