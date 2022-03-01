@@ -398,47 +398,33 @@ class Price(commands.Cog):
         else:
             embed = discord.Embed(color=constants.COLOR_TC)
             
-        embed.set_author(name=f'{index} @ {get_index}, thay đổi {change_score} | {change_perc}.')
+        embed.set_author(name=f'{index} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
         
         listUp   = listInfluence[0:5]
         listDown = listInfluence[-6:-1]
         
-        symbolUp = ""
-        pointUp  = ""
-        priceUp  = ""
+        symbolChg = ""
+        pointChg  = ""
+        priceChg  = ""
         
         for stock in listUp:
-            symbolUp += f"**{stock['symbol']}**\n"
-            pointUp  += f"+{utils.format_value(stock['point'], basic=False)}\n"
-            priceUp  += f"{utils.format_value(stock['price'])}\n"
-        
-        symbolDown = ""
-        pointDown  = ""
-        priceDown  = ""
+            symbolChg += f"**{stock['symbol']}**\n"
+            pointChg  += f"+{utils.format_value(stock['point'], basic=False)}\n"
+            priceChg  += f"{utils.format_value(stock['price'])}\n"
         
         for stock in listDown:
-            symbolDown += f"**{stock['symbol']}**\n"
-            pointDown  += f"{utils.format_value(stock['point'], basic=False)}\n"
-            priceDown  += f"{utils.format_value(stock['price'])}\n"
+            symbolChg += f"**{stock['symbol']}**\n"
+            pointChg  += f"{utils.format_value(stock['point'], basic=False)}\n"
+            priceChg  += f"{utils.format_value(stock['price'])}\n"
         
-        embed.add_field(name=f'Chiều tăng điểm', 
-                        value=f'{symbolUp}', 
+        embed.add_field(name=f'Ảnh hưởng', 
+                        value=f'{symbolChg}', 
                         inline = True)
         embed.add_field(name=f'Điểm thay đổi', 
-                        value=f'{pointUp}', 
+                        value=f'{pointChg}', 
                         inline = True)
-        embed.add_field(name=f'Giá cổ phiếu', 
-                        value=f'{priceUp}', 
-                        inline = True)
-        
-        embed.add_field(name=f'Chiều giảm điểm', 
-                        value=f'{symbolDown}', 
-                        inline = True)
-        embed.add_field(name=f'Điểm thay đổi', 
-                        value=f'{pointDown}', 
-                        inline = True)
-        embed.add_field(name=f'Giá cổ phiếu', 
-                        value=f'{priceDown}', 
+        embed.add_field(name=f'Giá hiện tại', 
+                        value=f'{priceChg}', 
                         inline = True)
             
         await ctx.send(embed=embed, delete_after=self.__TIMEOUT)

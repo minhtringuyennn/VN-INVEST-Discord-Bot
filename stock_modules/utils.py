@@ -30,16 +30,24 @@ def convertDailyToWeek(data):
     except:
         return data
 
-def format_value(val, basic = True):
+def format_value(val, basic = True, sign = False):
     try:
         val = float(val)
     except TypeError:
         return "None"
     
     if basic == True:
-        return "{:,.0f}".format(val)
+        res = "{:,.0f}".format(val)
     else:
-        return "{:,.2f}".format(val)
+        res = "{:,.2f}".format(val)
+    
+    if sign:
+        if(val > 0):
+            res = "+{}".format(res)
+        elif(val < 0):
+            res = "-{}".format(res)
+    
+    return res
     
 def format_percent(val, multiply = 1.0, basic = False):
     try:
