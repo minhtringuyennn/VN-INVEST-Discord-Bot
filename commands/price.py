@@ -28,8 +28,10 @@ class Price(commands.Cog):
             
     async def default_command(self, ctx, symbols):
         self.update_timeout(ctx)
-            
-        symbols_list = symbols.replace(' ','').split(",")
+        
+        symbols_list = " ".join(symbols.split())
+        symbols_list = symbols.replace(","," ")
+        symbols_list = symbols_list.split()
 
         # Check symbols contains list of stocks or not
         if not isinstance(symbols_list, list):
@@ -402,29 +404,44 @@ class Price(commands.Cog):
         
         listUp   = listInfluence[0:5]
         listDown = listInfluence[-6:-1]
+        listDown.reverse()
         
-        symbolChg = ""
-        pointChg  = ""
-        priceChg  = ""
+        symbolUp = ""
+        pointUp  = ""
+        priceUp  = ""
         
         for stock in listUp:
-            symbolChg += f"**{stock['symbol']}**\n"
-            pointChg  += f"+{utils.format_value(stock['point'], basic=False)}\n"
-            priceChg  += f"{utils.format_value(stock['price'])}\n"
+            symbolUp += f"**{stock['symbol']}**\n"
+            pointUp  += f"+{utils.format_value(stock['point'], basic=False)}\n"
+            priceUp  += f"{utils.format_value(stock['price'])}\n"
+        
+        symbolDown = ""
+        pointDown  = ""
+        priceDown  = ""
         
         for stock in listDown:
-            symbolChg += f"**{stock['symbol']}**\n"
-            pointChg  += f"{utils.format_value(stock['point'], basic=False)}\n"
-            priceChg  += f"{utils.format_value(stock['price'])}\n"
+            symbolDown += f"**{stock['symbol']}**\n"
+            pointDown  += f"{utils.format_value(stock['point'], basic=False)}\n"
+            priceDown  += f"{utils.format_value(stock['price'])}\n"
         
+        embed.add_field(name=f'Chiều tăng', 
+                        value=f'{symbolUp}', 
+                        inline = True)
         embed.add_field(name=f'Ảnh hưởng', 
-                        value=f'{symbolChg}', 
+                        value=f'{pointUp}', 
                         inline = True)
-        embed.add_field(name=f'Điểm thay đổi', 
-                        value=f'{pointChg}', 
+        embed.add_field(name=f'Giá', 
+                        value=f'{priceUp}', 
                         inline = True)
-        embed.add_field(name=f'Giá hiện tại', 
-                        value=f'{priceChg}', 
+        
+        embed.add_field(name=f'Chiều giảm', 
+                        value=f'{symbolDown}', 
+                        inline = True)
+        embed.add_field(name=f'Ảnh hưởng', 
+                        value=f'{pointDown}', 
+                        inline = True)
+        embed.add_field(name=f'Giá', 
+                        value=f'{priceDown}', 
                         inline = True)
             
         await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
