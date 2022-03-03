@@ -42,10 +42,10 @@ def format_value(val, basic = True, sign = False):
         res = "{:,.2f}".format(val)
     
     if sign:
-        if(val > 0):
+        if val > 0:
             res = "+{}".format(res)
-        elif(val < 0):
-            res = "-{}".format(res)
+        elif val < 0:
+            res = "{}".format(res)
     
     return res
     

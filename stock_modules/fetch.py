@@ -274,3 +274,19 @@ def fetchINDEXInfluences(index = "VNINDEX"):
     res = requests.get(VNDIRECT_API, headers=HEADERS)
     
     return res.json()["data"]
+
+def fetchYoutubeVideoList(channelId = "UCabsTV34JwALXKGMqHpvUiA", maxResults = 10):
+    read_config = configparser.ConfigParser()
+    path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
+    read_config.read(path)
+    
+    YOUTUBE_API_KEY = read_config.get("config", "YOUTUBE_API_KEY")
+    YOUTUBE_PARAMS = f'search?part=snippet&channelId={channelId}&maxResults={maxResults}&order=date&key={YOUTUBE_API_KEY}'
+    YOUTUBE_API = f'https://youtube.googleapis.com/youtube/v3/{YOUTUBE_PARAMS}'
+
+    try:
+        res = requests.get(YOUTUBE_API)
+        data = res.json()["items"]
+        return data
+    except:
+        return None

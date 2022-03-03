@@ -1,0 +1,31 @@
+index,symbol,companyName,floor,industryName
+0,ACB,Ngân hàng Thương mại Cổ phần Á Châu,HOSE,Ngân hàng
+1,BID,Ngân hàng Thương mại Cổ phần Đầu tư và Phát triển Việt Nam ,HOSE,Ngân hàng
+2,BVH,Tập đoàn Bảo Việt ,HOSE,Bảo hiểm đa ngành
+3,CTG,Ngân hàng Thương mại Cổ phần Công Thương Việt Nam,HOSE,Ngân hàng
+4,FPT,Công ty Cổ phần FPT,HOSE,Dịch vụ máy tính
+5,GAS,Tổng Công ty Khí Việt Nam - CTCP,HOSE,Gas
+6,GVR,Tập đoàn Công nghiệp Cao su Việt Nam - Công ty cổ phần,HOSE,Hóa chất cơ bản
+7,HDB,Ngân hàng Thương mại Cổ phần Phát triển Thành phố Hồ Chí Minh,HOSE,Ngân hàng
+8,HPG,Công ty Cổ phần Tập đoàn Hòa Phát,HOSE,Thép
+9,KDH,Công ty Cổ phần Đầu tư và Kinh doanh Nhà Khang Điền,HOSE,Đầu tư và phát triển bất động sản
+10,MBB,Ngân hàng Thương mại Cổ phần Quân đội ,HOSE,Ngân hàng
+11,MSN,Công ty Cổ phần Tập đoàn Ma San,HOSE,Sản xuất thực phẩm
+12,MWG,Công ty Cổ phần đầu tư thế giới di động,HOSE,Bán lẻ tổng hợp
+13,NVL,Công ty cổ phần Tập đoàn Đầu tư Địa ốc No Va,HOSE,Đầu tư và phát triển bất động sản
+14,PDR,Công ty Cổ phần Phát triển Bất động sản Phát Đạt ,HOSE,Đầu tư và phát triển bất động sản
+15,PLX,Tập đoàn Xăng dầu Việt Nam,HOSE,Dầu khí tổng hợp
+16,PNJ,Công ty Cổ phần Vàng bạc đá quý Phú Nhuận,HOSE,Cửa hàng chuyên dụng
+17,POW,Tổng Công ty Điện lực Dầu khí Việt Nam – Công ty cổ phần,HOSE,Điện
+18,SAB,Tổng Công ty Cổ phần Bia - Rượu - Nước giải khát Sài Gòn,HOSE,Sản xuất bia
+19,SSI,Công ty Cổ phần chứng khoán SSI,HOSE,Dịch vụ đầu tư
+20,STB,Ngân hàng Thương mại Cổ phần Sài Gòn Thương Tín,HOSE,Ngân hàng
+21,TCB,Ngân hàng Thương mại Cổ phần Kỹ Thương Việt Nam - Techcombank,HOSE,Ngân hàng
+22,TPB,Ngân hàng Thương mại cổ phần Tiên Phong,HOSE,Ngân hàng
+23,VCB,Ngân hàng Thương mại Cổ phần Ngoại thương Việt Nam ,HOSE,Ngân hàng
+24,VHM,Công ty cổ phần Vinhomes,HOSE,Đầu tư và phát triển bất động sản
+25,VIC,Tập đoàn VINGROUP - CTCP,HOSE,Đầu tư và phát triển bất động sản
+26,VJC,Công ty cổ phần Hàng không VIETJET,HOSE,Hàng không
+27,VNM,Công ty Cổ phần Sữa Việt Nam,HOSE,Sản xuất thực phẩm
+28,VPB,Ngân hàng Thương mại Cổ phần Việt Nam thịnh vượng,HOSE,Ngân hàng
+29,VRE,Công ty Cổ phần Vincom Retail,HOSE,Đầu tư và phát triển bất động sản

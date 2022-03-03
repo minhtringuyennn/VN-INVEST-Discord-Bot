@@ -63,7 +63,8 @@ class Price(commands.Cog):
         history_data = loader.fetchPrice()
         history_data = history_data[-16:-1]
         KLTB_GD = history_data.volume.mean()
-        KLTB_RATE = int(data["TotalVolume"]) / KLTB_GD * 100
+        print(KLTB_GD, int(data["TotalVolume"]))
+        KLTB_RATE = (int(data["TotalVolume"]) / KLTB_GD - 1) * 100
         
         if (data != None):
             mess = ""
@@ -102,7 +103,7 @@ class Price(commands.Cog):
                 embed = discord.Embed(color=constants.COLOR_TC)
                 
             price_str = str(data["PriceCurrent"])
-            mess = mess.replace("#code#",symbol.upper()).replace("#price#", price_str)
+            mess = mess.replace("#code#",symbol.upper()).replace("#price#", utils.format_value(price_str))
             
             embed.set_author(name=f'Giá {symbol.upper()} tại {utils.get_current_time(data["Date"])}:')
             embed.add_field(name='Giá: ', value=f'{utils.format_value(data["PriceCurrent"])}', inline=True)

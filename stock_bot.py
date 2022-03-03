@@ -1,17 +1,16 @@
 #!/usr/bin/python3
 
-import configparser
-import os, asyncio, pathlib, string
+import configparser, os, asyncio, pathlib, string, threading, logging
 
 import discord
 from discord.ext import commands
 
 import commands.default as default
 import commands.price as price
+import commands.notify as notify
+
 import stock_modules.websocket as wsprice
 import stock_modules.database as db
-import threading
-import logging
 
 logging.basicConfig(filename='./log.txt', format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 
@@ -33,12 +32,13 @@ class MyBot(commands.Bot):
         super().run(self.__TOKEN, reconnect=True)
 
 if __name__ == "__main__":
-    Db = db.mongoDB()
-    wsPrice = wsprice.websocketPrice(Db)
-    wsThread = threading.Thread(target=wsPrice.run)
-    wsThread.setDaemon(True)
-    wsThread.start()
+    # Db = db.mongoDB()
+    # wsPrice = wsprice.websocketPrice(Db)
+    # wsThread = threading.Thread(target=wsPrice.run)
+    # wsThread.setDaemon(True)
+    # wsThread.start()
     BOT = MyBot()
     BOT.add_cog(default.DefaultCommands(BOT))
     BOT.add_cog(price.Price(BOT))
+    BOT.add_cog(notify.NotifyCommands(BOT))
     BOT.run()
