@@ -403,8 +403,8 @@ class Price(commands.Cog):
             
         embed.set_author(name=f'{index} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
         
-        listUp   = listInfluence[0:5]
-        listDown = listInfluence[-6:-1]
+        listUp   = listInfluence[0:8]
+        listDown = listInfluence[-9:-1]
         listDown.reverse()
         
         symbolUp = ""

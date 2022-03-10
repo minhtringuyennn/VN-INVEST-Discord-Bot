@@ -40,5 +40,5 @@ if __name__ == "__main__":
     BOT = MyBot()
     BOT.add_cog(default.DefaultCommands(BOT))
     BOT.add_cog(price.Price(BOT))
-    BOT.add_cog(notify.NotifyCommands(BOT))
+    # BOT.add_cog(notify.NotifyCommands(BOT))
     BOT.run()
