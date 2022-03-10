@@ -2,8 +2,9 @@
 from bs4 import BeautifulSoup
 from datetime import datetime
 
-import re, os, time, requests, configparser
+import re, os, time, requests, configparser, xmltodict
 
+import feedparser as fp
 import numpy as np
 import pandas as pd
 import logging as logging
@@ -275,18 +276,33 @@ def fetchINDEXInfluences(index = "VNINDEX"):
     
     return res.json()["data"]
 
-def fetchYoutubeVideoList(channelId = "UCabsTV34JwALXKGMqHpvUiA", maxResults = 10):
-    read_config = configparser.ConfigParser()
-    path = os.path.join(os.path.abspath(__file__+"/../../"),"config", "config.ini")
-    read_config.read(path)
-    
-    YOUTUBE_API_KEY = read_config.get("config", "YOUTUBE_API_KEY")
-    YOUTUBE_PARAMS = f'search?part=snippet&channelId={channelId}&maxResults={maxResults}&order=date&key={YOUTUBE_API_KEY}'
-    YOUTUBE_API = f'https://youtube.googleapis.com/youtube/v3/{YOUTUBE_PARAMS}'
-
-    try:
-        res = requests.get(YOUTUBE_API)
-        data = res.json()["items"]
-        return data
-    except:
+def fetchYoutubeLivestream(youtube_channel_id):
+    channel_url = f"https://www.youtube.com/channel/{youtube_channel_id}/live"
+    page = requests.get(channel_url, headers=HEADERS, cookies={'CONSENT': 'YES+42'})
+    soup = BeautifulSoup(page.content, "html.parser")
+    live = soup.find("link", {"rel": "canonical"})
+    if live:
+        return live["href"]
+    else:
         return None
+    
+def fetchYoutubePlaylist(youtube_channel_id, max_results = 1):
+    YOUTUBE_API = f"https://www.youtube.com/feeds/videos.xml?channel_id={youtube_channel_id}"
+    rss = fp.parse(YOUTUBE_API)
+
+    youtube_playlist = {}
+    count = 0
+
+    for entry in rss.entries:
+        count += 1
+        if count > max_results: break
+    
+        title = entry['title']
+        attibute = {}
+        for link in entry.links:
+            attibute.update(link)
+        link = attibute['href']
+        
+        youtube_playlist.update({title: link})
+
+    return youtube_playlist

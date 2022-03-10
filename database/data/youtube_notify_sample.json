@@ -1,14 +1,10 @@
 {
-    "channel_id_1": {
-        "live_only": "True",
-        "latest_video_url": "",
-        "notify_discord_channel": "",
-        "tagged_id": ""
-    },
-    "channel_id_2": {
-        "live_only": "False",
-        "latest_video_url": "",
-        "notify_discord_channel": "",
-        "tagged_id": ""
+    "channel_id": {
+        "title": "",
+        "live_only": "",
+        "latest_url": "",
+        "posted_video_url": [ "" ],
+        "notify_discord_channel": [ "" ],
+        "tagged_id": [ "" ]
     }
 }

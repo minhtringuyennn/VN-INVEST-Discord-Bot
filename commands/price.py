@@ -383,7 +383,7 @@ class Price(commands.Cog):
         
         listInfluence = fetch.fetchINDEXInfluences(index)
         listInfluence.sort(key=lambda s: s["point"], reverse=True)
-        print(listInfluence[0:5], listInfluence[-6:-1])
+        print(listInfluence[0:8], listInfluence[-9:-1])
         
         if index == "HNX":
             index = "HNXINDEX"
