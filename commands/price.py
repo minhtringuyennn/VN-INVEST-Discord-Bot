@@ -386,7 +386,7 @@ class Price(commands.Cog):
         listInfluence.sort(key=lambda s: s["point"], reverse=True)
 
         listUp   = listInfluence[0:10]
-        listDown = listInfluence[-11:-1]
+        listDown = listInfluence[-10:]
 
         symbolList = [x['symbol'] for x in listUp + listDown]
         symbolPoint = [round(x['point'], 2) for x in listUp + listDown]
