@@ -5,6 +5,7 @@ from discord.commands import slash_command, Option
 
 from PIL import Image, ImageDraw, ImageFont
 import logging
+import pandas as pd
 
 import stock_modules.fetch as fetch
 import stock_modules.utils as utils
@@ -383,15 +384,23 @@ class Price(commands.Cog):
         
         listInfluence = fetch.fetchINDEXInfluences(index)
         listInfluence.sort(key=lambda s: s["point"], reverse=True)
-        print(listInfluence[0:8], listInfluence[-9:-1])
+
+        listUp   = listInfluence[0:10]
+        listDown = listInfluence[-11:-1]
+
+        symbolList = [x['symbol'] for x in listUp + listDown]
+        symbolPoint = [round(x['point'], 2) for x in listUp + listDown]
+
+        df = pd.DataFrame(symbolList, columns=['Symbol'])
+        df = df.merge(pd.DataFrame(symbolPoint, columns=['Point']), left_index=True, right_index=True)
+        
         
         if index == "HNX":
             index = "HNXINDEX"
-            
-        get_index, change_perc, change_score = fetch.fetchINDEX(index)
         
         await ctx.respond(f"Các cổ phiếu ảnh hưởng đến {index}", delete_after=self.__TIMEOUT)
-        
+            
+        get_index, change_perc, change_score = fetch.fetchINDEX(index)
         embed = discord.Embed()
         
         if change_perc[0] == "+":
@@ -403,47 +412,9 @@ class Price(commands.Cog):
             
         embed.set_author(name=f'{index} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
         
-        listUp   = listInfluence[0:8]
-        listDown = listInfluence[-9:-1]
-        listDown.reverse()
-        
-        symbolUp = ""
-        pointUp  = ""
-        priceUp  = ""
-        
-        for stock in listUp:
-            symbolUp += f"**{stock['symbol']}**\n"
-            pointUp  += f"+{utils.format_value(stock['point'], basic=False)}\n"
-            priceUp  += f"{utils.format_value(stock['price'])}\n"
-        
-        symbolDown = ""
-        pointDown  = ""
-        priceDown  = ""
-        
-        for stock in listDown:
-            symbolDown += f"**{stock['symbol']}**\n"
-            pointDown  += f"{utils.format_value(stock['point'], basic=False)}\n"
-            priceDown  += f"{utils.format_value(stock['price'])}\n"
-        
-        embed.add_field(name=f'Chiều tăng', 
-                        value=f'{symbolUp}', 
-                        inline = True)
-        embed.add_field(name=f'Ảnh hưởng', 
-                        value=f'{pointUp}', 
-                        inline = True)
-        embed.add_field(name=f'Giá', 
-                        value=f'{priceUp}', 
-                        inline = True)
-        
-        embed.add_field(name=f'Chiều giảm', 
-                        value=f'{symbolDown}', 
-                        inline = True)
-        embed.add_field(name=f'Ảnh hưởng', 
-                        value=f'{pointDown}', 
-                        inline = True)
-        embed.add_field(name=f'Giá', 
-                        value=f'{priceDown}', 
-                        inline = True)
-            
-        await ctx.send(embed=embed, delete_after=self.__TIMEOUT)
-        
+        figure.drawInfluences(df)
+        figure.img.seek(0)
+        file = discord.File(figure.img, filename=f'{index}.png')
+        embed.set_image(url=f"attachment://{index}.png")
+        await ctx.send(file=file, embed=embed, delete_after=self.__TIMEOUT)
+        figure.img.seek(0)

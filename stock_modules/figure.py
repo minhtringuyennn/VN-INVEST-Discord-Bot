@@ -166,3 +166,16 @@ def weekday_candlestick(ax, ohlc_data, fmt='%b %d', freq=1, **kwargs):
     # Format x axis
     ax.set_xticks(ndays[::freq])
     ax.set_xticklabels(date_strings[::freq], rotation=45, ha='center')
+
+def addlabels(x, y):
+    for i in range(int(len(x)/2)):
+        plt.text(i, y[i] + 0.04, y[i], ha = 'center')
+    for i in range(int(len(x)/2), len(x)):
+        plt.text(i, y[i] - 0.06, y[i], ha = 'center')
+
+def drawInfluences(df):
+    plt.figure(figsize=(12, 6))
+    plt.yticks([])
+    addlabels(df['Symbol'], df['Point'])
+    plt.bar(df['Symbol'], df['Point'], color=np.where(df['Point'] < 0, 'r', 'g'))
+    plt.savefig(img, Format="png", bbox_inches='tight', pad_inches=0.2)
