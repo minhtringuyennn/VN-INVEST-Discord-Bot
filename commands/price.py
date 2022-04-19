@@ -5,6 +5,7 @@ from discord.commands import slash_command, Option
 
 from PIL import Image, ImageDraw, ImageFont
 import logging
+import numpy as np
 import pandas as pd
 
 import stock_modules.fetch as fetch
@@ -375,7 +376,7 @@ class Price(commands.Cog):
         ctx, 
         index: Option(
             str,
-            "Chọn các khoảng thời gian sau",
+            "Chọn các INDEX gian sau",
             autocomplete=discord.utils.basic_autocomplete(index_searcher),                            
             default=constants.INDEX[0]),
         ):
@@ -413,6 +414,74 @@ class Price(commands.Cog):
         embed.set_author(name=f'{index} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
         
         figure.drawInfluences(df)
+        figure.img.seek(0)
+        file = discord.File(figure.img, filename=f'{index}.png')
+        embed.set_image(url=f"attachment://{index}.png")
+        await ctx.send(file=file, embed=embed, delete_after=self.__TIMEOUT)
+        figure.img.seek(0)
+    
+    async def vn_index_fialda_searcher(ctx: discord.AutocompleteContext):
+        return [index for index in constants.VNINDEX_FIALDA]
+    
+    @slash_command(
+        name='index',
+        description='Xem biểu đồ của các INDEX tại Việt Nam trong ngày.'
+    )
+    async def getStockIndexChart(
+        self, 
+        ctx, 
+        index: Option(
+            str,
+            "Chọn các INDEX sau",
+            autocomplete=discord.utils.basic_autocomplete(vn_index_fialda_searcher),                            
+            default=constants.VNINDEX_FIALDA[0]),
+        ):
+        
+        self.update_timeout(ctx)
+        
+        date = utils.get_today_date()
+        data = fetch.fetchINDEXHistory(index)
+
+        timeperiod = 60 * 6 + 1
+        timeseries = pd.date_range("09:00:00", periods=timeperiod, freq="T").to_series()
+        df1 = pd.DataFrame(list(zip(timeseries, np.zeros(timeperiod))), columns=['dateTime', 'value'])
+        df1['dateTime'] = df1['dateTime'].dt.strftime('%H:%M')
+
+        df2 = pd.DataFrame.from_dict(data).iloc[::-1]
+        df2['dateTime'] = pd.to_datetime(df2['dateTime'])
+        df2['dateTime'] = df2['dateTime'].dt.strftime('%H:%M')
+
+        df = pd.concat([df1, df2])
+        df = df.drop_duplicates(subset=['dateTime'], keep='last')
+        df.sort_values(by=['dateTime'], inplace=True)
+        df = df.reset_index(drop=True)
+
+        firstNonVal = int(next((i for i, x in enumerate(df['value']) if x), None))
+        baseline = df['value'][firstNonVal]
+
+        df['value'] = df['value'].replace(0, np.nan)
+        print(df.to_string())
+
+        df['value'] = df['value'].interpolate(limit_area='inside')
+        print(df.to_string())
+
+        maskdata = df.mask(df['value'] <= baseline, baseline)
+        
+        await ctx.respond(f"Biểu đồ của {index} ngày {date}", delete_after=self.__TIMEOUT)
+            
+        get_index, change_perc, change_score = fetch.fetchINDEX(index)
+        embed = discord.Embed()
+        
+        if change_perc[0] == "+":
+            embed = discord.Embed(color=constants.COLOR_UP)
+        elif change_perc[0] == "-":
+            embed = discord.Embed(color=constants.COLOR_DOWN)
+        else:
+            embed = discord.Embed(color=constants.COLOR_TC)
+            
+        embed.set_author(name=f'{index} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
+        
+        figure.drawIndexChart(df, maskdata, baseline, index, date)
         figure.img.seek(0)
         file = discord.File(figure.img, filename=f'{index}.png')
         embed.set_image(url=f"attachment://{index}.png")

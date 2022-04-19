@@ -179,3 +179,18 @@ def drawInfluences(df):
     addlabels(df['Symbol'], df['Point'])
     plt.bar(df['Symbol'], df['Point'], color=np.where(df['Point'] < 0, 'r', 'g'))
     plt.savefig(img, Format="png", bbox_inches='tight', pad_inches=0.2)
+
+def drawIndexChart(df, maskdata, baseline, index, date):
+    fig, ax = plt.subplots()
+    fig.set_size_inches((12, 4))
+
+    ax.plot(df['dateTime'], df['value'], color = 'red')
+    ax.plot(df['dateTime'], maskdata['value'], color = 'green')
+    ax.axhline(y=baseline)
+    ax.set_ylabel(f'{index} ngày {date}', fontsize=12)
+
+    ax.set_xticks(df['dateTime'][::15])
+    ax.set_xticklabels(df['dateTime'][::15], rotation=45, ha='center')
+    
+    fig.savefig(img, Format="png", bbox_inches='tight', pad_inches=0.2)
+    

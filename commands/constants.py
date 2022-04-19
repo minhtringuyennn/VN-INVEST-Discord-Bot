@@ -44,3 +44,11 @@ INDEX = [
     "VN30",
     "HNX"
 ]
+
+VNINDEX_FIALDA = [
+    "VNINDEX",
+    "VN30",
+    "HNXINDEX",
+    "HNX30",
+    "UPINDEX",
+]

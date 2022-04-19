@@ -276,6 +276,14 @@ def fetchINDEXInfluences(index = "VNINDEX"):
     
     return res.json()["data"]
 
+def fetchINDEXHistory(index = "VNINDEX"):    
+    # API
+    FIALDA_API = f'https://fwtapi2.fialda.com/api/services/app/Home/GetVNIndexChart?indexCode={index}&chartPedirod=today'
+    
+    # Get reponse from API
+    res = requests.get(FIALDA_API, headers=HEADERS)
+    return res.json()['result']
+
 def fetchYoutubeLivestream(youtube_channel_id):
     channel_url = f"https://www.youtube.com/channel/{youtube_channel_id}/live"
     page = requests.get(channel_url, headers=HEADERS, cookies={'CONSENT': 'YES+42'})

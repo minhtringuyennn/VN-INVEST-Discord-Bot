@@ -54,7 +54,7 @@ class DefaultCommands(commands.Cog):
         asyncio.run_coroutine_threadsafe(self.set_activity(), loop)
                                 
     async def set_activity(self):
-        index_list = ["VNINDEX", "VN30", "HNXINDEX", "UPINDEX"]
+        index_list = ["VNINDEX"]
         index_pos = 0
         
         while True:
