@@ -401,7 +401,7 @@ class Price(commands.Cog):
         
         await ctx.respond(f"Các cổ phiếu ảnh hưởng đến {index}", delete_after=self.__TIMEOUT)
             
-        get_index, change_perc, change_score = fetch.fetchINDEX(index)
+        get_index, change_perc, change_score, base_score = fetch.fetchINDEX(index)
         embed = discord.Embed()
         
         if change_perc[0] == "+":
