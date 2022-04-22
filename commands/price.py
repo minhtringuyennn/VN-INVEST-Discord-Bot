@@ -447,23 +447,24 @@ class Price(commands.Cog):
         df1 = pd.DataFrame(list(zip(timeseries, np.zeros(timeperiod))), columns=['dateTime', 'value'])
         df1['dateTime'] = df1['dateTime'].dt.strftime('%H:%M')
 
-        df2 = pd.DataFrame.from_dict(data).iloc[::-1]
-        df2['dateTime'] = pd.to_datetime(df2['dateTime'])
-        df2['dateTime'] = df2['dateTime'].dt.strftime('%H:%M')
+        try:
+            df2 = pd.DataFrame.from_dict(data).iloc[::-1]
+            df2['dateTime'] = pd.to_datetime(df2['dateTime'])
+            df2['dateTime'] = df2['dateTime'].dt.strftime('%H:%M')
+        except:
+            df2 = df1
 
         df = pd.concat([df1, df2])
         df = df.drop_duplicates(subset=['dateTime'], keep='last')
         df.sort_values(by=['dateTime'], inplace=True)
         df = df.reset_index(drop=True)
 
-        firstNonVal = int(next((i for i, x in enumerate(df['value']) if x), None))
+        firstNonVal = int(x if next((i for i, x in enumerate(df['value']) if x), None) else 0)
         baseline = df['value'][firstNonVal]
 
         df['value'] = df['value'].replace(0, np.nan)
-        print(df.to_string())
 
         df['value'] = df['value'].interpolate(limit_area='inside')
-        print(df.to_string())
 
         maskdata = df.mask(df['value'] <= baseline, baseline)
         
