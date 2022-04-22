@@ -439,13 +439,16 @@ class Price(commands.Cog):
         
         self.update_timeout(ctx)
         
+        index = index.upper()
         date = utils.get_today_date()
         data = fetch.fetchINDEXHistory(index)
+        get_index, change_perc, change_score, base_score = fetch.fetchINDEX(index)
 
         timeperiod = 60 * 6 + 1
         timeseries = pd.date_range("09:00:00", periods=timeperiod, freq="T").to_series()
         df1 = pd.DataFrame(list(zip(timeseries, np.zeros(timeperiod))), columns=['dateTime', 'value'])
         df1['dateTime'] = df1['dateTime'].dt.strftime('%H:%M')
+        df1.loc[0, 'value'] = base_score
 
         try:
             df2 = pd.DataFrame.from_dict(data).iloc[::-1]
@@ -459,8 +462,8 @@ class Price(commands.Cog):
         df.sort_values(by=['dateTime'], inplace=True)
         df = df.reset_index(drop=True)
 
-        firstNonVal = next((i for i, x in enumerate(df['value']) if x), 0)
-        baseline = df['value'][firstNonVal]
+        # firstNonVal = next((i for i, x in enumerate(df['value']) if x), 0)
+        baseline = base_score
 
         df['value'] = df['value'].replace(0, np.nan)
 
@@ -468,9 +471,8 @@ class Price(commands.Cog):
 
         maskdata = df.mask(df['value'] <= baseline, baseline)
         
-        await ctx.respond(f"Biểu đồ của {index} ngày {date}", delete_after=self.__TIMEOUT)
+        await ctx.respond(f"Biểu đồ của {index.upper()} ngày {date}", delete_after=self.__TIMEOUT)
             
-        get_index, change_perc, change_score = fetch.fetchINDEX(index)
         embed = discord.Embed()
         
         if change_perc[0] == "+":
@@ -480,7 +482,7 @@ class Price(commands.Cog):
         else:
             embed = discord.Embed(color=constants.COLOR_TC)
             
-        embed.set_author(name=f'{index} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
+        embed.set_author(name=f'{index.upper()} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
         
         figure.drawIndexChart(df, maskdata, baseline, index, date)
         figure.img.seek(0)
