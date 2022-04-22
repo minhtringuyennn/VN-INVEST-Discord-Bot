@@ -459,7 +459,7 @@ class Price(commands.Cog):
         df.sort_values(by=['dateTime'], inplace=True)
         df = df.reset_index(drop=True)
 
-        firstNonVal = int(x if next((i for i, x in enumerate(df['value']) if x), None) else 0)
+        firstNonVal = next((i for i, x in enumerate(df['value']) if x), 0)
         baseline = df['value'][firstNonVal]
 
         df['value'] = df['value'].replace(0, np.nan)
