@@ -186,7 +186,7 @@ def drawIndexChart(df, maskdata, baseline, index, date):
 
     ax.plot(df['dateTime'], df['value'], color = 'red')
     ax.plot(df['dateTime'], maskdata['value'], color = 'green')
-    ax.axhline(y=baseline)
+    ax.axhline(y=baseline, color = 'orange', alpha = 1, linewidth = 2)
     ax.set_ylabel(f'{index} ngày {date}', fontsize=12)
 
     ax.set_xticks(df['dateTime'][::15])
