@@ -1,4 +1,4 @@
-import discord, asyncio, requests, random, configparser, os, re
+import datetime, discord, asyncio, requests, random, configparser, os, re
 from discord.ext import commands
 from discord.ui import Button, View
 from discord.commands import slash_command, Option
@@ -488,5 +488,51 @@ class Price(commands.Cog):
         figure.img.seek(0)
         file = discord.File(figure.img, filename=f'{index}.png')
         embed.set_image(url=f"attachment://{index}.png")
+        await ctx.send(file=file, embed=embed, delete_after=self.__TIMEOUT)
+        figure.img.seek(0)
+        
+    @slash_command(
+        name='volume',
+        description='Xem thanh khoản HOSE so với phiên giao dịch trước.'
+    )
+    async def getStockIndexChart(self, ctx):
+        self.update_timeout(ctx)
+        await ctx.respond(f"Thanh khoản của sàn HOSE so với phiên giao dịch trước đó", delete_after=self.__TIMEOUT)
+            
+        embed = discord.Embed()
+        
+        today_vol, last_vol = fetch.fetchHOSEVolume()
+
+        df1 = pd.DataFrame(today_vol)
+        df2 = pd.DataFrame(last_vol)
+
+        timeperiod = 60 * 6 + 1
+        timeseries = pd.date_range("09:00:00", periods=timeperiod, freq="M").strftime('%H:%m').to_series()
+
+        today_vol_df = pd.DataFrame(list(zip(timeseries, np.zeros(timeperiod))), columns=['time', 'value'])
+        last_vol_df = pd.DataFrame(list(zip(timeseries, np.zeros(timeperiod))), columns=['time', 'value'])
+
+        # convert dataframe epoch time colume to datetime
+        df1['time'] = df1['time'].apply(lambda x: datetime.datetime.utcfromtimestamp(x/1000).strftime('%H:%M'))
+        df2['time'] = df2['time'].apply(lambda x: datetime.datetime.utcfromtimestamp(x/1000).strftime('%H:%M'))
+
+        today_vol_df = pd.concat([today_vol_df, df1])
+        today_vol_df = today_vol_df.drop_duplicates(subset=['time'], keep='last')
+        today_vol_df.sort_values(by=['time'], inplace=True)
+        today_vol_df = today_vol_df.reset_index(drop=True)
+        today_vol_df['value'] = today_vol_df['value'].replace(0, np.nan)
+        today_vol_df['value'] = today_vol_df['value'].interpolate(method='index', limit_area='inside')
+
+        last_vol_df = pd.concat([last_vol_df, df2])
+        last_vol_df = last_vol_df.drop_duplicates(subset=['time'], keep='last')
+        last_vol_df.sort_values(by=['time'], inplace=True)
+        last_vol_df = last_vol_df.reset_index(drop=True)
+        last_vol_df['value'] = last_vol_df['value'].replace(0, np.nan)
+        last_vol_df['value'] = last_vol_df['value'].interpolate(method='index', limit_area='inside')
+
+        figure.drawVolume(today_vol_df, last_vol_df)
+        figure.img.seek(0)
+        file = discord.File(figure.img, filename=f'HOSE.png')
+        embed.set_image(url=f"attachment://HOSE.png")
         await ctx.send(file=file, embed=embed, delete_after=self.__TIMEOUT)
         figure.img.seek(0)

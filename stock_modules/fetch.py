@@ -315,3 +315,12 @@ def fetchYoutubePlaylist(youtube_channel_id, max_results = 1):
         youtube_playlist.update({title: link})
 
     return youtube_playlist
+
+def fetchHOSEVolume():
+    TODAY_VOLUME = f'https://mkw-socket.vndirect.com.vn/mkwsocket/liquidity?index=VNINDEX'
+    LAST_VOLUME = f'https://mkw-socket.vndirect.com.vn/mkwsocket/liquidity?index=PRE-VNINDEX'
+    
+    today_vol = requests.get(TODAY_VOLUME, headers=HEADERS).json()["data"]
+    last_vol = requests.get(LAST_VOLUME, headers=HEADERS).json()["data"]
+    
+    return today_vol, last_vol

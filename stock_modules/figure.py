@@ -194,3 +194,21 @@ def drawIndexChart(df, maskdata, baseline, index, date):
     
     fig.savefig(img, Format="png", bbox_inches='tight', pad_inches=0.2)
     
+def drawVolume(today_vol_df, last_vol_df):
+    # draw graph
+    fig, ax = plt.subplots()
+    fig.set_size_inches(12, 4)
+
+    ax.plot(today_vol_df['time'], today_vol_df['value'], label='KLGD Hôm nay', color="tab:orange", alpha=0.7)
+    ax.fill_between(today_vol_df['time'], today_vol_df['value'], color="tab:orange", alpha=0.5)
+    ax.plot(last_vol_df['time'], last_vol_df['value'], label='KLGD Phiên vừa rồi', color="tab:blue", alpha=0.7)
+    ax.fill_between(last_vol_df['time'], last_vol_df['value'], color="tab:blue", alpha=0.5)
+
+    ax.legend()
+    ax.set_ylabel("Tỷ VNĐ")
+
+    ax.set_xticks(today_vol_df['time'][::15])
+    ax.set_xticklabels(today_vol_df['time'][::15], rotation=45, ha='center')
+    
+    fig.savefig(img, Format="png", bbox_inches='tight', pad_inches=0.2)
+    
