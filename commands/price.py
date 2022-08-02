@@ -420,76 +420,65 @@ class Price(commands.Cog):
         await ctx.send(file=file, embed=embed, delete_after=self.__TIMEOUT)
         figure.img.seek(0)
     
-    async def vn_index_fialda_searcher(ctx: discord.AutocompleteContext):
-        return [index for index in constants.VNINDEX_FIALDA]
-    
     @slash_command(
-        name='index',
+        name='chartindex',
         description='Xem biểu đồ của các INDEX tại Việt Nam trong ngày.'
     )
-    async def getStockIndexChart(
-        self, 
-        ctx, 
-        index: Option(
-            str,
-            "Chọn các INDEX sau",
-            autocomplete=discord.utils.basic_autocomplete(vn_index_fialda_searcher),                            
-            default=constants.VNINDEX_FIALDA[0]),
-        ):
+    async def getStockIndexChart(self, ctx):
+        print("called me")
+        # self.update_timeout(ctx)
         
-        self.update_timeout(ctx)
+        # index = "VNINDEX"
+        # date = utils.get_today_date()
+        # data = fetch.fetchINDEXHistory(index)
+        # get_index, change_perc, change_score, base_score = fetch.fetchINDEX(index)
+
+        # timeperiod = 60 * 6 + 1
+        # timeseries = pd.date_range("09:00:00", periods=timeperiod, freq="T").to_series()
+        # df1 = pd.DataFrame(list(zip(timeseries, np.zeros(timeperiod))), columns=['dateTime', 'value'])
+        # df1['dateTime'] = df1['dateTime'].dt.strftime('%H:%M')
+        # df1.loc[0, 'value'] = base_score
+
+        # try:
+        #     df2 = pd.DataFrame.from_dict(data).iloc[::-1]
+        #     df2['dateTime'] = pd.to_datetime(df2['dateTime'])
+        #     df2['dateTime'] = df2['dateTime'].dt.strftime('%H:%M')
+        # except:
+        #     df2 = df1
+
+        # df = pd.concat([df1, df2])
+        # df = df.drop_duplicates(subset=['dateTime'], keep='last')
+        # df.sort_values(by=['dateTime'], inplace=True)
+        # df = df.reset_index(drop=True)
+
+        # # firstNonVal = next((i for i, x in enumerate(df['value']) if x), 0)
+        # baseline = base_score
+
+        # df['value'] = df['value'].replace(0, np.nan)
+
+        # df['value'] = df['value'].interpolate(limit_area='inside')
+
+        # maskdata = df.mask(df['value'] <= baseline, baseline)
         
-        index = index.upper()
-        date = utils.get_today_date()
-        data = fetch.fetchINDEXHistory(index)
-        get_index, change_perc, change_score, base_score = fetch.fetchINDEX(index)
-
-        timeperiod = 60 * 6 + 1
-        timeseries = pd.date_range("09:00:00", periods=timeperiod, freq="T").to_series()
-        df1 = pd.DataFrame(list(zip(timeseries, np.zeros(timeperiod))), columns=['dateTime', 'value'])
-        df1['dateTime'] = df1['dateTime'].dt.strftime('%H:%M')
-        df1.loc[0, 'value'] = base_score
-
-        try:
-            df2 = pd.DataFrame.from_dict(data).iloc[::-1]
-            df2['dateTime'] = pd.to_datetime(df2['dateTime'])
-            df2['dateTime'] = df2['dateTime'].dt.strftime('%H:%M')
-        except:
-            df2 = df1
-
-        df = pd.concat([df1, df2])
-        df = df.drop_duplicates(subset=['dateTime'], keep='last')
-        df.sort_values(by=['dateTime'], inplace=True)
-        df = df.reset_index(drop=True)
-
-        # firstNonVal = next((i for i, x in enumerate(df['value']) if x), 0)
-        baseline = base_score
-
-        df['value'] = df['value'].replace(0, np.nan)
-
-        df['value'] = df['value'].interpolate(limit_area='inside')
-
-        maskdata = df.mask(df['value'] <= baseline, baseline)
-        
-        await ctx.respond(f"Biểu đồ của {index.upper()} ngày {date}", delete_after=self.__TIMEOUT)
+        # await ctx.respond(f"Biểu đồ của {index.upper()} ngày {date}", delete_after=self.__TIMEOUT)
             
-        embed = discord.Embed()
+        # embed = discord.Embed()
         
-        if change_perc[0] == "+":
-            embed = discord.Embed(color=constants.COLOR_UP)
-        elif change_perc[0] == "-":
-            embed = discord.Embed(color=constants.COLOR_DOWN)
-        else:
-            embed = discord.Embed(color=constants.COLOR_TC)
+        # if change_perc[0] == "+":
+        #     embed = discord.Embed(color=constants.COLOR_UP)
+        # elif change_perc[0] == "-":
+        #     embed = discord.Embed(color=constants.COLOR_DOWN)
+        # else:
+        #     embed = discord.Embed(color=constants.COLOR_TC)
             
-        embed.set_author(name=f'{index.upper()} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
+        # embed.set_author(name=f'{index.upper()} @ {get_index}, {utils.format_value(change_score, basic=False, sign=True)} | {change_perc}.')
         
-        figure.drawIndexChart(df, maskdata, baseline, index, date)
-        figure.img.seek(0)
-        file = discord.File(figure.img, filename=f'{index}.png')
-        embed.set_image(url=f"attachment://{index}.png")
-        await ctx.send(file=file, embed=embed, delete_after=self.__TIMEOUT)
-        figure.img.seek(0)
+        # figure.drawIndexChart(df, maskdata, baseline, index, date)
+        # figure.img.seek(0)
+        # file = discord.File(figure.img, filename=f'{index}.png')
+        # embed.set_image(url=f"attachment://{index}.png")
+        # await ctx.send(file=file, embed=embed, delete_after=self.__TIMEOUT)
+        # figure.img.seek(0)
         
     @slash_command(
         name='volume',

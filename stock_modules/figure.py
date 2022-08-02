@@ -207,8 +207,8 @@ def drawVolume(today_vol_df, last_vol_df):
     ax.legend()
     ax.set_ylabel("Tỷ VNĐ")
 
-    ax.set_xticks(today_vol_df['time'][::15])
-    ax.set_xticklabels(today_vol_df['time'][::15], rotation=45, ha='center')
+    ax.set_xticks(last_vol_df['time'][::15])
+    ax.set_xticklabels(last_vol_df['time'][::15], rotation=45, ha='center')
     
     fig.savefig(img, Format="png", bbox_inches='tight', pad_inches=0.2)
     
